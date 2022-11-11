@@ -13,3 +13,4 @@
 
 ## Relevante tema:
 - Hvordan ser siden ut på 400% zoom
+- Fungerer breakpoints med zoom?
