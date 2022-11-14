@@ -16,3 +16,4 @@
 - Fungerer breakpoints med zoom?
 - landmarks
 - riktig bruk av input med label
+- Diverse chrome extensions ein kan bruke for å teste (fargeblind, UU-test)
