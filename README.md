@@ -16,4 +16,5 @@
 - Fungerer breakpoints med zoom?
 - landmarks
 - riktig bruk av input med label
-- Diverse chrome extensions ein kan bruke for å teste (fargeblind, UU-test)
+- Diverse chrome extensions ein kan bruke for å teste ([fargeblind](https://chrome.google.com/webstore/detail/colorblindly/floniaahmccleoclneebhhmnjgdfijgg?hl=en), [UU-test](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh))
+- Alt-tekster (Alt="" vs ingen alt vs alt="forklaring")
