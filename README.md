@@ -15,6 +15,7 @@
 - Hvordan ser siden ut på 400% zoom
 - Fungerer breakpoints med zoom?
 - landmarks
-- riktig bruk av input med label
+- riktig bruk av input med label (og alternavite løsninger med f.eks. aria-label)
 - Diverse chrome extensions ein kan bruke for å teste ([fargeblind](https://chrome.google.com/webstore/detail/colorblindly/floniaahmccleoclneebhhmnjgdfijgg?hl=en), [UU-test](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh))
 - Alt-tekster (Alt="" vs ingen alt vs alt="forklaring")
+- Fokus markering (outline brukes eksempelvis i NAV sitt designsystem siden den ikke endrer størrelse på element, box-shadow fungerer ikke like bra i alle tilfeller - research her)
