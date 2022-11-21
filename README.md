@@ -15,7 +15,12 @@
 ## Relevante tema:
 - landmarks
 - riktig bruk av input med label (og alternavite løsninger med f.eks. aria-label)
-- Diverse chrome extensions ein kan bruke for å teste ([fargeblind](https://chrome.google.com/webstore/detail/colorblindly/floniaahmccleoclneebhhmnjgdfijgg?hl=en), [UU-test](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh)), [UU-test](https://chrome.google.com/webstore/detail/siteimprove-accessibility/djcglbmbegflehmbfleechkjhmedcopn?hl=en)
+- Diverse chrome extensions ein kan bruke for å teste ([fargeblind](https://chrome.google.com/webstore/detail/colorblindly/floniaahmccleoclneebhhmnjgdfijgg?hl=en), [UU-test](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh), [UU-test](https://chrome.google.com/webstore/detail/siteimprove-accessibility/djcglbmbegflehmbfleechkjhmedcopn?hl=en))
 - Alt-tekster (Alt="" vs ingen alt vs alt="forklaring")
 - Fokus markering (outline brukes eksempelvis i NAV sitt designsystem siden den ikke endrer størrelse på element, box-shadow fungerer ikke like bra i alle tilfeller - research her)
 - Ikkje-semantisk html. (Knapp som er laga som ein div, f.eks.)
+- Bruk av skjermleser - tabing vs annen støttet funksjonalitet som å lese overskrifter - vikitgheten av semantisk HTML.
+
+## Ideer:
+- Kunne illustrert bruk med bind for øynene og skjermleser, eller noe annet gøy som hadde vært underholdende og samtidig gitt praktisk innsikt.
+
