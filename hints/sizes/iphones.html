@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Viss du har testa på iphone, så merker du kanskje at nettsida ikkje høyrer på fontstørrelsen du har valgt i settings.
+Dette er fordi iPhones ikkje gjer default-fonten større eller mindre, men bytter ut sjølve fonten
+(eller noko sånt, eg skjønner det ikkje heilt).
+For å løyse dette problemet må du legge inn
+<pre>
+@supports (font: -apple-system-body) {
+    html {
+        font: -apple-system-body;
+    }
+}
+</pre>
+<a href="https://dev.to/colingourlay/how-to-support-apple-s-dynamic-text-in-your-web-content-with-css-40c0/">Les meir</a>
+</body>
+</html>
