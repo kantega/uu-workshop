@@ -12,7 +12,6 @@ body {
 .header {
     background-color: red;
     min-height: 50px;
-    width: 100%;
     padding: 10px 50px;
 }
 
@@ -62,4 +61,8 @@ body {
 
 a.button {
     text-decoration: none;
+}
+
+.button:focus-visible {
+    outline: none;
 }
