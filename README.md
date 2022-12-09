@@ -9,6 +9,7 @@
 - [Om forskjell på keyboard nav og screen readers, interessant video på slutten av ei som bruker screen reader](https://tink.uk/the-difference-between-keyboard-and-screen-reader-navigation/)
 - [Når skal eg bruke pixels og når skal eg bruke rem](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/)
 - [Zoom](https://www.w3.org/WAI/WCAG21/Understanding/reflow.html)
+- Aria-live
 
 
 
