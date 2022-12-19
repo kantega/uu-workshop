@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="blind.css" />
+    <script src="blind.js" type="text/javascript"></script>
+    <title>title</title>
+  </head>
+  <body class="blind-page">
+    <div class="blind-nav">
+      <a class="link" href="../index.html">Hovedside</a>
+      <a class="link" href="../vision/vision.html">Svaksynt</a>
+      <a class="link" href="../cognition/cognition.html">Kognisjon</a>
+    </div>
+    <img class="blind-header" src="blind.png" />
+
+    <div id="blind-modal-overlay" class="blind-modal-overlay">
+      <div id="blind-modal" class="blind-modal">
+        <div>
+          <label>Navn</label>
+          <input type="text" class="blind-text" id="blind-input-name" />
+        </div>
+        <div>
+          <label>Adresse</label>
+          <input type="text" class="blind-text" id="blind-input-name" />
+        </div>
+        <div>
+          <label>Epost</label>
+          <input type="text" class="blind-text" id="blind-input-name" />
+        </div>
+        <button>Kjøp</button>
+      </div>
+    </div>
+
+    <button onclick="showModal()">Klikk for å kjøpe</button>
+    <p>
+      På denne siden kan vi lage oppgaver for bruk med skjermleser. Lage et
+      dårlig utgangspunkt og så kan vi ha en branch med forslag til
+      forbedringer?
+    </p>
+
+    <p>Tips til dårlige ting å ha med:</p>
+    <ul>
+      <li>ingen landmarks</li>
+      <li>dårlig semantisk struktur</li>
+      <li>svg uten aria-label</li>
+      <li>Interaktive elementer med tabindex="-1"</li>
+      <li>
+        Popup med fokusfelle - kan ikke komme deg ut av den uten å sende inn
+      </li>
+    </ul>
+
+    <p>Hint til bruker</p>
+    <ul>
+      <li>
+        Elementer som dukker opp på skjermen etter første innlasting. Typisk
+        valideringsfeilmelding (Aria-live)
+      </li>
+    </ul>
+
+    <p>Relevante krav:</p>
+    <ul>
+      <li>hei</li>
+    </ul>
+
+    <p>Notat: talestyring, få inn person øverst på siden (info-knapp)</p>
+  </body>
+</html>
