@@ -18,7 +18,7 @@ html {
 	display: block;
 }
 
-.blind-modal-overlay {
+.modal-overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -28,7 +28,7 @@ html {
 	display: none;
 }
 
-.blind-modal {
+.modal {
 	background-color: white;
 	width: 500px;
 	height: 500px;
@@ -39,17 +39,14 @@ html {
 	transform: translate(-50%, -50%);
 }
 
-.blind-modal-input {
+.modal-input {
 	padding-bottom: 1rem;
 }
 
-.blind-text {
-}
-
-.blind-modal label {
+.modal label {
 	width: 100px;
 }
 
-.blind-validation-error {
+.validation-error {
 	color: red;
 }

@@ -1,5 +1,5 @@
 window.addEventListener("click", function (e) {
-	if (e.target.id === "blind-modal-overlay") {
+	if (e.target.id === "modal-overlay") {
 		hideModal();
 	}
 });
@@ -11,18 +11,18 @@ function buy() {
 }
 
 function showModal() {
-	document.getElementById("blind-modal-overlay").style.display = "flex";
-	document.getElementById("blind-input-name").focus();
+	document.getElementById("modal-overlay").style.display = "flex";
+	document.getElementById("input-name").focus();
 }
 
 function hideModal() {
-	document.getElementById("blind-modal-overlay").style.display = "none";
+	document.getElementById("modal-overlay").style.display = "none";
 }
 
 function validate() {
-	let nameInput = document.getElementById("blind-input-name");
-	let addressInput = document.getElementById("blind-input-address");
-	let emailInput = document.getElementById("blind-input-email");
+	let nameInput = document.getElementById("input-name");
+	let addressInput = document.getElementById("input-address");
+	let emailInput = document.getElementById("input-email");
 
 	if (!validateNameInput(nameInput.value)) {
 		return false;
@@ -37,7 +37,7 @@ function validate() {
 }
 
 function validateNameInput(name) {
-	let validationErrorElem = document.getElementById("blind-validation-error-name");
+	let validationErrorElem = document.getElementById("validation-error-name");
 	if (!name) {
 		validationErrorElem.innerText = "Navn er påkrevd";
 		return false;
@@ -46,7 +46,7 @@ function validateNameInput(name) {
 }
 
 function validateAddressInput(address) {
-	let validationErrorElem = document.getElementById("blind-validation-error-address");
+	let validationErrorElem = document.getElementById("validation-error-address");
 	if (!address) {
 		validationErrorElem.innerText = "Addresse er påkrevd";
 		return false;
@@ -55,7 +55,7 @@ function validateAddressInput(address) {
 }
 
 function validateEmailInput(email) {
-	let validationErrorElem = document.getElementById("blind-validation-error-email");
+	let validationErrorElem = document.getElementById("validation-error-email");
 	if (!email) {
 		validationErrorElem.innerText = "Epost er påkrevd";
 		return false;
