@@ -43,10 +43,21 @@ html {
 	padding-bottom: 1rem;
 }
 
-.modal label {
-	width: 100px;
-}
-
 .validation-error {
 	color: red;
+	display: none;
+}
+
+.hidden.hideable .hideable-content {
+	display: none;
+}
+
+.hidden.hideable h2::before {
+	content: url("../assets/chevron-right.svg");
+	padding-right: 2px;
+}
+
+.hideable h2::before {
+	content: url("../assets/chevron-down.svg");
+	padding-right: 2px;
 }

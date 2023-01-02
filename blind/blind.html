@@ -6,17 +6,19 @@
 	<script src="blind.js" type="text/javascript"></script>
 	<title>title</title>
 </head>
+
 <body class="blind-page">
 <div class="blind-nav">
 	<a class="link" href="../index.html">Hovedside</a>
 	<a class="link" href="../vision/vision.html">Svaksynt</a>
 	<a class="link" href="../cognition/cognition.html">Kognisjon</a>
 </div>
+
 <img class="blind-header" src="blind.png"/>
 
 <div id="modal-overlay" class="modal-overlay">
 	<div id="modal" class="modal">
-		<h2>Betaling- og leveringsinfo for greia</h2>
+		<h2>Betalings- og leveringsinfo for greia</h2>
 		<div class="modal-input">
 			<label>Navn</label>
 			<input type="text" id="input-name"/>
@@ -48,33 +50,76 @@
 
 <button onclick="showModal()">Klikk her for å kjøpe ei greie</button>
 
-<div class="screen-readers">
-	<h2>Korleis bruke skjermlesere</h2>
-	Det kan vera ein idé å prøve ut skjermlesernavigasjon sjølv. Eg vil anbefale dykk å finne ut både korleis de skrur
-	skjermleser på <b>og av</b>. Det blir masse prat.
+<div class="screen-readers hideable hidden">
+	<h2 id="screen-reader-header">Korleis bruke skjermlesere</h2>
+	<div class="hideable-content">
+		Det kan vera ein idé å prøve ut skjermlesernavigasjon sjølv. Eg vil anbefale dykk å finne ut både korleis de
+		skrur skjermleser på <b>og av</b>. Det blir masse prat.
 
-	<h3>Mac</h3>
-	<ul>
-		<li><a href="https://support.apple.com/en-gb/guide/voiceover/vo2682/mac">Turn VoiceOver on or off</a></li>
-		<li>
-			<a href="https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts#:~:text=Command%20%2B%20F5%20starts%20the%20VoiceOver,as%20VO%20in%20the%20tables.">
-				Keyboard shortcuts for VoiceOver</a>
-		</li>
-	</ul>
+		<h3>Mac</h3>
+		<ul>
+			<li><a href="https://support.apple.com/en-gb/guide/voiceover/vo2682/mac">Turn VoiceOver on or off</a></li>
+			<li>
+				<a href="https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts#:~:text=Command%20%2B%20F5%20starts%20the%20VoiceOver,as%20VO%20in%20the%20tables.">
+					Keyboard shortcuts for VoiceOver</a>
+			</li>
+		</ul>
 
-	<h3>Windows</h3>
-	<ul>
-		<li>Du skrur Narrator av og på ved å trykke Windows+Ctrl+Enter</li>
-		<li>
-			<a href="https://support.microsoft.com/en-us/windows/appendix-b-narrator-keyboard-commands-and-touch-gestures-8bdab3f4-b3e9-4554-7f28-8b15bd37410a">
-				Keyboard shortcuts for Narrator</a>
-		</li>
-	</ul>
+		<h3>Windows</h3>
+		<ul>
+			<li>Du skrur Narrator av og på ved å trykke Windows+Ctrl+Enter</li>
+			<li>
+				<a href="https://support.microsoft.com/en-us/windows/appendix-b-narrator-keyboard-commands-and-touch-gestures-8bdab3f4-b3e9-4554-7f28-8b15bd37410a">
+					Keyboard shortcuts for Narrator</a>
+			</li>
+		</ul>
 
-	<h3>Linux</h3>
-	<ul>
-		<li>🤷</li>
-	</ul>
+		<h3>Linux</h3>
+		<ul>
+			<li>🤷</li>
+		</ul>
+	</div>
+
+</div>
+
+<div class="how-to-test hideable hidden">
+	<h2 id="how-to-test-header">Ting de kan teste</h2>
+	<div class="hideable-content">
+		<h3>Navigasjon og oversikt</h3>
+		Sjåande opner sida og får ein viss oversikt med ein gong. Brukarar av skjermlesarar kan bruke hurtigtaster for å
+		lese kjapt over headere, eller hovedseksjoner.
+		<ul>
+			<li>
+				Når de opner sida med skjermleser er noko av det første som blir sagt: "Title". Kvifor?
+				<a href="hints/title.html">Hint</a>
+			</li>
+			<li>
+				Prøv å få oversikt over sida ved å navigere via landmarks eller headings.
+				<a href="hints/navigation.html">Hint</a>
+			</li>
+			<li>
+				Opne modalen og tab deg rundt. Kan markøren forlate modalen?
+				<a href="hints/tab-capture.html">Hint</a>
+			</li>
+			<li>
+				Prøv å lukke modalen uten å kjøpe.
+				<a href="hints/close-button.html">Hint</a>
+			</li>
+		</ul>
+
+		<h3>Interagering</h3>
+		<ul>
+			<li>
+				Tab deg gjennom input-felta i modalen. Korleis kan du vite kva du skal skrive i kva felt?
+				<a href="hints/labels.html">Hint</a>
+			</li>
+			<li>
+				Trykk kjøp uten å fylle noko ut, sånn at du får ein valideringsfeil. Korleis finn du ut av dette vha.
+				ein skjermleser?
+				<a href="hints/aria-live.html">Hint</a>
+			</li>
+		</ul>
+	</div>
 </div>
 
 <div class="tips-and-tricks">
