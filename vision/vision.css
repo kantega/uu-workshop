@@ -48,8 +48,26 @@ a:hover {
 }
 
 .section {
-	padding: 8px 160px;
+	padding: 8px 500px;
 	margin: 0;
+}
+
+@media screen and (max-width: 1980px) {
+	.section {
+		padding: 8px 160px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.section {
+		padding: 8px 80px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.section {
+		padding: 8px 16px;
+	}
 }
 
 .vision-header {
