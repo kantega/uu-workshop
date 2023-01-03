@@ -50,9 +50,9 @@ function validateNameInput(name) {
 	let validationErrorElem = document.getElementById("validation-error-name");
 	if (!name) {
 		validationErrorElem.innerText = "Navn er påkrevd";
-		validationErrorElem.style.display = "block"
 		return false;
 	}
+	validationErrorElem.innerText = "";
 	return true;
 }
 
@@ -60,9 +60,9 @@ function validateAddressInput(address) {
 	let validationErrorElem = document.getElementById("validation-error-address");
 	if (!address) {
 		validationErrorElem.innerText = "Addresse er påkrevd";
-		validationErrorElem.style.display = "block"
 		return false;
 	}
+	validationErrorElem.innerText = "";
 	return true;
 }
 
@@ -70,13 +70,12 @@ function validateEmailInput(email) {
 	let validationErrorElem = document.getElementById("validation-error-email");
 	if (!email) {
 		validationErrorElem.innerText = "Epost er påkrevd";
-		validationErrorElem.style.display = "block"
 		return false;
 	}
 	if (!String(email).toLowerCase().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
 		validationErrorElem.innerText = "Eposten er ikkje gyldig";
-		validationErrorElem.style.display = "block"
 		return false;
 	}
+	validationErrorElem.innerText = "";
 	return true;
 }

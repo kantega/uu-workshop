@@ -43,9 +43,40 @@ html {
 	padding-bottom: 1rem;
 }
 
+.modal-input label {
+	display: block;
+	font-size: 0.875rem;
+	font-weight: 500;
+	line-height: 1rem;
+	margin: 0 0.5rem;
+}
+
+.modal-input input {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0.5rem 0;
+	padding: 0.5rem;
+	border: 1px solid rgb(206, 206, 206);
+	border-radius: 0.25rem;
+	font-size: 1rem;
+	line-height: 1.1875rem;
+}
+
 .validation-error {
 	color: red;
-	display: none;
+	margin: 0 0.5rem;
+	font-size: 0.875rem;
+}
+
+.buy-button {
+	margin: 1rem auto 0;
+	padding: 1.25rem;
+	width: 75%;
+	background-color: mediumpurple;
+	border-radius: 0.25rem;
+	text-align: center;
+	font-weight: 500;
+	font-size: 1rem;
 }
 
 .hidden.hideable .hideable-content {
