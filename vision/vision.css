@@ -57,6 +57,10 @@ a:hover {
 	display: block;
 }
 
+.signup {
+	background-color: #024d5a;
+}
+
 .how-to-test {
 	background-color: #27003d;
 }
@@ -65,23 +69,21 @@ a:hover {
 	background-color: #024d5a;
 }
 
-.signup-form {
-}
-
 .signup-email {
 	display: inline-block;
-	height: 100%;
+	margin-right: 8px;
 }
 
-.signup-form label {
+.signup-email label {
 	display: block;
-	font-size: 0.875rem;
-	font-weight: 500;
-	line-height: 1rem;
-	margin: 0 0.5rem;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	margin: 0 8px;
 }
 
-.signup-form input {
+.signup-email input {
+	display: block;
 	box-sizing: border-box;
 	margin: 8px 0;
 	padding: 8px;
@@ -91,18 +93,25 @@ a:hover {
 	line-height: 20px;
 }
 
+.signup .button {
+	height: 38px;
+	padding: 0 20px;
+	text-align: center;
+	vertical-align: center;
+	border: 1px solid darkgreen;
+}
+
 .button {
-	display: inline-block;
 	height: 100%;
 	background-color: darkgreen;
 	color: white;
 	margin: 0;
 	padding: 20px;
 	border-radius: 4px;
+	border: none;
 	text-align: center;
 	font-weight: 500;
 	font-size: 16px;
-
 }
 
 .button:disabled {
