@@ -8,6 +8,9 @@ window.addEventListener("click", function (e) {
 	if (e.target.id === "how-to-test-header") {
 		toggleHideable(".how-to-test");
 	}
+	if (e.target.id === "criteria-header") {
+		toggleHideable(".criteria");
+	}
 });
 
 function buy() {
