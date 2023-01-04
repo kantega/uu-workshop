@@ -21,9 +21,17 @@ html {
 
 body {
 	font-family: "Source Sans Pro", sans-serif;
-	letter-spacing: 0.1px;
 	margin: 0;
 	padding: 0;
+	position: relative;
+}
+
+.kantega-splat {
+	position: absolute;
+	right: 20px;
+	top: 80px;
+	max-width: 50%;
+	max-height: 80vh;
 }
 
 .vision-nav {
