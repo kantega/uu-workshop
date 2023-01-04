@@ -100,6 +100,23 @@ a:hover {
 	width: 75%;
 }
 
+.side-by-side {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.person-intro .side-by-side {
+	max-height: 291px;
+	height: 100%;
+}
+
+.person-intro img {
+}
+
+.side-by-side .side-illustration {
+}
+
 .hidden.hideable .hideable-content {
 	display: none;
 }
