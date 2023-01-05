@@ -13,6 +13,9 @@ window.addEventListener("click", function (e) {
 	if (e.target.id === "criteria-header") {
 		toggleHideable(".criteria");
 	}
+	if (e.target.id === "notes-header") {
+		toggleHideable(".notes");
+	}
 });
 
 window.addEventListener("focusout", (e) => {

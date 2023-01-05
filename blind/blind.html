@@ -182,6 +182,36 @@
 	</div>
 </div>
 
+<div class="notes hideable hidden">
+	<h2 id="notes-header">Notater</h2>
+	<div class="hideable-content">
+		Diverse notater om ting som ikkje passer heilt inn i ein egen oppgåve. Kanskje berre ta dette i samandraget?
+		<h3>WAI-ARIA</h3>
+		<p>
+			Web Accessibility Initiative - Accessible Rich Internet Applications, eller berre Aria, er ein samling med
+			attributter du kan legge på html-taggene dine for å gi informasjon til Accessibility APIet (som er det
+			skjermlesere bruker).
+		</p>
+
+		<p>
+			Disse er kraftige verktøy som bør brukes der dei trengs. <b>Men</b> dei skal brukes der dei trengs og ikkje
+			berre slenges på for å vera på den sikre sida. Ein skal helst skrive semantisk html sånn at dei ikkje
+			trengs, men i visse tilfeller vil ein måtte bruke dei. Å ha mange aria-attributter i koden er egentleg ein
+			code smell, då det tyder på at ein må bruke aria for å prøve å fikse problemer i staden for å skrive god
+			html.
+		</p>
+
+		<h4>Aria-hidden</h4>
+		<p>
+			Aria-hidden er eit eksempel på det. Attributten blir ofte lagt på alle gøymde element, sånn for å vera på
+			den sikre sida, men den er heilt unaudsynt viss elementet er skjult vha. <code>display: none</code>, <code>visibility:
+			hidden</code> eller html sin <code>hidden</code>-attributt. Legg ein til <code>aria-hidden: true</code> i
+			disse tilfella, så gir du ingen ekstra informasjon til skjermleseren, men du auker sannsynlegheita for feil
+			ved at ein f.eks. sett <code>visibility: visible</code> uten å sette <code>aria-hidden: false</code>.
+		</p>
+	</div>
+</div>
+
 <div class="criteria hideable hidden">
 	<h2 id="criteria-header">Relevante krav</h2>
 	<div class="hideable-content">
