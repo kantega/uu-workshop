@@ -1,3 +1,5 @@
+let modalVisible = false;
+
 window.addEventListener("click", function (e) {
 	if (e.target.id === "modal-overlay") {
 		hideModal();
@@ -13,6 +15,28 @@ window.addEventListener("click", function (e) {
 	}
 });
 
+window.addEventListener("focusout", (e) => {
+	if (modalVisible) {
+		if (["input-name", "input-address", "input-email"].includes(e.target.id)) {
+			updateProgressBar();
+			validate();
+		}
+	}
+})
+
+function updateProgressBar() {
+	let progressBar = document.getElementById("progress-bar");
+	let nameInput = document.getElementById("input-name");
+	let addressInput = document.getElementById("input-address");
+	let emailInput = document.getElementById("input-email");
+	let progress = 0;
+	progress += !validateEmailInput(emailInput.value) ? 1.0 : 0.0;
+	progress += !validateAddressInput(addressInput.value) ? 1.0 : 0.0;
+	progress += !validateNameInput(nameInput.value) ? 1.0 : 0.0;
+
+	progressBar.style.width = 100 * progress / 3 + "%";
+}
+
 function buy() {
 	if (validate()) {
 		hideModal();
@@ -22,10 +46,12 @@ function buy() {
 function showModal() {
 	document.getElementById("modal-overlay").style.display = "flex";
 	document.getElementById("input-name").focus();
+	modalVisible = true;
 }
 
 function hideModal() {
 	document.getElementById("modal-overlay").style.display = "none";
+	modalVisible = false;
 }
 
 function toggleHideable(hideableClass) {
@@ -37,48 +63,32 @@ function validate() {
 	let addressInput = document.getElementById("input-address");
 	let emailInput = document.getElementById("input-email");
 
-	if (!validateNameInput(nameInput.value)) {
-		return false;
-	}
-	if (!validateAddressInput(addressInput.value)) {
-		return false;
-	}
-	if (!validateEmailInput(emailInput.value)) {
-		return false;
-	}
-	return true;
+	const nameValidationMessage = validateNameInput(nameInput.value);
+	const addressValidationMessage = validateAddressInput(addressInput.value);
+	const emailValidationMessage = validateEmailInput(emailInput.value);
+
+	document.getElementById("validation-error-name").innerText = nameValidationMessage;
+	document.getElementById("validation-error-address").innerText = addressValidationMessage;
+	document.getElementById("validation-error-email").innerText = emailValidationMessage;
+
+	return !nameValidationMessage && !addressValidationMessage && !emailValidationMessage;
+
 }
 
 function validateNameInput(name) {
-	let validationErrorElem = document.getElementById("validation-error-name");
-	if (!name) {
-		validationErrorElem.innerText = "Navn er påkrevd";
-		return false;
-	}
-	validationErrorElem.innerText = "";
-	return true;
+	return !name ? "Navn er påkrevd" : "";
 }
 
 function validateAddressInput(address) {
-	let validationErrorElem = document.getElementById("validation-error-address");
-	if (!address) {
-		validationErrorElem.innerText = "Addresse er påkrevd";
-		return false;
-	}
-	validationErrorElem.innerText = "";
-	return true;
+	return !address ? "Addresse er påkrevd" : "";
 }
 
 function validateEmailInput(email) {
-	let validationErrorElem = document.getElementById("validation-error-email");
 	if (!email) {
-		validationErrorElem.innerText = "Epost er påkrevd";
-		return false;
+		return "Epost er påkrevd";
 	}
 	if (!String(email).toLowerCase().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
-		validationErrorElem.innerText = "Eposten er ikkje gyldig";
-		return false;
+		return "Eposten er ikkje gyldig";
 	}
-	validationErrorElem.innerText = "";
-	return true;
+	return "";
 }
