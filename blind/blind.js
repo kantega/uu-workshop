@@ -37,7 +37,6 @@ function updateProgressBar() {
 	progress += !validateAddressInput(addressInput.value) ? 1.0 : 0.0;
 	progress += !validateNameInput(nameInput.value) ? 1.0 : 0.0;
 
-	progressBar.ariaValueNow = progress + "";
 	progressBar.style.width = 100 * progress / 3 + "%";
 }
 
