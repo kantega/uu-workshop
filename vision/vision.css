@@ -99,13 +99,8 @@ a:hover {
 
 @media screen and (max-width: 640px) {
     .section {
-        padding: 8px 16px;
+        padding: 8px 32px;
     }
-}
-
-.vision-header {
-    height: 40px;
-    display: block;
 }
 
 .signup-email {
