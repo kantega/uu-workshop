@@ -1,263 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <link rel="stylesheet" type="text/css" href="blind.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="blind.css" />
     <script src="blind.js" type="text/javascript"></script>
     <title>title</title>
-</head>
+  </head>
 
-<body class="blind-page">
-<div class="blind-nav">
-    <a class="link" href="../index.html">Hovedside</a>
-    <a class="link" href="../vision/vision.html">Svaksynt</a>
-    <a class="link" href="../cognition/cognition.html">Kognisjon</a>
-</div>
+  <body class="blind-page">
+    <div class="blind-nav">
+      <a class="link" href="../index.html">Hovedside</a>
+      <a class="link" href="../vision/vision.html">Svaksynt</a>
+      <a class="link" href="../cognition/cognition.html">Kognisjon</a>
+    </div>
 
-<img class="blind-header" src="blind.png"/>
+    <img class="blind-header" src="blind.png" />
 
-<div id="modal-overlay" class="modal-overlay">
-    <div id="modal" class="modal">
+    <div id="modal-overlay" class="modal-overlay">
+      <div id="modal" class="modal">
         <div class="progress">
-            <span id="progress-label">Framgang: </span>
-            <div class="progress-bar" id="progress-bar"></div>
+          <span id="progress-label">Framgang: </span>
+          <div class="progress-bar" id="progress-bar"></div>
         </div>
         <h2 id="modal-header">Betalings- og leveringsinfo for raketten</h2>
-        <img src="rakett.png" width="994" height="855"/>
+        <img src="rakett.png" width="994" height="855" />
         <p class="modal-input">
-            <label>Navn *</label>
-            <input type="text" id="input-name"/>
-            <span id="validation-error-name" class="validation-error"></span>
+          <label>Navn *</label>
+          <input type="text" id="input-name" />
+          <span id="validation-error-name" class="validation-error"></span>
         </p>
         <p class="modal-input">
-            <label>Adresse *</label>
-            <input type="text" id="input-address"/>
-            <span id="validation-error-address" class="validation-error"></span>
+          <label>Adresse *</label>
+          <input type="text" id="input-address" />
+          <span id="validation-error-address" class="validation-error"></span>
         </p>
         <p class="modal-input">
-            <label>Epost *</label>
-            <input type="text" id="input-email"/>
-            <span id="validation-error-email" class="validation-error"></span>
+          <label>Epost *</label>
+          <input type="text" id="input-email" />
+          <span id="validation-error-email" class="validation-error"></span>
         </p>
         <button class="button buy-button" onclick="buy()">Kjøp</button>
+      </div>
     </div>
-</div>
 
-<div class="person-intro">
-    <h2>Blinde Bjørn</h2>
-    <div class="side-by-side">
-        <img src="blind-person.png" width="173" height="291">
-        <svg viewBox="0 0 363 560" fill="none" xmlns="http://www.w3.org/2000/svg" class="side-illustration">
-            <g opacity="0.2" fill="#027c92">
-                <path d="M189.773 341.953c-6.668-6.403-11.524-4.688-16.816.738v-.052c-4.46 4.562-9.221 11.744-15.629 18.926-7.147 8.044-15.441 16.536-17.889 22.772-2.334 6.018.687 10.071 15.274 9.874 14.899-.167 28.923-18.709 28.923-18.709 7.22-10.247 12.211-15.901 12.836-21.098.459-3.835-1.49-7.431-6.699-12.451z"></path>
-                <path d="M248.424 321.727c4.168-8.19 5.272-18.386-1.928-25.526a15.908 15.908 0 00-5.959-3.668 15.947 15.947 0 00-6.96-.76c-12.149 1.528-13.045 15.258-19.619 21.639a10.85 10.85 0 01-6.043 3.066 12.528 12.528 0 01-10.825-3.856c-3.126-3.388-4.324-7.483-4.897-11.682l-47.803 29.611a95.533 95.533 0 01-17.129 32.219c-10.231 12.41-24.161 22.325-32.694 35.722-3.887 6.091-6.648 12.878-9.836 19.353-3.48 7.067-7.45 13.76-13.93 18.708-5.95 4.594-13.42 7.202-20.421 10.393-7.002 3.191-13.983 7.275-17.494 13.595-3.511 6.319-1.469 13.376 4.668 18.708 6.137 5.331 28.412.852 16.389 15.922-7.616 9.552-25.006 17.201-35.352 24.321C8.485 526.424-2.83 536.298.64 547.284c2.084 6.485 9.127 10.944 16.504 12.233 4.111.644 8.298.644 12.409 0 22.4-3.118 43.197-12.337 60.868-25.069l58.18-41.927c4.407-3.18 10.95-.426 11.044 4.635-2.595 13.075 15.889 10.394 20.202 6.787 28.996-24.393 44.739-55.563 63.296-87.107 3.344-5.685 6.563-12.326 3.98-18.323-2.47-5.737-9.378-8.751-14.045-13.241-12.18-11.682-7.429-30.972 2.084-44.494 4.48-6.33 9.835-12.223 13.263-19.051zm-51.949 32.697c-.625 5.197-5.616 10.851-12.836 21.099 0 0-14.024 18.542-28.924 18.708-14.586.197-17.608-3.856-15.274-9.874 2.449-6.236 10.742-14.727 17.9-22.772 6.408-7.181 11.169-14.363 15.629-18.926v.052c5.292-5.425 10.148-7.14 16.816-.738 5.199 4.999 7.147 8.595 6.689 12.451zM214.042 132.682c1.667 4.895 3.177 10.019 6.751 14.01 3.574 3.991 9.919 6.538 15.129 4.417 5.709-2.328 7.449-9.187 5.772-14.613-1.678-5.425-5.772-9.915-9.232-14.623-3.459-4.708-6.251-10.393-4.844-15.84 1.927-7.504 10.971-11.92 14.076-19.113 3.271-7.597-.875-16.047-5.491-23.063a177.958 177.958 0 00-52.897-51.676C174.97 6.84 165.823 2.017 155.695.468c-10.127-1.549-21.452.686-28.225 7.608-21.473 21.961 27.183 42.384 40.634 54.898 21.088 19.591 37.113 43.621 45.938 69.708zM234.503 256.831c4.042-3.17 4.917-8.398 5.365-13.179a201.679 201.679 0 00-1.25-48.069c-.49-3.367-1.115-6.849-3.219-9.697-2.105-2.848-6.095-4.874-9.763-3.939-5.137 1.31-6.627 7.036-7.231 11.765l-6.251 48.776c-.355 2.786-.688 5.727.583 8.315 2.511 4.947 16.848 9.853 21.766 6.028z"></path>
-                <path d="M139.441 384.337c7.294-7.837 13.972-16.245 20.557-24.622 4.407-5.612 8.846-11.266 12.961-17.076-4.449 4.562-9.21 11.744-15.628 18.926-7.148 8.045-15.441 16.536-17.89 22.772z"></path>
-                <path d="M139.439 384.337c2.448-6.236 10.742-14.728 17.9-22.772 6.408-7.182 11.169-14.364 15.628-18.927 6.252-8.761 11.732-17.876 15.348-27.719a80.136 80.136 0 003.844-14.499c-.198-1.579-.323-3.17-.448-4.749-1.493-20.219-2.99-40.43-4.49-60.635-.573-7.743-1.23-15.767-5.324-22.606-4.095-6.839-12.659-12.191-21.141-10.663-7.366 1.33-12.711 7.483-14.649 13.999-1.938 6.517-1.125 13.408-.291 20.112 2.74 21.732 5.678 43.589 4.053 65.405-1.626 21.816-8.127 43.87-22.61 61.456-10.231 12.41-24.161 22.325-32.694 35.722-3.887 6.091-6.648 12.877-9.836 19.353 14.701-2.921 28.308-10.217 39.592-19.301 5.369-4.363 10.42-9.1 15.118-14.176z"></path>
-                <path d="M248.424 321.727c4.168-8.19 5.272-18.386-1.928-25.526a15.908 15.908 0 00-5.959-3.668 15.947 15.947 0 00-6.96-.76c-12.149 1.528-13.045 15.258-19.619 21.639a10.85 10.85 0 01-6.043 3.066 12.528 12.528 0 01-10.825-3.856c-3.272-3.513-4.418-7.784-4.97-12.15a80.345 80.345 0 01-3.814 14.499c-3.615 9.843-9.127 18.958-15.347 27.719 5.293-5.425 10.148-7.14 16.816-.738 5.21 5.02 7.158 8.616 6.7 12.472-.625 5.197-5.616 10.851-12.836 21.099 0 0-14.024 18.542-28.924 18.708-14.586.197-17.608-3.856-15.274-9.874a144.133 144.133 0 01-15.107 14.177c-11.295 9.084-24.902 16.38-39.593 19.3-3.48 7.068-7.45 13.761-13.93 18.708-5.949 4.594-13.42 7.203-20.421 10.394-7.002 3.19-13.982 7.275-17.494 13.594-3.51 6.319-1.469 13.376 4.668 18.708 6.137 5.332 28.413.852 16.39 15.923-7.617 9.551-25.006 17.201-35.352 24.32C8.495 526.414-2.82 536.287.65 547.273c2.083 6.486 9.127 10.944 16.503 12.233a40.03 40.03 0 0012.41 0c22.4-3.118 43.197-12.337 60.867-25.069l58.18-41.926c4.407-3.181 10.95-.427 11.044 4.635-2.594 13.075 15.889 10.393 20.202 6.787 28.997-24.393 44.74-55.563 63.296-87.107 3.344-5.685 6.564-12.326 3.98-18.323-2.469-5.738-9.377-8.752-14.045-13.242-12.18-11.682-7.429-30.972 2.084-44.494 4.47-6.319 9.825-12.212 13.253-19.04zM291.142 388.038c23.39 8.107 64.795-64.626 70.682-97.458 5.887-32.833-10.742-76.038-40.54-74.656-29.798 1.383-13.16-24.539-25.631-44.587-12.472-20.049-35.341-15.206-33.955 7.608 1.385 22.813 4.584 77.316 19.618 86.867 15.035 9.552 27.184-2.702 28.538 9.677 1.49 13.708-43.666 103.912-18.712 112.549z"></path>
-            </g>
+    <div class="person-intro">
+      <h2>Blinde Bjørn</h2>
+      <div class="side-by-side">
+        <img src="blind-person.png" width="173" height="291" />
+        <svg
+          viewBox="0 0 363 560"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="side-illustration"
+        >
+          <g opacity="0.2" fill="#027c92">
+            <path
+              d="M189.773 341.953c-6.668-6.403-11.524-4.688-16.816.738v-.052c-4.46 4.562-9.221 11.744-15.629 18.926-7.147 8.044-15.441 16.536-17.889 22.772-2.334 6.018.687 10.071 15.274 9.874 14.899-.167 28.923-18.709 28.923-18.709 7.22-10.247 12.211-15.901 12.836-21.098.459-3.835-1.49-7.431-6.699-12.451z"
+            ></path>
+            <path
+              d="M248.424 321.727c4.168-8.19 5.272-18.386-1.928-25.526a15.908 15.908 0 00-5.959-3.668 15.947 15.947 0 00-6.96-.76c-12.149 1.528-13.045 15.258-19.619 21.639a10.85 10.85 0 01-6.043 3.066 12.528 12.528 0 01-10.825-3.856c-3.126-3.388-4.324-7.483-4.897-11.682l-47.803 29.611a95.533 95.533 0 01-17.129 32.219c-10.231 12.41-24.161 22.325-32.694 35.722-3.887 6.091-6.648 12.878-9.836 19.353-3.48 7.067-7.45 13.76-13.93 18.708-5.95 4.594-13.42 7.202-20.421 10.393-7.002 3.191-13.983 7.275-17.494 13.595-3.511 6.319-1.469 13.376 4.668 18.708 6.137 5.331 28.412.852 16.389 15.922-7.616 9.552-25.006 17.201-35.352 24.321C8.485 526.424-2.83 536.298.64 547.284c2.084 6.485 9.127 10.944 16.504 12.233 4.111.644 8.298.644 12.409 0 22.4-3.118 43.197-12.337 60.868-25.069l58.18-41.927c4.407-3.18 10.95-.426 11.044 4.635-2.595 13.075 15.889 10.394 20.202 6.787 28.996-24.393 44.739-55.563 63.296-87.107 3.344-5.685 6.563-12.326 3.98-18.323-2.47-5.737-9.378-8.751-14.045-13.241-12.18-11.682-7.429-30.972 2.084-44.494 4.48-6.33 9.835-12.223 13.263-19.051zm-51.949 32.697c-.625 5.197-5.616 10.851-12.836 21.099 0 0-14.024 18.542-28.924 18.708-14.586.197-17.608-3.856-15.274-9.874 2.449-6.236 10.742-14.727 17.9-22.772 6.408-7.181 11.169-14.363 15.629-18.926v.052c5.292-5.425 10.148-7.14 16.816-.738 5.199 4.999 7.147 8.595 6.689 12.451zM214.042 132.682c1.667 4.895 3.177 10.019 6.751 14.01 3.574 3.991 9.919 6.538 15.129 4.417 5.709-2.328 7.449-9.187 5.772-14.613-1.678-5.425-5.772-9.915-9.232-14.623-3.459-4.708-6.251-10.393-4.844-15.84 1.927-7.504 10.971-11.92 14.076-19.113 3.271-7.597-.875-16.047-5.491-23.063a177.958 177.958 0 00-52.897-51.676C174.97 6.84 165.823 2.017 155.695.468c-10.127-1.549-21.452.686-28.225 7.608-21.473 21.961 27.183 42.384 40.634 54.898 21.088 19.591 37.113 43.621 45.938 69.708zM234.503 256.831c4.042-3.17 4.917-8.398 5.365-13.179a201.679 201.679 0 00-1.25-48.069c-.49-3.367-1.115-6.849-3.219-9.697-2.105-2.848-6.095-4.874-9.763-3.939-5.137 1.31-6.627 7.036-7.231 11.765l-6.251 48.776c-.355 2.786-.688 5.727.583 8.315 2.511 4.947 16.848 9.853 21.766 6.028z"
+            ></path>
+            <path
+              d="M139.441 384.337c7.294-7.837 13.972-16.245 20.557-24.622 4.407-5.612 8.846-11.266 12.961-17.076-4.449 4.562-9.21 11.744-15.628 18.926-7.148 8.045-15.441 16.536-17.89 22.772z"
+            ></path>
+            <path
+              d="M139.439 384.337c2.448-6.236 10.742-14.728 17.9-22.772 6.408-7.182 11.169-14.364 15.628-18.927 6.252-8.761 11.732-17.876 15.348-27.719a80.136 80.136 0 003.844-14.499c-.198-1.579-.323-3.17-.448-4.749-1.493-20.219-2.99-40.43-4.49-60.635-.573-7.743-1.23-15.767-5.324-22.606-4.095-6.839-12.659-12.191-21.141-10.663-7.366 1.33-12.711 7.483-14.649 13.999-1.938 6.517-1.125 13.408-.291 20.112 2.74 21.732 5.678 43.589 4.053 65.405-1.626 21.816-8.127 43.87-22.61 61.456-10.231 12.41-24.161 22.325-32.694 35.722-3.887 6.091-6.648 12.877-9.836 19.353 14.701-2.921 28.308-10.217 39.592-19.301 5.369-4.363 10.42-9.1 15.118-14.176z"
+            ></path>
+            <path
+              d="M248.424 321.727c4.168-8.19 5.272-18.386-1.928-25.526a15.908 15.908 0 00-5.959-3.668 15.947 15.947 0 00-6.96-.76c-12.149 1.528-13.045 15.258-19.619 21.639a10.85 10.85 0 01-6.043 3.066 12.528 12.528 0 01-10.825-3.856c-3.272-3.513-4.418-7.784-4.97-12.15a80.345 80.345 0 01-3.814 14.499c-3.615 9.843-9.127 18.958-15.347 27.719 5.293-5.425 10.148-7.14 16.816-.738 5.21 5.02 7.158 8.616 6.7 12.472-.625 5.197-5.616 10.851-12.836 21.099 0 0-14.024 18.542-28.924 18.708-14.586.197-17.608-3.856-15.274-9.874a144.133 144.133 0 01-15.107 14.177c-11.295 9.084-24.902 16.38-39.593 19.3-3.48 7.068-7.45 13.761-13.93 18.708-5.949 4.594-13.42 7.203-20.421 10.394-7.002 3.19-13.982 7.275-17.494 13.594-3.51 6.319-1.469 13.376 4.668 18.708 6.137 5.332 28.413.852 16.39 15.923-7.617 9.551-25.006 17.201-35.352 24.32C8.495 526.414-2.82 536.287.65 547.273c2.083 6.486 9.127 10.944 16.503 12.233a40.03 40.03 0 0012.41 0c22.4-3.118 43.197-12.337 60.867-25.069l58.18-41.926c4.407-3.181 10.95-.427 11.044 4.635-2.594 13.075 15.889 10.393 20.202 6.787 28.997-24.393 44.74-55.563 63.296-87.107 3.344-5.685 6.564-12.326 3.98-18.323-2.469-5.738-9.377-8.752-14.045-13.242-12.18-11.682-7.429-30.972 2.084-44.494 4.47-6.319 9.825-12.212 13.253-19.04zM291.142 388.038c23.39 8.107 64.795-64.626 70.682-97.458 5.887-32.833-10.742-76.038-40.54-74.656-29.798 1.383-13.16-24.539-25.631-44.587-12.472-20.049-35.341-15.206-33.955 7.608 1.385 22.813 4.584 77.316 19.618 86.867 15.035 9.552 27.184-2.702 28.538 9.677 1.49 13.708-43.666 103.912-18.712 112.549z"
+            ></path>
+          </g>
         </svg>
+      </div>
+
+      <p>
+        Blinde Bjørn bruker ein skjermleser når han skal navigere nettsider. Han
+        prøver å bruke denne sida for å kjøpe ein rakett. Dessverre inneheld
+        sida ein del av dei vanligste feila ein møter på som kan vanskeleggjere
+        tastaturnavigasjon.
+      </p>
+      <p>
+        Kan du hjelpe han med å få kjøpt raketten? Det er lagt inn litt
+        forskjellige ting de kan teste, og de kan lese hinta for å få tips til
+        korleis de kan løyse problemet.
+      </p>
     </div>
 
-    <p>
-        Blinde Bjørn bruker ein skjermleser når han skal navigere nettsider. Han prøver å bruke denne sida for å kjøpe
-        ein rakett. Dessverre inneheld sida ein del av dei vanligste feila ein møter på som kan vanskeleggjere
-        tastaturnavigasjon.
-    </p>
-    <p>
-        Kan du hjelpe han med å få kjøpt raketten? Det er lagt inn litt forskjellige ting de kan teste, og de kan lese
-        hinta for å få tips til korleis de kan løyse problemet.
-    </p>
-</div>
+    <button class="button" onclick="showModal()">
+      Klikk her for å kjøpe ein rakett
+    </button>
 
-<button class="button" onclick="showModal()">Klikk her for å kjøpe ein rakett</button>
-
-<div class="screen-readers hideable hidden">
-    <h2 id="screen-reader-header">Korleis bruke skjermlesere</h2>
-    <div class="hideable-content">
-        Det kan vera ein idé å prøve ut skjermlesernavigasjon sjølv. Eg vil anbefale dykk å finne ut både korleis de
-        skrur skjermleser på <b>og av</b>. Det blir masse prat.
+    <div class="screen-readers hideable hidden">
+      <h2 id="screen-reader-header">Korleis bruke skjermlesere</h2>
+      <div class="hideable-content">
+        Det kan vera ein idé å prøve ut skjermlesernavigasjon sjølv. Eg vil
+        anbefale dykk å finne ut både korleis de skrur skjermleser på
+        <b>og av</b>. Det blir masse prat.
 
         <h3>Mac</h3>
         <ul>
-            <li><a href="https://support.apple.com/en-gb/guide/voiceover/vo2682/mac">Turn VoiceOver on or off</a></li>
-            <li>
-                <a href="https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts#:~:text=Command%20%2B%20F5%20starts%20the%20VoiceOver,as%20VO%20in%20the%20tables.">
-                    Keyboard shortcuts for VoiceOver</a>
-            </li>
+          <li>
+            <a href="https://support.apple.com/en-gb/guide/voiceover/vo2682/mac"
+              >Turn VoiceOver on or off</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts#:~:text=Command%20%2B%20F5%20starts%20the%20VoiceOver,as%20VO%20in%20the%20tables."
+            >
+              Keyboard shortcuts for VoiceOver</a
+            >
+          </li>
         </ul>
 
         <h3>Windows</h3>
         <ul>
-            <li>Du skrur Narrator av og på ved å trykke Windows+Ctrl+Enter</li>
-            <li>
-                <a href="https://support.microsoft.com/en-us/windows/appendix-b-narrator-keyboard-commands-and-touch-gestures-8bdab3f4-b3e9-4554-7f28-8b15bd37410a">
-                    Keyboard shortcuts for Narrator</a>
-            </li>
+          <li>Du skrur Narrator av og på ved å trykke Windows+Ctrl+Enter</li>
+          <li>
+            <a
+              href="https://support.microsoft.com/en-us/windows/appendix-b-narrator-keyboard-commands-and-touch-gestures-8bdab3f4-b3e9-4554-7f28-8b15bd37410a"
+            >
+              Keyboard shortcuts for Narrator</a
+            >
+          </li>
         </ul>
 
         <h3>Linux</h3>
         <ul>
-            <li>🤷</li>
+          <li>🤷</li>
         </ul>
+      </div>
     </div>
 
-</div>
-
-<div class="how-to-test hideable hidden">
-    <h2 id="how-to-test-header">Ting de kan teste</h2>
-    <div class="hideable-content">
+    <div class="how-to-test hideable hidden">
+      <h2 id="how-to-test-header">Ting de kan teste</h2>
+      <div class="hideable-content">
         <h3>Navigasjon og oversikt</h3>
-        Sjåande opner sida og får ein viss oversikt med ein gong. Brukarar av skjermlesarar kan bruke hurtigtaster for å
-        lese kjapt over headere, eller hovedseksjoner.
+        Sjåande opner sida og får ein viss oversikt med ein gong. Brukarar av
+        skjermlesarar kan bruke hurtigtaster for å lese kjapt over headere,
+        eller hovedseksjoner.
         <ul>
-            <li>
-                Når de opner sida med skjermleser er noko av det første som blir sagt: "Title". Kvifor?
-                <a href="hints/title.html">Hint</a>
-            </li>
-            <li>
-                Prøv å få oversikt over sida ved å navigere via landmarks eller headings.
-                <a href="hints/navigation.html">Hint</a>
-            </li>
-            <li>
-                Klarer de opne "Ting de kan teste" ved hjelp av ein skjermleser?
-                <a href="hints/non-semantic-click-events.html">Hint</a>
-            </li>
-            <li>
-                Opne kjøp-modalen. Ein sjåande vil ha konteksten med "Betalings- og leveringsinfo for raketten, men får
-                Bjørn noko kontekst frå skjermleseren?
-                <a href="hints/modal.html">Hint</a>
-            </li>
-            <li>
-                Opne modalen og tab deg rundt. Kan markøren forlate modalen?
-                <a href="hints/tab-capture.html">Hint</a>
-            </li>
-            <li>
-                Prøv å lukke modalen uten å kjøpe.
-                <a href="hints/close-button.html">Hint</a>
-            </li>
+          <li>
+            Når de opner sida med skjermleser er noko av det første som blir
+            sagt: "Title". Kvifor?
+            <a href="hints/title.html">Hint</a>
+          </li>
+          <li>
+            Prøv å få oversikt over sida ved å navigere via landmarks eller
+            headings.
+            <a href="hints/navigation.html">Hint</a>
+          </li>
+          <li>
+            Klarer de opne "Ting de kan teste" ved hjelp av ein skjermleser?
+            <a href="hints/non-semantic-click-events.html">Hint</a>
+          </li>
+          <li>
+            Opne kjøp-modalen. Ein sjåande vil ha konteksten med "Betalings- og
+            leveringsinfo for raketten, men får Bjørn noko kontekst frå
+            skjermleseren?
+            <a href="hints/modal.html">Hint</a>
+          </li>
+          <li>
+            Opne modalen og tab deg rundt. Kan markøren forlate modalen?
+            <a href="hints/tab-capture.html">Hint</a>
+          </li>
+          <li>
+            Prøv å lukke modalen uten å kjøpe.
+            <a href="hints/close-button.html">Hint</a>
+          </li>
         </ul>
 
         <h3>Interagering</h3>
         <ul>
-            <li>
-                Tab deg gjennom input-felta i modalen. Korleis kan du vite kva du skal skrive i kva felt?
-                <a href="hints/labels.html">Hint</a>
-            </li>
-            <li>
-                Korleis kan ein blind person få vite at "navn" er påkrevd?
-                <a href="hints/required.html">Hint</a>
-            </li>
-            <li>
-                Trykk kjøp uten å fylle noko ut, sånn at du får ein valideringsfeil. Korleis finn du ut av dette vha.
-                ein skjermleser?
-                <a href="hints/aria-live.html">Hint</a>
-            </li>
-            <li>
-                Usikker på kva ein kan teste for å få fram dette her, men bør vera noko om forms.
-                <a href="hints/forms.html">Hint</a>
-            </li>
-            <li>
-                Greitt nok, progressbaren er ganske teit i dette tilfellet her, men ein har det i mange andre tilfeller
-                så bear with me.
-                Korleis vil ein skjermleser lese progressbaren og vil den klare å få noko informasjon ut av den?
-                <a href="hints/progressbar.html">Hint</a>
-            </li>
+          <li>
+            Tab deg gjennom input-felta i modalen. Korleis kan du vite kva du
+            skal skrive i kva felt?
+            <a href="hints/labels.html">Hint</a>
+          </li>
+          <li>
+            Korleis kan ein blind person få vite at "navn" er påkrevd?
+            <a href="hints/required.html">Hint</a>
+          </li>
+          <li>
+            Trykk kjøp uten å fylle noko ut, sånn at du får ein valideringsfeil.
+            Korleis finn du ut av dette vha. ein skjermleser?
+            <a href="hints/aria-live.html">Hint</a>
+          </li>
+          <li>
+            Usikker på kva ein kan teste for å få fram dette her, men bør vera
+            noko om forms.
+            <a href="hints/forms.html">Hint</a>
+          </li>
+          <li>
+            Greitt nok, progressbaren er ganske teit i dette tilfellet her, men
+            ein har det i mange andre tilfeller så bear with me. Korleis vil ein
+            skjermleser lese progressbaren og vil den klare å få noko
+            informasjon ut av den?
+            <a href="hints/progressbar.html">Hint</a>
+          </li>
         </ul>
 
         <h3>Lesing og bilete</h3>
         <ul>
-            <li>
-                Tab deg gjennom bileta. Kva informasjon får du?
-                <a href="hints/alt.html">Hint</a>
-            </li>
-            <li>
-                Treng ein blind person egentleg informasjon om kantega-dæsjen på høgresida?
-                <a href="hints/aria-hidden.html">Hint</a>
-            </li>
-            <li>
-                <p>
-                    <span>Korleis blir denne setninga </span>
-                    <span>lese av skjermlesaren på ein Mac?</span>
-                    <a href="hints/role-text.html">Hint</a>
-                </p>
-            </li>
-            <li>
-                Har de fått fiksa det førre liste-punktet? Klarer skjermlesaren skjønne at hintet er ei lenke?
-                <a href="hints/role-text-issues.html">Hint</a>
-            </li>
+          <li>
+            Tab deg gjennom bileta. Kva informasjon får du?
+            <a href="hints/alt.html">Hint</a>
+          </li>
+          <li>
+            Treng ein blind person egentleg informasjon om kantega-dæsjen på
+            høgresida?
+            <a href="hints/aria-hidden.html">Hint</a>
+          </li>
+          <li>
+            <p>
+              <span>Korleis blir denne setninga </span>
+              <span>lese av skjermlesaren på ein Mac?</span>
+              <a href="hints/role-text.html">Hint</a>
+            </p>
+          </li>
+          <li>
+            Har de fått fiksa det førre liste-punktet? Klarer skjermlesaren
+            skjønne at hintet er ei lenke?
+            <a href="hints/role-text-issues.html">Hint</a>
+          </li>
         </ul>
+      </div>
     </div>
-</div>
 
-<div class="notes hideable hidden">
-    <h2 id="notes-header">Notater</h2>
-    <div class="hideable-content">
-        Diverse notater om ting som ikkje passer heilt inn i ein egen oppgåve. Kanskje berre ta dette i samandraget?
+    <div class="notes hideable hidden">
+      <h2 id="notes-header">Notater</h2>
+      <div class="hideable-content">
+        Diverse notater om ting som ikkje passer heilt inn i ein egen oppgåve.
+        Kanskje berre ta dette i samandraget?
         <h3>WAI-ARIA</h3>
         <p>
-            Web Accessibility Initiative - Accessible Rich Internet Applications, eller berre Aria, er ein samling med
-            attributter du kan legge på html-taggene dine for å gi informasjon til Accessibility APIet (som er det
-            skjermlesere bruker).
+          Web Accessibility Initiative - Accessible Rich Internet Applications,
+          eller berre Aria, er ein samling med attributter du kan legge på
+          html-taggene dine for å gi informasjon til Accessibility APIet (som er
+          det skjermlesere bruker).
         </p>
 
         <p>
-            Disse er kraftige verktøy som bør brukes der dei trengs. <b>Men</b> dei skal brukes der dei trengs og ikkje
-            berre slenges på for å vera på den sikre sida. Ein skal helst skrive semantisk html sånn at dei ikkje
-            trengs, men i visse tilfeller vil ein måtte bruke dei. Å ha mange aria-attributter i koden er egentleg ein
-            code smell, då det tyder på at ein må bruke aria for å prøve å fikse problemer i staden for å skrive god
-            html.
+          Disse er kraftige verktøy som bør brukes der dei trengs.
+          <b>Men</b> dei skal brukes der dei trengs og ikkje berre slenges på
+          for å vera på den sikre sida. Ein skal helst skrive semantisk html
+          sånn at dei ikkje trengs, men i visse tilfeller vil ein måtte bruke
+          dei. Å ha mange aria-attributter i koden er egentleg ein code smell,
+          då det tyder på at ein må bruke aria for å prøve å fikse problemer i
+          staden for å skrive god html.
         </p>
 
         <h4>Aria-hidden</h4>
         <p>
-            Aria-hidden er eit eksempel på det. Attributten blir ofte lagt på alle gøymde element, sånn for å vera på
-            den sikre sida, men den er heilt unaudsynt viss elementet er skjult vha. <code>display: none</code>, <code>visibility:
-            hidden</code> eller html sin <code>hidden</code>-attributt. Legg ein til <code>aria-hidden: true</code> i
-            disse tilfella, så gir du ingen ekstra informasjon til skjermleseren, men du auker sannsynlegheita for feil
-            ved at ein f.eks. sett <code>visibility: visible</code> uten å sette <code>aria-hidden: false</code>.
+          Aria-hidden er eit eksempel på det. Attributten blir ofte lagt på alle
+          gøymde element, sånn for å vera på den sikre sida, men den er heilt
+          unaudsynt viss elementet er skjult vha. <code>display: none</code>,
+          <code>visibility: hidden</code> eller html sin
+          <code>hidden</code>-attributt. Legg ein til
+          <code>aria-hidden: true</code> i disse tilfella, så gir du ingen
+          ekstra informasjon til skjermleseren, men du auker sannsynlegheita for
+          feil ved at ein f.eks. sett <code>visibility: visible</code> uten å
+          sette <code>aria-hidden: false</code>.
         </p>
 
         <h3>Semantisk HTML</h3>
         <h4>h-tags</h4>
         <p>
-            h1/h2/h3/h4/h5/h6 må følge strukturen. Er forelderen din ein h1 så skal du vera ein h2, sjølv om designet
-            kanskje tilseier at du skal sjå ut som ein h3. Her må de først sette opp den semantiske strukturen, så kan
-            de style etterpå. Dette må designere tenke på òg ;)
+          h1/h2/h3/h4/h5/h6 må følge strukturen. Er forelderen din ein h1 så
+          skal du vera ein h2, sjølv om designet kanskje tilseier at du skal sjå
+          ut som ein h3. Her må de først sette opp den semantiske strukturen, så
+          kan de style etterpå. Dette må designere tenke på òg ;)
         </p>
+      </div>
     </div>
-</div>
 
-<div class="criteria hideable hidden">
-    <h2 id="criteria-header">Relevante krav</h2>
-    <div class="hideable-content">
+    <div class="criteria hideable hidden">
+      <h2 id="criteria-header">Relevante krav</h2>
+      <div class="hideable-content">
         <ul>
-            <li>hei</li>
+          <li>
+            1.1.1 - Gi brukeren et tekstalternativ for innhold som ikke er
+            tekst.
+          </li>
+          <li>1.3.1 - Ting skal være kodet som det ser ut som.</li>
+          <li>1.3.2 - Presenter innhold i en meningsfull rekkefølge.</li>
+          <li>
+            1.3.3 - Instruksjoner må ikke utelukkende være avhengige av form,
+            størrelse, visuell plassering, orientering, eller lyd for å kunne
+            bli forstått.
+          </li>
+          <li>
+            1.4.1 - Ikke bruk presentasjon som bygger utelukkende på farge.
+          </li>
+          <li>1.4.5 - Bruk tekst i stedet for bilder av tekst.</li>
+          <li>
+            2.1.1 - All funksjonalitet skal kunne brukes kun ved hjelp av
+            tastatur.
+          </li>
+          <li>2.1.2 - Unngå tastaturfeller.</li>
+          <li>
+            2.4.1 - Gi brukeren mulighet til å hoppe direkte til hovedinnholdet.
+          </li>
+          <li>2.4.2 - Bruk nyttige og tydelige sidetitler.</li>
+          <li>
+            2.4.3 - Presenter innholdet i en logisk rekkefølge (fokusrekkefølge)
+          </li>
+          <li>
+            2.4.4 - Alle lenkers mål og funksjon fremgår tydelig av
+            lenketeksten.
+          </li>
+          <li>
+            2.4.6 - Sørg for at ledetekster og overskrifter er beskrivende.
+          </li>
+          <li>
+            3.1.1 - Sørg for at språket til innholdet på alle nettsider er
+            angitt i koden.
+          </li>
+          <li>
+            3.1.2 - Sørg for at alle deler av innholdet som er på et annet språk
+            enn resten av siden er markert i koden.
+          </li>
+          <li>
+            3.3.1 - For feil som oppdages automatisk må du vise hvor feilen har
+            oppstått og gi en tekstbeskrivelse av feilen.
+          </li>
+          <li>
+            3.3.2 - Det vises ledetekster eller instruksjoner når du har
+            skjemaelementer som må fylles ut.
+          </li>
+          <li>4.1.2 - Alle komponenter har navn og rolle bestemt i koden.</li>
+          <li>1.3.5 - Skjemaelementer er kodet med inndataformål.</li>
+          <li>
+            4.1.3 - Brukeren skal få statusbeskjeder om viktige endringer på
+            nettsiden uten at det gir kontekstendring.
+          </li>
         </ul>
+      </div>
     </div>
-</div>
 
-<div class="tips-and-tricks">
-    <p>Tips til dårlige ting å ha med:</p>
-    <ul>
+    <div class="tips-and-tricks">
+      <p>Tips til dårlige ting å ha med:</p>
+      <ul>
         <li>ingen landmarks</li>
         <li>dårlig semantisk struktur</li>
         <li>svg uten aria-label</li>
         <li>Interaktive elementer med tabindex="-1"</li>
         <li>
-            Popup med fokusfelle - kan ikke komme deg ut av den uten å sende inn
+          Popup med fokusfelle - kan ikke komme deg ut av den uten å sende inn
         </li>
-    </ul>
+      </ul>
 
-    <p>Hint til bruker</p>
-    <ul>
+      <p>Hint til bruker</p>
+      <ul>
         <li>
-            Elementer som dukker opp på skjermen etter første innlasting. Typisk
-            valideringsfeilmelding (Aria-live)
+          Elementer som dukker opp på skjermen etter første innlasting. Typisk
+          valideringsfeilmelding (Aria-live)
         </li>
-    </ul>
-</div>
+      </ul>
+    </div>
 
-
-<p>Notat: talestyring, få inn person øverst på siden (info-knapp)</p>
-</body>
+    <p>Notat: talestyring, få inn person øverst på siden (info-knapp)</p>
+  </body>
 </html>
