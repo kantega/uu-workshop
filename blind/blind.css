@@ -91,8 +91,7 @@ a:hover {
 	transition: width 1s;
 }
 
-
-.modal .button {
+.modal .buy-button {
 	grid-area: footer;
 }
 
@@ -136,6 +135,14 @@ a:hover {
 	font-size: 1rem;
 }
 
+.close-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	background-color: white;
+}
+
 .buy-button {
 	width: 75%;
 }
@@ -151,16 +158,6 @@ a:hover {
 	height: 100%;
 }
 
-.hidden.hideable .hideable-content {
-	display: none;
-}
-
-.hidden.hideable h2::before {
-	content: url("../assets/chevron-right.svg");
-	padding-right: 2px;
-}
-
-.hideable h2::before {
-	content: url("../assets/chevron-down.svg");
-	padding-right: 2px;
+details h2 {
+	display: inline-block;
 }

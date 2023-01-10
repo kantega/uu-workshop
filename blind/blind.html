@@ -1,58 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nn">
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="blind.css" />
     <script src="blind.js" type="text/javascript"></script>
-    <title>title</title>
+    <title>UU-Workshop: Blind</title>
   </head>
 
   <body class="blind-page">
-    <div class="blind-nav">
+    <nav class="blind-nav">
       <a class="link" href="../index.html">Hovedside</a>
       <a class="link" href="../vision/vision.html">Svaksynt</a>
       <a class="link" href="../cognition/cognition.html">Kognisjon</a>
-    </div>
+    </nav>
 
-    <img class="blind-header" src="blind.png" />
+    <h1>
+		  <img class="blind-header" src="blind.png" alt="Blind" />
+	  </h1>
 
     <div id="modal-overlay" class="modal-overlay">
-      <div id="modal" class="modal">
+      <dialog aria-labelledby="modal-header" id="modal" class="modal">
         <div class="progress">
           <span id="progress-label">Framgang: </span>
-          <div class="progress-bar" id="progress-bar"></div>
+          <div class="progress-bar" id="progress-bar" role="progressbar" aria-labelledby="progress-label" aria-valuemin="0" aria-valuemax="3" aria-valuenow="0"></div>
         </div>
         <h2 id="modal-header">Betalings- og leveringsinfo for raketten</h2>
-        <img src="rakett.png" width="994" height="855" />
+        <img src="rakett.png" width="994" height="855" alt="Rakett av typen Kantega"/>
         <p class="modal-input">
-          <label>Navn *</label>
-          <input type="text" id="input-name" />
-          <span id="validation-error-name" class="validation-error"></span>
+          <label for="input-name">Navn (Påkrevd)</label>
+          <input type="text" id="input-name" required />
+          <span id="validation-error-name" class="validation-error" aria-live="polite" ></span>
         </p>
         <p class="modal-input">
-          <label>Adresse *</label>
-          <input type="text" id="input-address" />
-          <span id="validation-error-address" class="validation-error"></span>
+          <label for="input-address">Adresse (Påkrevd)</label>
+          <input type="text" id="input-address" required />
+          <span id="validation-error-address" class="validation-error" aria-live="polite" ></span>
         </p>
         <p class="modal-input">
-          <label>Epost *</label>
-          <input type="text" id="input-email" />
-          <span id="validation-error-email" class="validation-error"></span>
+          <label for="input-email">Epost (Påkrevd)</label>
+          <input type="email" id="input-email" required />
+          <span id="validation-error-email" class="validation-error" aria-live="polite" ></span>
         </p>
         <button class="button buy-button" onclick="buy()">Kjøp</button>
-      </div>
+        <button class="button close-button" onclick="hideModal()"><img src="../assets/x-lg.svg" alt="Lukk"></button>
+      </dialog>
     </div>
 
-    <div class="person-intro">
+    <section class="person-intro">
       <h2>Blinde Bjørn</h2>
       <div class="side-by-side">
-        <img src="blind-person.png" width="173" height="291" />
+        <img src="blind-person.png" width="173" height="291" alt="Blinde Bjørn med stokk og briller" />
         <svg
           viewBox="0 0 363 560"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           class="side-illustration"
+          aria-hidden="true"
         >
+          <title id="kantega-dash">Ein splæsj med malind</title>
           <g opacity="0.2" fill="#027c92">
             <path
               d="M189.773 341.953c-6.668-6.403-11.524-4.688-16.816.738v-.052c-4.46 4.562-9.221 11.744-15.629 18.926-7.147 8.044-15.441 16.536-17.889 22.772-2.334 6.018.687 10.071 15.274 9.874 14.899-.167 28.923-18.709 28.923-18.709 7.22-10.247 12.211-15.901 12.836-21.098.459-3.835-1.49-7.431-6.699-12.451z"
@@ -82,17 +87,19 @@
       <p>
         Kan du hjelpe han med å få kjøpt raketten? Det er lagt inn litt
         forskjellige ting de kan teste, og de kan lese hinta for å få tips til
-        korleis de kan løyse problemet.
+        korleis de kan løyse problema.
       </p>
-    </div>
+    </section>
 
-    <button class="button" onclick="showModal()">
-      Klikk her for å kjøpe ein rakett
-    </button>
+    <section>
+      <button class="button" onclick="showModal()">
+        Klikk her for å kjøpe ein rakett
+      </button>
+    </section>
 
-    <div class="screen-readers hideable hidden">
-      <h2 id="screen-reader-header">Korleis bruke skjermlesere</h2>
-      <div class="hideable-content">
+    <details class="screen-readers">
+      <summary><h2 id="screen-reader-header">Korleis bruke skjermlesere</h2></summary>
+      <div>
         Det kan vera ein idé å prøve ut skjermlesernavigasjon sjølv. Eg vil
         anbefale dykk å finne ut både korleis de skrur skjermleser på
         <b>og av</b>. Det blir masse prat.
@@ -130,11 +137,11 @@
           <li>🤷</li>
         </ul>
       </div>
-    </div>
+    </details>
 
-    <div class="how-to-test hideable hidden">
-      <h2 id="how-to-test-header">Ting de kan teste</h2>
-      <div class="hideable-content">
+    <details class="how-to-test">
+      <summary><h2 id="how-to-test-header">Ting de kan teste</h2></summary>
+      <div>
         <h3>Navigasjon og oversikt</h3>
         Sjåande opner sida og får ein viss oversikt med ein gong. Brukarar av
         skjermlesarar kan bruke hurtigtaster for å lese kjapt over headere,
@@ -213,8 +220,10 @@
           </li>
           <li>
             <p>
-              <span>Korleis blir denne setninga </span>
-              <span>lese av skjermlesaren på ein Mac?</span>
+              <span role="text">
+                <span>Korleis blir denne setninga </span>
+                <span>lese av skjermlesaren på ein Mac?</span>
+              </span>
               <a href="hints/role-text.html">Hint</a>
             </p>
           </li>
@@ -225,11 +234,11 @@
           </li>
         </ul>
       </div>
-    </div>
+    </details>
 
-    <div class="notes hideable hidden">
-      <h2 id="notes-header">Notater</h2>
-      <div class="hideable-content">
+    <details class="notes">
+      <summary><h2 id="notes-header">Notater</h2></summary>
+      <div>
         Diverse notater om ting som ikkje passer heilt inn i ein egen oppgåve.
         Kanskje berre ta dette i samandraget?
         <h3>WAI-ARIA</h3>
@@ -272,11 +281,11 @@
           kan de style etterpå. Dette må designere tenke på òg ;)
         </p>
       </div>
-    </div>
+    </details>
 
-    <div class="criteria hideable hidden">
-      <h2 id="criteria-header">Relevante krav</h2>
-      <div class="hideable-content">
+    <details class="criteria">
+      <summary><h2 id="criteria-header">Relevante krav</h2></summary>
+      <div>
         <ul>
           <li>
             1.1.1 - Gi brukeren et tekstalternativ for innhold som ikke er
@@ -336,6 +345,6 @@
           </li>
         </ul>
       </div>
-    </div>
+    </details>
   </body>
 </html>
