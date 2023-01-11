@@ -114,12 +114,21 @@ a:focus-visible {
     }
 }
 
+.signup-group {
+	display: grid;
+	grid-gap: 0.5rem;
+	grid-template-areas:
+"label ."
+"input button"
+"error .";
+}
+
 .signup-email {
-    display: inline-block;
     margin-right: 8px;
 }
 
-.signup-email label {
+.signup-group label {
+	grid-area: label;
     display: block;
     font-size: 0.875rem;
     font-weight: 400;
@@ -127,10 +136,10 @@ a:focus-visible {
     margin: 0 8px;
 }
 
-.signup-email input {
+.signup-group input {
+	grid-area: input;
     display: block;
     box-sizing: border-box;
-    margin: 0.5rem 0;
     padding: 0.5rem;
     border: 2px solid rgb(206, 206, 206);
     border-radius: 0.25rem;
@@ -138,13 +147,15 @@ a:focus-visible {
     line-height: 1.25rem;
 }
 
-.signup-email input:focus-visible {
+.signup-group input:focus-visible {
     outline: none;
     border: #027c92 2px solid;
 }
 
 .signup .button {
-    height: 2.375rem;
+	grid-area: button;
+	align-self: stretch;
+	justify-self: stretch;
     padding: 0 20px;
     text-align: center;
     vertical-align: center;
@@ -162,9 +173,14 @@ a:focus-visible {
     text-align: center;
     font-weight: 500;
     font-size: 1rem;
+	transition: border-color 300ms;
 }
 
-.button:disabled {
-    background-color: red;
-	border-color: red;
+.button:hover {
+	border-color: white;
+}
+
+#signup-email-error {
+	grid-area: error;
+	color: red;
 }

@@ -64,13 +64,14 @@
 
     <div class="signup section">
       <h2>Meld på nyhetsbrev</h2>
-      <div class="signup-email">
+      <div class="signup-group">
         <label for="signup-email-input">Epost</label>
         <input type="email" id="signup-email-input" />
+        <span id="signup-email-error"></span>
+        <button type="submit" id="signup-submit" class="button" >
+          Send inn
+        </button>
       </div>
-      <button type="submit" id="signup-submit" class="button" disabled>
-        Send inn
-      </button>
     </div>
 
     <div class="how-to-test section">
@@ -106,8 +107,7 @@
         Det finnes mange kjekke verktøy for å simulere fargeblindhet. Eg liker
         <a
           href="https://wearecolorblind.com/resources/colorblindly-colorblindness-simulator/"
-          >Colorblindly</a
-        >
+          >Colorblindly</a>
         som er ein Chrome-extension der du kan velge mellom forskjellige
         fargeblindheter og så viser den sida som om du er f.eks. raud-grøn
         fargeblind.
