@@ -23,7 +23,7 @@ h3 {
 
 html {
     color: white;
-    background-color: #027c92;
+    background-color: #19254f;
 }
 
 body {
@@ -42,24 +42,28 @@ body {
     pointer-events: none;
 }
 
-.vision-nav {
-    background-color: #027c92;
+.purple {
+	background-color: #27003d;
 }
 
-.person-intro {
-    background-color: #027c92;
+.purple a {
+	color: antiquewhite;
 }
 
-.signup {
-    background-color: #024d5a;
+.purple a:visited {
+	color: pink;
 }
 
-.how-to-test {
-    background-color: #27003d;
+.teal {
+	background-color: #024d5a;
 }
 
-.criteria {
-    background-color: #024d5a;
+a {
+	color: #D6D6FF;
+}
+
+a:hover {
+    color: lightseagreen;
 }
 
 .vision-nav {
@@ -76,15 +80,6 @@ body {
 
 .vision-nav a:first-child {
     margin-left: 0;
-}
-
-a:hover {
-    color: lightseagreen;
-}
-
-a:focus-visible {
-    outline: 2px solid #024d5a;
-    border-radius: 4px;
 }
 
 .section {
