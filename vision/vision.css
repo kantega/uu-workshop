@@ -28,6 +28,7 @@ html {
 
 body {
     font-family: "Source Sans Pro", sans-serif;
+	letter-spacing: 0.01em;
     margin: 0;
     padding: 0;
     position: relative;
@@ -69,6 +70,7 @@ a:hover {
 .vision-nav {
     display: flex;
     grid-gap: 1.25rem;
+	flex-wrap: wrap;
 }
 
 .vision-nav a {
@@ -91,19 +93,24 @@ a:hover {
     max-width: 50rem;
 }
 
-@media screen and (max-width: 123.75rem) {
+/*
+We're using em instead of rem because of issues with Safari.
+https://medium.com/@barrypeng6/why-should-not-use-rem-unit-in-media-query-5645d0163ce5
+It doesn't have any impact here, as we don't change font-size on the html-tag, but it doesn't cost us anything and is a bit more future proof.
+*/
+@media screen and (max-width: 123.75em) {
     .section {
         padding: 0.5rem 160px;
     }
 }
 
-@media screen and (max-width: 64rem) {
+@media screen and (max-width: 64em) {
     .section {
         padding: 0.5rem 80px;
     }
 }
 
-@media screen and (max-width: 32rem) {
+@media screen and (max-width: 32em) {
     .section {
         padding: 0.5rem 32px;
     }
