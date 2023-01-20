@@ -1,80 +1,82 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 
 h1 {
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: bold;
-    font-size: 55px;
-    margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-size: 55px;
+  margin: 0;
 }
 
 h2 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 h3 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 html {
-    color: white;
-    background-color: #027c92;
+  color: white;
+  background-color: #027c92;
 }
 
 body {
-    font-family: "Source Sans Pro", sans-serif;
-    margin: 0;
-    padding: 0;
-    position: relative;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .kantega-splat {
-    position: absolute;
-    right: 20px;
-    top: 80px;
-    max-width: 75%;
-    max-height: 80vh;
-    pointer-events: none;
+  position: absolute;
+  right: 20px;
+  top: 80px;
+  max-width: 75%;
+  max-height: 80vh;
+  pointer-events: none;
 }
 
 .vision-nav {
-    background-color: #027c92;
+  background-color: #027c92;
 }
 
 .person-intro {
-    background-color: #027c92;
+  background-color: #027c92;
 }
 
 .signup {
-    background-color: #024d5a;
+  background-color: #024d5a;
 }
 
 .how-to-test {
-    background-color: #27003d;
+  background-color: #27003d;
 }
 
 .criteria {
-    background-color: #024d5a;
+  background-color: #024d5a;
 }
 
 .vision-nav {
-    display: flex;
-    grid-gap: 20px;
-    margin: 30px 0;
+  display: flex;
+  grid-gap: 20px;
+  margin: 30px 0;
 }
 
 .vision-nav a {
-    padding: 5px;
-    margin: 15px;
-    font-size: 20px;
-    text-underline-offset: 7px;
+  padding: 5px;
+  margin: 15px;
+  font-size: 20px;
+  text-underline-offset: 7px;
 }
 
 .vision-nav a:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 a:hover {
-    color: lightseagreen;
+  color: lightseagreen;
 }
 
 a:focus-visible {
@@ -83,82 +85,82 @@ a:focus-visible {
 }
 
 .section {
-    padding: 8px 500px;
-    margin: 0;
+  padding: 8px 500px;
+  margin: 0;
 }
 
 .section > * {
-    max-width: 800px;
+  max-width: 800px;
 }
 
 @media screen and (max-width: 1980px) {
-    .section {
-        padding: 8px 160px;
-    }
+  .section {
+    padding: 8px 160px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    .section {
-        padding: 8px 80px;
-    }
+  .section {
+    padding: 8px 80px;
+  }
 }
 
 @media screen and (max-width: 640px) {
-    .section {
-        padding: 8px 32px;
-    }
+  .section {
+    padding: 8px 32px;
+  }
 }
 
 .signup-email {
-    display: inline-block;
-    margin-right: 8px;
+  display: inline-block;
+  margin-right: 8px;
 }
 
 .signup-email label {
-    display: block;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16px;
-    margin: 0 8px;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0 8px;
 }
 
 .signup-email input {
-    display: block;
-    box-sizing: border-box;
-    margin: 8px 0;
-    padding: 8px;
-    border: 2px solid rgb(206, 206, 206);
-    border-radius: 4px;
-    font-size: 16px;
-    line-height: 20px;
+  display: block;
+  box-sizing: border-box;
+  margin: 8px 0;
+  padding: 8px;
+  border: 2px solid rgb(206, 206, 206);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .signup-email input:focus-visible {
-    outline: none;
-    border: #027c92 2px solid;
+  outline: none;
+  border: #027c92 2px solid;
 }
 
 .signup .button {
-    height: 38px;
-    padding: 0 20px;
-    text-align: center;
-    vertical-align: center;
-    border: 1px solid darkgreen;
+  height: 38px;
+  padding: 0 20px;
+  text-align: center;
+  vertical-align: center;
+  border: 1px solid darkgreen;
 }
 
 .button {
-    height: 100%;
-    background-color: darkgreen;
-    color: white;
-    margin: 0;
-    padding: 20px;
-    border-radius: 4px;
-    border: none;
-    text-align: center;
-    font-weight: 500;
-    font-size: 16px;
+  height: 100%;
+  background-color: darkgreen;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .button:disabled {
-    background-color: red;
+  background-color: red;
 }
