@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap");
 
 h1 {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
   font-size: 55px;
   margin: 0;
 }
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto Light", sans-serif;
   margin: 0;
   padding: 0;
   position: relative;
@@ -62,6 +62,7 @@ body {
   display: flex;
   grid-gap: 20px;
   margin: 30px 0;
+  font-family: "Roboto Light", sans-serif;
 }
 
 .vision-nav a {
@@ -80,8 +81,8 @@ a:hover {
 }
 
 a:focus-visible {
-    outline: 2px solid #024d5a;
-    border-radius: 4px;
+  outline: 2px solid #024d5a;
+  border-radius: 4px;
 }
 
 .section {
@@ -163,4 +164,8 @@ a:focus-visible {
 
 .button:disabled {
   background-color: red;
+}
+
+.sverre {
+  max-width: 180px;
 }
