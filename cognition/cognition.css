@@ -79,3 +79,9 @@ main > p {
   max-height: 24rem;
   padding: 0 3rem;
 }
+
+.timer {
+  font: 72px Courier;
+  color: #a17d7d;
+  text-align: center;
+}
