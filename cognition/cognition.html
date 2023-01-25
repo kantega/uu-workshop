@@ -52,21 +52,19 @@
         og så kan vi ha en branch med forslag til forbedringer?
       </p>
 
-      <p class="timer"><span id="seconds">60</span> sekunder</p>
-
-      <p>Tips til dårlige ting å ha med:</p>
-      <ul>
-        <li>innhold som forvinner automatisk (med timer)</li>
-        <li>GIF</li>
-        <li>Innhold som flytter seg</li>
-        <li>Uoversiktlig innhold - ustrukturert side</li>
-        <li>
-          Meld på nyhetsbrev. Validering på input, men ikkje tydelig kva som
-          forventes av input eller hva som er feil.
-        </li>
-        <li>Lyd som ikkje kan skrus av</li>
-        <li></li>
-      </ul>
+      <section class="timer-frame" id="timer-frame"">
+        <h2>Bestill billetter</h2>
+        <p class="timer">Reservert i <span id="seconds">60</span> sekunder</p>
+        <div class="form">
+          <input type="text" id="name" placeholder="Fornavn" required />
+          <input type="text" id="surname" placeholder="Etternavn" required />
+          <input type="email" id="email" placeholder="Epost" required pattern=".+@globex\.com"/>
+          <button onclick="orderTickets()"">Bestill</button>
+        </div>
+        <p class="error" id="error">Noe er feil</p>
+      </section>
+      <p class="success" id="success">Biletter er bestilt!</p>
+      <button class="find-button" id="find-button" onclick="findTickets()">Finn billetter</button>
 
       <p>Relevante krav:</p>
       <ul>
@@ -109,15 +107,19 @@
           2.5.3 - Brukere som bruker visuelle ledetekster skal også kunne bruke
           kodede ledetekster.
         </li>
+        <li><a href="https://www.y-oslo.com/">Eksempel på innhold som flytter seg</a></li>
       </ul>
 
-      <p>
-        Notat: Dette inkluderer mange, både viss ein slit med å forstå språk,
-        eller viss ein er i ein stressa situasjon e.l. Tidsbegrensinger skal ha
-        ein mogelegheit til å forlenge. (Du får berre lese hint i 1 minutt før
-        du blir sendt tilbake.) Skal kunne pause eller skjule innhold som endrer
-        seg (gif).
-      </p>
+
+      <iframe
+        src="https://giphy.com/embed/qhepNcb0L83PG"
+        width="480"
+        height="320"
+        frameborder="0"
+        class="gif"
+      ></iframe>
+
+
       <svg
         viewBox="0 0 363 560"
         fill="none"

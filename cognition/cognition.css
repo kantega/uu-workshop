@@ -80,8 +80,65 @@ main > p {
   padding: 0 3rem;
 }
 
+.timer-frame {
+  border: 2px solid #a17d7d;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+  padding-bottom: 1rem;
+}
+
 .timer {
-  font: 72px Courier;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.8rem;
+
   color: #a17d7d;
   text-align: center;
+}
+
+.find-button {
+  display: none;
+}
+
+.error {
+  display: none;
+  background-color: #f0d2d2;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+}
+
+h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  margin: 3.25rem 0 2rem 0;
+  font-size: 2rem;
+}
+
+.form {
+  padding: 3rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 0.5rem;
+}
+
+.success {
+  display: none;
+  background-color: #cfe6ce;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+}
+
+.gif {
+  margin: 0 auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
 }
