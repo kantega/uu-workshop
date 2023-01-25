@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="nn">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/hints.css" />
     <title>Tab capture</title>
-</head>
-<body>
-
-Du må fange markøren inne i modalen. F.eks. så kan du lage ein eventlistener som lytter på tab og flytter fokus opp til
-øverste element når det forlater siste element.
-
-Viss de vil slippe å skrive ei fokusfelle sjølv, kan de bruke denne her:
-<pre>
+  </head>
+  <body>
+    Du må fange markøren inne i modalen. F.eks. så kan du lage ein eventlistener
+    som lytter på tab og flytter fokus opp til øverste element når det forlater
+    siste element. Viss de vil slippe å skrive ei fokusfelle sjølv, kan de bruke
+    denne her:
+    <pre>
 // Run trapFocus on a modal that you want to trap focus within.
 // Shamelessly stolen from https://hidde.blog/using-javascript-to-trap-focus-in-an-element/
 function trapFocus(element) {
@@ -39,6 +39,7 @@ function trapFocus(element) {
     }
   });
 }
-	</pre>
-</body>
+	</pre
+    >
+  </body>
 </html>

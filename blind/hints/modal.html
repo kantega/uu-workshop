@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="nn">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/hints.css" />
     <title>Modal</title>
-</head>
-<body>
-
-Det første som må gjøres er at de må fortelle skjermlesaren at du er i ein modal. Det kan gjøres enten ved å bytte ut
-div-en med <code>dialog</code>-elementet, eller ved å gi div-en ein rolle: <code>role="dialog"</code>.
-
-Viss de då opner dialogen, så vil de få mogelegheit til å lese innholdet i modalen, siden skjermleseren veit kva som er
-ein del av det opne innholdet.
-
-Viss de i tillegg legg til <code>aria-labelledby="modal-header"</code>, så vil skjermleseren lese labelen før den
-starter med å lese input-feltet.
-
-Ein kan òg bruke <code>aria-describedby</code> viss det er ein slags ingress i modalen.
-
-</body>
+  </head>
+  <body>
+    Det første som må gjøres er at de må fortelle skjermlesaren at du er i ein
+    modal. Det kan gjøres enten ved å bytte ut div-en med
+    <code>dialog</code>-elementet, eller ved å gi div-en ein rolle:
+    <code>role="dialog"</code>. Viss de då opner dialogen, så vil de få
+    mogelegheit til å lese innholdet i modalen, siden skjermleseren veit kva som
+    er ein del av det opne innholdet. Viss de i tillegg legg til
+    <code>aria-labelledby="modal-header"</code>, så vil skjermleseren lese
+    labelen før den starter med å lese input-feltet. Ein kan òg bruke
+    <code>aria-describedby</code> viss det er ein slags ingress i modalen.
+  </body>
 </html>
