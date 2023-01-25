@@ -9,6 +9,15 @@ oppgåver og løyse berre noko av kvar.
 Kvar oppgåve har all css, javascript og html liggende i sin egen mappe, så kva de gjer på ei oppgåve har ingen
 innvirkning på dei andre.
 
+## Relevante plugins for Chrome:
+
+- [Blurry-eye Test: for å se hvordan en nettside ser ut for svaksynt](https://chrome.google.com/webstore/detail/blurry-eye-test/panidpjdcjkdhjamnogampinhbkjdkpo)
+- [WAVE: UU-verktøy ](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh)
+- [Siteimprove Accessibility Checker: UU-verktøy med filter for å se siden som fargeblind](https://chrome.google.com/webstore/detail/siteimprove-accessibility/djcglbmbegflehmbfleechkjhmedcopn?hl=en)
+
+## Andre verktøy
+- [Contrast - Color Accessibility (mac)](https://apps.apple.com/no/app/contrast-color-accessibility/id1254981365?l=nb&mt=12)
+
 ## Relevante linker:
 
 - [Korleis bør ein sette opp svg og multi-img bilete](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/img_role)

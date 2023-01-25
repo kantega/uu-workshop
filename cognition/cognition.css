@@ -51,7 +51,6 @@ nav {
 }
 
 main {
-  align-self: flex-start;
   font-size: 1rem;
   line-height: 1.4rem;
 }
@@ -71,6 +70,7 @@ main > p {
 .persons {
   display: flex;
   align-items: baseline;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -133,7 +133,8 @@ h2 {
 }
 
 .gif {
-  margin: 0 auto;
+  margin: 5rem auto;
+  display: block;
 }
 
 footer {
