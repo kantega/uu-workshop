@@ -40,7 +40,6 @@ function validate() {
 
 function orderTickets() {
   const [validationResult, validationMessage] = validate()
-  console.log(validationMessage, validationResult)
   if (!validationResult) {
     document.getElementById("error").innerHTML = validationMessage
     document.getElementById("error").style.display = "block";
