@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap");
 
 @supports (font: -apple-system-body) {
     html {
@@ -7,7 +7,7 @@
 }
 
 h1 {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: bold;
     font-size: 3.4375rem;
     margin: 0;
@@ -27,7 +27,7 @@ html {
 }
 
 body {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Roboto Light", sans-serif;
 	letter-spacing: 0.01em;
     margin: 0;
     padding: 0;
@@ -81,7 +81,7 @@ a:hover {
 }
 
 .vision-nav a:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .section {
@@ -185,4 +185,16 @@ It doesn't have any impact here, as we don't change font-size on the html-tag, b
 #signup-email-error {
 	grid-area: error;
 	color: red;
+}
+
+.sverre {
+  max-width: 180px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+  justify-content: center;
+  grid-gap: 0.3rem;
 }
