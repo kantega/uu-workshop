@@ -35,7 +35,7 @@
     </section>
 
     <main>
-      <audio autoplay>
+      <audio autoplay controls id="musikk">
         <source src="audio.m4a" type="audio/mp4" />
         Your browser does not support the audio element.
       </audio>
@@ -50,14 +50,13 @@
         som syns teknologi er vanskeleg.
       </p>
 
-      <section class="timer-frame" id="timer-frame"">
+      <section class="timer-frame" id="timer-frame">
         <h2>Bestill billetter</h2>
-        <p class="timer">Reservert i <span id="seconds">10</span> sekunder</p>
         <div class="form">
           <input type="text" id="name" placeholder="Fornavn" required />
           <input type="text" id="surname" placeholder="Etternavn" required />
           <input type="email" id="email" placeholder="Epost" required pattern=".+@globex\.com"/>
-          <button onclick="orderTickets()"">Bestill</button>
+          <button onclick="orderTickets()">Bestill</button>
         </div>
         <p class="error" id="error">Noe er feil</p>
       </section>

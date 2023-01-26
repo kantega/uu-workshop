@@ -3,13 +3,7 @@ let timer = setInterval(calculate, 1000);
 
 function calculate() {
   time--;
-  if (time >= 0) {
-    seconds = parseInt(time);
-
-    document.getElementById("seconds").innerHTML = time;
-  } else {
-    document.getElementById("timer-frame").style.display = "none";
-    document.getElementById("find-button").style.display = "block";
+  if (time <= 0) {
     clearInterval(timer);
 
     return;
@@ -19,9 +13,6 @@ function calculate() {
 function findTickets() {
   document.getElementById("timer-frame").style.display = "flex";
   document.getElementById("find-button").style.display = "none";
-
-  time = 10;
-  timer = setInterval(calculate, 1000);
 }
 
 function containsNumbers(str) {
@@ -31,6 +22,9 @@ function containsNumbers(str) {
 function validate() {
   const name = document.getElementById("name").value;
   const surname = document.getElementById("surname").value;
+  if(time <= 0) {
+    return [false, "Tiden er utløpt"]
+  }
 
   if (
     containsNumbers(name) ||
@@ -38,20 +32,23 @@ function validate() {
     name.length === 0 ||
     surname.length === 0
   ) {
-    return false;
+    return [false, "Du må fylle ut alle felter med riktig informasjon"];
   } else {
-    return true;
+    return [true];
   }
 }
 
 function orderTickets() {
-  if (validate()) {
+  const [validationResult, validationMessage] = validate()
+  console.log(validationMessage, validationResult)
+  if (!validationResult) {
+    document.getElementById("error").innerHTML = validationMessage
+    document.getElementById("error").style.display = "block";
+  } else {
     document.getElementById("error").style.display = "none";
     document.getElementById("timer-frame").style.display = "none";
     document.getElementById("success").style.display = "inline-block";
     document.getElementById("find-button").style.display = "none";
     clearInterval(timer);
-  } else {
-    document.getElementById("error").style.display = "block";
   }
 }
