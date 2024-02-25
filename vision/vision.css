@@ -38,21 +38,12 @@ body {
   margin-top: 70px;
 }
 
-.kantega-splat {
-  position: absolute;
-  right: 20px;
-  bottom: 80px;
-  max-width: 75%;
-  max-height: 80vh;
-  pointer-events: none;
-}
-
 .signup {
   color: black;
 }
 
 .section {
-  padding: 8px 500px;
+  padding: 10px 500px;
   margin: 0;
 }
 
@@ -62,19 +53,19 @@ body {
 
 @media screen and (max-width: 1980px) {
   .section {
-    padding: 8px 160px;
+    padding: 10px 160px;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .section {
-    padding: 8px 80px;
+    padding: 10px 80px;
   }
 }
 
 @media screen and (max-width: 640px) {
   .section {
-    padding: 8px 32px;
+    padding: 10px 32px;
   }
 }
 
