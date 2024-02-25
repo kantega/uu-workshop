@@ -2,7 +2,7 @@
 <html lang="nn">
   <head>
     <meta charset="UTF-8" />
-    <title>Svaksynt</title>
+    <title>Vision</title>
     <link rel="stylesheet" type="text/css" href="../common/common.css" />
     <link rel="stylesheet" type="text/css" href="vision.css" />
     <script src="vision.js" type="text/javascript"></script>
@@ -17,39 +17,40 @@
   <body class="vision-page">
     <div class="section">
       <div class="nav-bar">
-        <p>Svaksynt</p>
+        <p>Vision</p>
         <a href="../blind/blind.html">Blind</a>
-        <a href="../cognition/cognition.html">Kognisjon</a>
-        <a href="../index.html">Hovedside</a>
+        <a href="../cognition/cognition.html">Cognition</a>
+        <a href="../index.html">Main page</a>
       </div>
     </div>
 
     <div class="section intro">
       <div>
-        <h1>Blogginnlegg</h1>
+        <h1>Blog post</h1>
         <p class="blogg-intro">
-          Då Apple lanserte iOS 14, inkluderte dei ei lita linje i Safari 14
-          sine release-notes. “Added a Web Authentication platform authenticator
-          using Face ID or Touch ID, depending on which capability is present.”
-          Denne linja kan få store konsekvenser for sikkerheten på nettet
-          framover.
+          When Apple launched iOS 14, they included a small line in Safari 14's
+          release notes: "Added a Web Authentication platform authenticator
+          using Face ID or Touch ID, depending on which capability is present."
+          This line could have significant implications for online security in
+          the future.
         </p>
       </div>
 
       <div id="person" class="person-bubble">
         <img src="../assets/sverre.png" alt="Bilde av Svaksynte Sverre." />
-        <h2>Svaksynte Sverre</h2>
+        <h2>Visually impaired Sven</h2>
         <div class="description">
           <p>
-            Svaksynte Sverre har den leie tilstanden Achromatopsia, som vil seie
-            at alt ser grått ut. Han har òg utruleg dårleg syn, så han har
-            skrudd font-størrelsen opp til 64 i nettlesaren sin. Dei som har
-            laga denne nettsida har nok ikkje tenkt så mykje på Sverre, så det
-            blir dykkar jobb å hjelpe til med å gjøre nettsida lesbar for han.
+            Visually impaired Sven has the challenging condition Achromatopsia,
+            which means that everything appears gray to him. He also has
+            incredibly poor vision, so he has increased the font size to 64 in
+            his web browser. Those who have created this website probably
+            haven't considered Sverre much, so please help make the website
+            readable for him.
           </p>
         </div>
         <button id="read-more-button" onclick="toggleReadMore()">
-          Les mer
+          Read more
         </button>
       </div>
     </div>
@@ -84,22 +85,22 @@
       <div class="section blog-text">
         <div>
           <p>
-            Web Authentication (Webauthn) kan nemleg freiste med ein trygg og
-            enkel påloggingsmekanisme og Safari på mobil (47% av
-            mobilnettlesarar i Noreg) har vore det siste store hinderet for at
-            ein kan ta det i bruk. Nå mangler berre Internet Explorer (kun 3% av
-            alle desktop-nettlesarar i Noreg) og Samsung internet (8% av
-            mobilnettlesarar i Noreg) før alle dei største nettlesarane er
-            kompatible med Webauthn, noko som vil seie at me bør ta det i bruk!
+            Web Authentication (WebAuthn) can indeed offer a secure and simple
+            login mechanism, and Safari on mobile (47% of mobile browsers in
+            Norway) has been the last major obstacle preventing its widespread
+            adoption. Now, only Internet Explorer (only 3% of all desktop
+            browsers in Norway) and Samsung Internet (8% of mobile browsers in
+            Norway) are missing before all the major browsers are compatible
+            with WebAuthn, which means that we should start using it!
           </p>
-          <h2>Så kva er Webauthn?</h2>
+          <h2>What is Webauthn?</h2>
           <p>
-            Webauthn er ein standard støtta av FIDO-alliansen (Fast IDentity
-            Online) og W3C. Den spesifiserer eit Javascript-API som nettlesarar
-            kan implementere. Dette APIet kan dermed brukes til registrering og
-            autentisering ved hjelp av ein FIDO-brikke eller biometri. Det linja
-            i release notesa betydde, var at Safari nå implementerer Webauthn
-            med biometrisk autentisering.
+            WebAuthn is a standard supported by the FIDO Alliance (Fast IDentity
+            Online) and W3C. It specifies a JavaScript API that web browsers can
+            implement. This API can thus be used for registration and
+            authentication using a FIDO token or biometrics. What the line in
+            the release notes meant was that Safari now implements WebAuthn with
+            biometric authentication.
           </p>
         </div>
         <img src="../assets/ball.svg" />
@@ -107,124 +108,125 @@
     </div>
 
     <div class="signup section">
-      <h2>Meld på nyhetsbrev</h2>
+      <h2>Subscribe to newsletter</h2>
       <div class="signup-email">
-        <label for="signup-email-input">Epost</label>
+        <label for="signup-email-input">E-mail</label>
         <input type="email" id="signup-email-input" />
       </div>
       <button type="submit" id="signup-submit" class="button" disabled>
-        Send inn
+        Subscribe
       </button>
     </div>
 
     <div class="how-to-test section">
       <div class="tasks">
-        <h2>Ting de kan teste</h2>
+        <h2>Things you can test</h2>
         <div>
-          <h3>Fontstørrelse</h3>
-          WCAG 2.1 har eit krav om at ein skal kunne zoome inn sida 400% på ein
-          1280x1024-skjerm. Dvs. 100% zoom i 320x256 piksler. Uten tap av
-          informasjon eller scrolling i to dimensjoner. Dette er ein fin
-          minstegrense å jobbe mot.
+          <h3>Font Size</h3>
+          WCAG 2.1 requires that a page should be zoomable up to 400% on a
+          1280x1024 screen. That is 100% zoom at 320x256 pixels. Without loss of
+          information or scrolling in two dimensions. This is a good minimum
+          requirement to work towards.
           <ul>
             <li>
-              Zoom nettsida inn til 400%. Korleis ser sida ut? Må du skrolle til
-              høgre for å få med deg alt?
+              Zoom the webpage to 400%. How does the page look? Do you need to
+              scroll right to see everything?
             </li>
             <li>
-              Skru fontstørrelsen opp til 64px i settings i nettlesaren din.
-              Bryr sida seg om det?
+              Increase the font size to 64px in your browser settings. Does the
+              page respond to it?
               <a href="hints/rem.html">Hint</a>
             </li>
             <li>
-              Korleis ser sida ut med stor skriftstørrelse og smal skjerm? Er
-              det masse unødvendig luft?
+              How does the page look with large font size and narrow screen? Is
+              there a lot of unnecessary space?
               <a href="hints/remOrPx.html">Hint</a>
             </li>
             <li>
-              Viss du hadde lese dette på ein iPhone og hadde satt iPhone-fonten
-              til 64, så ville den sannsynlegvis ikkje brydd seg om fonten din.
+              If you were reading this on an iPhone and had set the iPhone font
+              to 64, it probably wouldn't care about your font.
               <a href="hints/iphones.html">Hint</a>
             </li>
           </ul>
-          <h3>Fargeblindhet</h3>
-          Det finnes mange kjekke verktøy for å simulere fargeblindhet. Eg liker
+
+          <h3>Color Blindness</h3>
+          There are many useful tools for simulating color blindness. I like
           <a
             href="https://wearecolorblind.com/resources/colorblindly-colorblindness-simulator/"
             >Colorblindly</a
           >
-          som er ein Chrome-extension der du kan velge mellom forskjellige
-          fargeblindheter og så viser den sida som om du er f.eks. raud-grøn
-          fargeblind.
+          which is a Chrome extension where you can choose between different
+          types of color blindness and then it shows the page as if you were,
+          for example, red-green color blind.
           <ul>
             <li>
-              Skru på fargeblindhet i nettlesaren din og klikk litt rundt på
-              lenker. Kan du lese dei? Kva med etter at dei er lese? Kva med
-              hover?
+              Turn on color blindness in your browser and click around on links.
+              Can you read them? What about after they are visited? What about
+              on hover?
               <a href="hints/wave.html">Hint</a>
             </li>
             <li>
-              Korleis ser ein med raud-grøn fargeblindhet om han kan trykke på
-              meld på nyhetsbrev-knappen?
+              How does someone with red-green color blindness see if they can
+              press the sign up for newsletter button?
               <a href="hints/only-change-colors.html">Hint</a>
             </li>
           </ul>
 
-          <h3>Lesbarhet</h3>
-          Disse spørsmåla har ikkje noko fasitsvar og det er ikkje sikkert dei
-          faktisk er feil, men dei er verdt å stille og tenke over likevel.
+          <h3>Readability</h3>
+          These questions do not have definitive answers, and they may not
+          actually be wrong, but they are worth asking and considering
+          nonetheless.
           <ul>
             <li>
-              Korleis er fokusmarkeringa på inputfeltet? Er den tydeleg nok for
-              folk med dårleg syn? Kva med fokusmarkeringa på lenkene? Er den
-              bra på alle bakgrunner?
+              How is the focus highlighting on the input field? Is it clear
+              enough for people with poor vision? What about the focus
+              highlighting on the links? Is it good on all backgrounds?
             </li>
-            <li>
-              Er avstanden mellom bokstavene bra nok? Kva med linjeavstand?
-            </li>
+            <li>Is the letter spacing adequate? What about line spacing?</li>
           </ul>
         </div>
       </div>
 
       <div class="tasks">
-        <h2>Relevante krav</h2>
+        <h2>Relevant Requirements</h2>
         <div>
           <ul>
             <li>
-              1.4.3 - Kontrastforholdet mellom teksten og bakgrunnen er minst
-              4,5:1.
+              1.4.3 - The contrast ratio between text and background is at least
+              4.5:1.
             </li>
             <li>
-              1.44 - Tekst kan bli endret til 200 % størrelse uten tap av
-              innhold eller funksjon.
+              1.44 - Text can be resized to 200% without loss of content or
+              function.
             </li>
             <li>
-              2.4.7 - Sørg for at alt innhold får synlig fokus når du navigerer
-              med tastatur.
+              2.4.7 - Ensure all content receives visible focus when navigating
+              with the keyboard.
             </li>
             <li>
-              1.3.4 - Brukeren må få velge om innholdet skal vises i liggende
-              eller stående retning.
+              1.3.4 - Users must be able to choose whether the content is
+              displayed in landscape or portrait orientation.
             </li>
             <li>
-              1.4.10 - Innhold skal kunne endres til 400 prosent størrelse ved
-              1280 piksler bredde, uten tap av informasjon eller funksjonalitet.
+              1.4.10 - Content should be able to be resized to 400 percent size
+              at 1280 pixels width, without loss of information or
+              functionality.
             </li>
             <li>
-              1.4.11 - Ikke-tekstlig innhold skal ha et kontrastforhold på minst
-              3:1 mot farge(r) som ligger ved siden av.
+              1.4.11 - Non-text content should have a contrast ratio of at least
+              3:1 against adjacent color(s).
             </li>
             <li>
-              1.4.12 - Tekstavstanden skal kunne overstyres for å gjøre teksten
-              lettere å lese.
+              1.4.12 - Text spacing should be able to be overridden to make the
+              text easier to read.
             </li>
             <li>
-              1.4.13 - Brukeren skal ha mer kontroll over innholdet på nettsiden
-              som får fokus med musepeker eller tastatur.
+              1.4.13 - Users should have more control over the content on the
+              website that receives focus with a mouse pointer or keyboard.
             </li>
             <li>
-              2.5.2 - Uheldige og feilaktige input via mus eller berøringsskjerm
-              skal lettere kunne forhindres.
+              2.5.2 - Unintended and erroneous input via mouse or touchscreen
+              should be more easily prevented.
             </li>
           </ul>
         </div>

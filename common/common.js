@@ -4,10 +4,10 @@ function toggleReadMore() {
 
   if (element.classList.contains("person-read-more")) {
     element.classList.remove("person-read-more");
-    button.innerHTML = "Les mer";
+    button.innerHTML = "Read more";
   } else {
     element.classList.add("person-read-more");
-    button.innerHTML = "Les mindre";
+    button.innerHTML = "Read less";
   }
 }
 

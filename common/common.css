@@ -32,8 +32,8 @@ html {
 }
 
 .person-bubble {
-  width: 19rem;
-  height: 19rem;
+  width: 15rem;
+  height: 15rem;
   background-color: white;
   border-radius: 100%;
   color: black;
@@ -43,10 +43,13 @@ html {
   justify-content: center;
   gap: 0.5rem;
   font-family: "Inter";
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .person-bubble > img {
-  max-width: 80px;
+  max-width: 3rem;
 }
 
 .person-bubble > h2 {
@@ -74,9 +77,13 @@ html {
 }
 
 .person-read-more {
-  width: 30rem;
-  height: 30rem;
+  width: 32rem;
+  height: 32rem;
   border: 3px solid #ee3a64;
+}
+
+.person-read-more > img {
+  max-width: 6rem;
 }
 
 .person-read-more > .description {
@@ -111,6 +118,10 @@ html {
   font-size: 1rem;
   margin: 2rem 0 0.5rem 0;
   font-family: "Roboto", sans-serif;
+}
+
+.tasks ul {
+  padding-left: 1rem;
 }
 
 .tasks li {
