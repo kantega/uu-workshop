@@ -9,18 +9,29 @@
     <p>
       One cannot rely solely on color to convey information. Text or icons
       should also be used for explanation. Perhaps you could change the mouse
-      pointer to 'not-allowed'? By setting <code>cursor: not-allowed</code> on
-      <code>button:disabled</code> in the CSS, the mouse pointer will change
-      when hovering over a disabled button.
+      pointer to <code>not-allowed</code>? By setting
+    </p>
+    <pre>
+      <code>
+        button:disabled {
+          cursor: not-allowed;
+        }
+      </code> 
+    </pre>
+    <p>
+      in the CSS, the mouse pointer will change when hovering over a disabled
+      button.
     </p>
     <p>
       With a bit more work, you could make the tooltip display an error message
       when hovering over the button - "You must enter an email address to
       submit". But this is a lot of effort for a solution that is still not
       universally designed, as a screen reader will not be able to highlight a
-      disabled button and will therefore never display the error message. What
-      you should do is to let the button remain enabled, but display the error
-      message when it is clicked.
+      disabled button and will therefore never display the error message.
+    </p>
+    <p>
+      What you should do is to let the button remain enabled, but display the
+      error message when it is clicked.
     </p>
   </body>
 </html>
