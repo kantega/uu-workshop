@@ -4,7 +4,6 @@ html {
 
 .blind-page {
   margin: 10px 160px;
-  font-family: "Roboto Light", sans-serif;
 }
 
 h1 {
@@ -117,7 +116,7 @@ h3 {
 .button {
   margin: 1rem auto 0;
   padding: 1.25rem;
-  background-color: #896CA7;
+  background-color: #896ca7;
   color: white;
   border: none;
   border-radius: 8px;
@@ -163,4 +162,14 @@ footer {
   padding-top: 5rem;
   justify-content: center;
   grid-gap: 0.3rem;
+}
+
+.tasks {
+  background-color: #e4eaf9;
+}
+
+.info-content {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }

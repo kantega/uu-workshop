@@ -63,7 +63,7 @@
       <h2>Blind Bethany</h2>
       <div class="description">
         <p>
-          Blind Betina uses a screen reader to navigate websites. She is trying
+          Blind Bethany uses a screen reader to navigate websites. She is trying
           to use this site to buy a rocket. Unfortunately, the site contains
           some of the most common errors that can hinder keyboard navigation.
         </p>
@@ -110,12 +110,33 @@
     </button>
 
     <div class="screen-readers hideable hidden">
-      <h2 id="screen-reader-header">Korleis bruke skjermlesere</h2>
-      <div class="hideable-content">
-        Det kan vera ein idé å prøve ut skjermlesernavigasjon sjølv. Eg vil
-        anbefale dykk å finne ut både korleis de skrur skjermleser på
-        <b>og av</b>. Det blir masse prat.
+      <h2 id="screen-reader-header">rakett</h2>
+      <div class="hideable-content">jepp</div>
+    </div>
 
+    <div class="how-to-test hideable hidden">
+      <h2 id="how-to-test-header">heihei</h2>
+      <div class="hideable-content">yeye</div>
+    </div>
+
+    <div class="notes hideable hidden">
+      <h2 id="notes-header">Jojo</h2>
+      <div class="hideable-content">hei</div>
+    </div>
+
+    <div class="criteria hideable hidden">
+      <h2 id="criteria-header">hmm</h2>
+      <div class="hideable-content">??</div>
+    </div>
+
+    <div class="info-content">
+      <div class="tasks">
+        <h2>How to Use Screen Readers</h2>
+        <p>
+          It may be a good idea to try out screen reader navigation yourself. I
+          would recommend figuring out how to both turn on
+          <b>and off</b> the screen reader. There's a lot of talking.
+        </p>
         <h3>Mac</h3>
         <ul>
           <li>
@@ -126,240 +147,214 @@
           <li>
             <a
               href="https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts#:~:text=Command%20%2B%20F5%20starts%20the%20VoiceOver,as%20VO%20in%20the%20tables."
-            >
-              Keyboard shortcuts for VoiceOver</a
+              >Keyboard shortcuts for VoiceOver</a
             >
           </li>
         </ul>
-
         <h3>Windows</h3>
         <ul>
-          <li>Du skrur Narrator av og på ved å trykke Windows+Ctrl+Enter</li>
+          <li>You turn Narrator on and off by pressing Windows+Ctrl+Enter</li>
           <li>
             <a
               href="https://support.microsoft.com/en-us/windows/appendix-b-narrator-keyboard-commands-and-touch-gestures-8bdab3f4-b3e9-4554-7f28-8b15bd37410a"
-            >
-              Keyboard shortcuts for Narrator</a
+              >Keyboard shortcuts for Narrator</a
             >
           </li>
         </ul>
-
         <h3>Linux</h3>
         <ul>
           <li>🤷</li>
         </ul>
       </div>
-    </div>
 
-    <div class="how-to-test hideable hidden">
-      <h2 id="how-to-test-header">Ting de kan teste</h2>
-      <div class="hideable-content">
-        <h3>Navigasjon og oversikt</h3>
-        Sjåande opner sida og får ein viss oversikt med ein gong. Brukarar av
-        skjermlesarar kan bruke hurtigtaster for å lese kjapt over headere,
-        eller hovedseksjoner.
+      <div class="tasks">
+        <h2>Notes</h2>
+        <p>
+          Various notes about things that don't fit quite well into a separate
+          task. Perhaps just include this in the summary?
+        </p>
+        <h3>WAI-ARIA</h3>
+        <p>
+          Web Accessibility Initiative - Accessible Rich Internet Applications,
+          or just Aria, is a set of attributes you can add to your HTML tags to
+          provide information to the Accessibility API (which is what screen
+          readers use).
+        </p>
+        <p>
+          These are powerful tools that should be used where needed.
+          <b>However</b>, they should be used where needed and not just added to
+          be on the safe side. Ideally, you should write semantic HTML so that
+          they are not needed, but in certain cases, you will need to use them.
+          Having many ARIA attributes in the code is actually a code smell, as
+          it indicates that you need to use ARIA to try to fix problems instead
+          of writing good HTML.
+        </p>
+        <h4>Aria-hidden</h4>
+        <p>
+          Aria-hidden is an example of this. The attribute is often added to all
+          hidden elements just to be on the safe side, but it is not needed if
+          the element is hidden using <code>display: none</code>,
+          <code>visibility: hidden</code>, or the HTML
+          <code>hidden</code> attribute. Adding
+          <code>aria-hidden: true</code> in these cases provides no additional
+          information to the screen reader, but it increases the likelihood of
+          errors if, for example, <code>visibility: visible</code> is set
+          without setting <code>aria-hidden: false</code>.
+        </p>
+        <h3>Semantic HTML</h3>
+        <h4>h-tags</h4>
+        <p>
+          h1/h2/h3/h4/h5/h6 tags must follow the structure. If your parent is an
+          h1, then you should be an h2, even if the design may suggest that you
+          should look like an h3. Here you must first set up the semantic
+          structure, and then you can style afterwards. Designers must also
+          consider this ;)
+        </p>
+      </div>
+
+      <div class="tasks">
+        <h2>Things to Test</h2>
+        <h3>Navigation and Overview</h3>
+        <p>
+          Sighted users open the page and get an overview right away. Screen
+          reader users can use shortcuts to quickly read headers or main
+          sections.
+        </p>
         <ul>
           <li>
-            Når de opner sida med skjermleser er noko av det første som blir
-            sagt: "Title". Kvifor?
-            <a href="hints/title.html">Hint</a>
+            When you open the page with a screen reader, one of the first things
+            said is: "Title". Why? <a href="hints/title.html">Hint</a>
           </li>
           <li>
-            Prøv å få oversikt over sida ved å navigere via landmarks eller
-            headings.
-            <a href="hints/navigation.html">Hint</a>
+            Try to get an overview of the page by navigating via landmarks or
+            headings. <a href="hints/navigation.html">Hint</a>
           </li>
           <li>
-            Klarer de opne "Ting de kan teste" ved hjelp av ein skjermleser?
+            Can you open "Things to Test" using a screen reader?
             <a href="hints/non-semantic-click-events.html">Hint</a>
           </li>
           <li>
-            Opne kjøp-modalen. Ein sjåande vil ha konteksten med "Betalings- og
-            leveringsinfo for raketten, men får Betina noko kontekst frå
-            skjermleseren?
-            <a href="hints/modal.html">Hint</a>
+            Open the purchase modal. A sighted user will have context with
+            "Payment and delivery info for the rocket," but does Bethany get any
+            context from the screen reader? <a href="hints/modal.html">Hint</a>
           </li>
           <li>
-            Opne modalen og tab deg rundt. Kan markøren forlate modalen?
+            Open the modal and tab around. Can the cursor leave the modal?
             <a href="hints/tab-capture.html">Hint</a>
           </li>
           <li>
-            Prøv å lukke modalen uten å kjøpe.
+            Try to close the modal without purchasing.
             <a href="hints/close-button.html">Hint</a>
           </li>
         </ul>
-
-        <h3>Interagering</h3>
+        <h3>Interaction</h3>
         <ul>
           <li>
-            Tab deg gjennom input-felta i modalen. Korleis kan du vite kva du
-            skal skrive i kva felt?
-            <a href="hints/labels.html">Hint</a>
+            Tab through the input fields in the modal. How do you know what to
+            write in each field? <a href="hints/labels.html">Hint</a>
           </li>
           <li>
-            Korleis kan ein blind person få vite at "navn" er påkrevd?
+            How can a blind person know that "name" is required?
             <a href="hints/required.html">Hint</a>
           </li>
           <li>
-            Trykk kjøp uten å fylle noko ut, sånn at du får ein valideringsfeil.
-            Korleis finn du ut av dette vha. ein skjermleser?
+            Click buy without filling anything out, so you get a validation
+            error. How do you find out about this using a screen reader?
             <a href="hints/aria-live.html">Hint</a>
           </li>
           <li>
-            Usikker på kva ein kan teste for å få fram dette her, men bør vera
-            noko om forms.
-            <a href="hints/forms.html">Hint</a>
+            Not sure what to test to bring this up, but it should be related to
+            forms. <a href="hints/forms.html">Hint</a>
           </li>
           <li>
-            Greitt nok, progressbaren er ganske teit i dette tilfellet her, men
-            ein har det i mange andre tilfeller så bear with me. Korleis vil ein
-            skjermleser lese progressbaren og vil den klare å få noko
-            informasjon ut av den?
-            <a href="hints/progressbar.html">Hint</a>
+            Okay, the progress bar is pretty pointless in this case, but it's
+            used in many other cases so bear with me. How will a screen reader
+            read the progress bar and will it be able to get any information
+            from it? <a href="hints/progressbar.html">Hint</a>
           </li>
         </ul>
-
-        <h3>Lesing og bilete</h3>
+        <h3>Reading and Images</h3>
         <ul>
           <li>
-            Tab deg gjennom bileta. Kva informasjon får du?
+            Tab through the images. What information do you get?
             <a href="hints/alt.html">Hint</a>
           </li>
           <li>
-            Treng ein blind person egentleg informasjon om kantega-dæsjen på
-            høgresida?
-            <a href="hints/aria-hidden.html">Hint</a>
+            Does a blind person really need information about the corner dash on
+            the right side? <a href="hints/aria-hidden.html">Hint</a>
           </li>
           <li>
-            <p>
-              <span>Korleis blir denne setninga </span>
-              <span>lese av skjermlesaren på ein Mac?</span>
-              <a href="hints/role-text.html">Hint</a>
-            </p>
+            How will this sentence be read by the screen reader on a Mac?
+            <a href="hints/role-text.html">Hint</a>
           </li>
           <li>
-            Har de fått fiksa det førre liste-punktet? Klarer skjermlesaren
-            skjønne at hintet er ei lenke?
+            Have you fixed the previous list item? Can the screen reader
+            understand that the hint is a link?
             <a href="hints/role-text-issues.html">Hint</a>
           </li>
         </ul>
       </div>
-    </div>
 
-    <div class="notes hideable hidden">
-      <h2 id="notes-header">Notater</h2>
-      <div class="hideable-content">
-        Diverse notater om ting som ikkje passer heilt inn i ein egen oppgåve.
-        Kanskje berre ta dette i samandraget?
-        <h3>WAI-ARIA</h3>
-        <p>
-          Web Accessibility Initiative - Accessible Rich Internet Applications,
-          eller berre Aria, er ein samling med attributter du kan legge på
-          html-taggene dine for å gi informasjon til Accessibility APIet (som er
-          det skjermlesere bruker).
-        </p>
-
-        <p>
-          Disse er kraftige verktøy som bør brukes der dei trengs.
-          <b>Men</b> dei skal brukes der dei trengs og ikkje berre slenges på
-          for å vera på den sikre sida. Ein skal helst skrive semantisk html
-          sånn at dei ikkje trengs, men i visse tilfeller vil ein måtte bruke
-          dei. Å ha mange aria-attributter i koden er egentleg ein code smell,
-          då det tyder på at ein må bruke aria for å prøve å fikse problemer i
-          staden for å skrive god html.
-        </p>
-
-        <h4>Aria-hidden</h4>
-        <p>
-          Aria-hidden er eit eksempel på det. Attributten blir ofte lagt på alle
-          gøymde element, sånn for å vera på den sikre sida, men det trengs
-          ikkje viss elementet er skjult vha. <code>display: none</code>,
-          <code>visibility: hidden</code> eller html sin
-          <code>hidden</code>-attributt. Legg ein til
-          <code>aria-hidden: true</code> i disse tilfella, så gir du ingen
-          ekstra informasjon til skjermleseren, men du auker sannsynlegheita for
-          feil ved at ein f.eks. sett <code>visibility: visible</code> uten å
-          sette <code>aria-hidden: false</code>.
-        </p>
-
-        <h3>Semantisk HTML</h3>
-        <h4>h-tags</h4>
-        <p>
-          h1/h2/h3/h4/h5/h6 må følge strukturen. Er forelderen din ein h1 så
-          skal du vera ein h2, sjølv om designet kanskje tilseier at du skal sjå
-          ut som ein h3. Her må de først sette opp den semantiske strukturen, så
-          kan de style etterpå. Dette må designere tenke på òg ;)
-        </p>
-      </div>
-    </div>
-
-    <div class="criteria hideable hidden">
-      <h2 id="criteria-header">Relevante krav</h2>
-      <div class="hideable-content">
+      <div class="tasks">
+        <h2>Relevant Requirements</h2>
         <ul>
           <li>
-            1.1.1 - Gi brukeren et tekstalternativ for innhold som ikke er
-            tekst.
+            1.1.1 - Provide users with a text alternative for non-text content.
           </li>
-          <li>1.3.1 - Ting skal være kodet som det ser ut som.</li>
-          <li>1.3.2 - Presenter innhold i en meningsfull rekkefølge.</li>
+          <li>1.3.1 - Things should be coded as they appear.</li>
+          <li>1.3.2 - Present content in a meaningful sequence.</li>
           <li>
-            1.3.3 - Instruksjoner må ikke utelukkende være avhengige av form,
-            størrelse, visuell plassering, orientering, eller lyd for å kunne
-            bli forstått.
+            1.3.3 - Instructions must not rely solely on shape, size, visual
+            location, orientation, or sound to be understood.
           </li>
-          <li>1.3.5 - Skjemaelementer er kodet med inndataformål.</li>
+          <li>1.3.5 - Form elements are coded with input purpose.</li>
+          <li>1.4.1 - Do not use presentation that relies solely on color.</li>
+          <li>1.4.5 - Use text instead of images of text.</li>
+          <li>2.1.1 - All functionality must be operable via keyboard only.</li>
+          <li>2.1.2 - Avoid keyboard traps.</li>
           <li>
-            1.4.1 - Ikke bruk presentasjon som bygger utelukkende på farge.
+            2.4.1 - Provide users with the ability to skip directly to main
+            content.
           </li>
-          <li>1.4.5 - Bruk tekst i stedet for bilder av tekst.</li>
+          <li>2.4.2 - Use helpful and clear page titles.</li>
+          <li>2.4.3 - Present content in a logical sequence (focus order).</li>
           <li>
-            2.1.1 - All funksjonalitet skal kunne brukes kun ved hjelp av
-            tastatur.
+            2.4.4 - Clearly indicate the target and function of all links in the
+            link text.
           </li>
-          <li>2.1.2 - Unngå tastaturfeller.</li>
+          <li>2.4.6 - Ensure that labels and headings are descriptive.</li>
           <li>
-            2.4.1 - Gi brukeren mulighet til å hoppe direkte til hovedinnholdet.
-          </li>
-          <li>2.4.2 - Bruk nyttige og tydelige sidetitler.</li>
-          <li>
-            2.4.3 - Presenter innholdet i en logisk rekkefølge (fokusrekkefølge)
-          </li>
-          <li>
-            2.4.4 - Alle lenkers mål og funksjon fremgår tydelig av
-            lenketeksten.
+            3.1.1 - Ensure that the language of content on all web pages is
+            specified in the code.
           </li>
           <li>
-            2.4.6 - Sørg for at ledetekster og overskrifter er beskrivende.
+            3.1.2 - Ensure that all parts of content that are in a language
+            different from the rest of the page are marked in the code.
           </li>
           <li>
-            3.1.1 - Sørg for at språket til innholdet på alle nettsider er
-            angitt i koden.
+            3.3.1 - For errors detected automatically, show where the error
+            occurred and provide a text description of the error.
           </li>
           <li>
-            3.1.2 - Sørg for at alle deler av innholdet som er på et annet språk
-            enn resten av siden er markert i koden.
+            3.3.2 - Display labels or instructions when form elements need to be
+            filled out.
           </li>
           <li>
-            3.3.1 - For feil som oppdages automatisk må du vise hvor feilen har
-            oppstått og gi en tekstbeskrivelse av feilen.
+            4.1.2 - All components have name and role determined in the code.
           </li>
           <li>
-            3.3.2 - Det vises ledetekster eller instruksjoner når du har
-            skjemaelementer som må fylles ut.
-          </li>
-          <li>4.1.2 - Alle komponenter har navn og rolle bestemt i koden.</li>
-          <li>
-            4.1.3 - Brukeren skal få statusbeskjeder om viktige endringer på
-            nettsiden uten at det gir kontekstendring.
+            4.1.3 - Users should receive status messages about important changes
+            on the website without causing a change in context.
           </li>
         </ul>
       </div>
     </div>
+
     <footer>
       Illustrasjon av
       <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a>
       fra <a href="https://icons8.com/illustrations">Ouch!</a>
     </footer>
+    <img class="k" src="../assets/K.svg" />
   </body>
 </html>

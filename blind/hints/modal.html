@@ -2,18 +2,19 @@
 <html lang="nn">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="/hints.css" />
+    <link rel="stylesheet" type="text/css" href="../../common/common.css" />
     <title>Modal</title>
   </head>
-  <body>
-    Det første som må gjøres er at de må fortelle skjermlesaren at du er i ein
-    modal. Det kan gjøres enten ved å bytte ut div-en med
-    <code>dialog</code>-elementet, eller ved å gi div-en ein rolle:
-    <code>role="dialog"</code>. Viss de då opner dialogen, så vil de få
-    mogelegheit til å lese innholdet i modalen, siden skjermleseren veit kva som
-    er ein del av det opne innholdet. Viss de i tillegg legg til
-    <code>aria-labelledby="modal-header"</code>, så vil skjermleseren lese
-    labelen før den starter med å lese input-feltet. Ein kan òg bruke
-    <code>aria-describedby</code> viss det er ein slags ingress i modalen.
+  <body class="hint">
+    The first thing you need to do is to inform the screen reader that you are
+    in a modal. This can be done either by replacing the
+    <code>div</code> with the <code>dialog</code> element, or by giving the
+    <code>div</code> a role attribute: <code>role="dialog"</code>. If you then
+    open the dialog, you will have the opportunity to read the contents of the
+    modal, as the screen reader knows what is part of the open content.
+    Additionally, if you add <code>aria-labelledby="modal-header"</code>, the
+    screen reader will read the label before starting to read the input field.
+    You can also use <code>aria-describedby</code> if there is some kind of
+    introduction in the modal.
   </body>
 </html>

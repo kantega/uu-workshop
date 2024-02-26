@@ -2,42 +2,40 @@
 <html lang="nn">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="/hints.css" />
+    <link rel="stylesheet" type="text/css" href="../../common/common.css" />
     <title>Alt</title>
   </head>
-  <body>
+  <body class="hint">
     <p>
-      Alle bilete må ha ein alt-tag! Denne skal ikkje naudsynt vera ei skildring
-      av biletet, men heller eit substitutt for det.
+      All images must have an <code>alt</code> attribute! This should not
+      necessarily be a description of the image, but rather a substitute for it.
     </p>
 
     <p>
-      F.eks: Viss biletet er eit ansikt som enten er glad eller leit basert på
-      input, så vil skildringene "Jippi! Så bra input!" og "Æsj, det var dum
-      input." potensielt vera betre skildringer enn "Smilefjes" og "Gråtefjes".
+      For example: If the image is a face that is either happy or sad based on
+      input, descriptions like "Yay! Great input!" and "Ew, that was bad input."
+      might potentially be better descriptions than "Smiley face" and "Sad
+      face."
     </p>
     <p>
-      Viss biletet berre er der av stilistiske grunner, som ein krusedull som
-      skiller to paragrafer eller ei pil som viser kva retning du skal lese, så
-      kan du ha ein tom alt-tag for å vise at dette biletet ikkje gir noko meir
-      info til leseren. Det er ingen grunn til å tvinge brukaren til å høyre på
-      masse tekst som ikkje hjelper hen framover.
+      If the image is only there for stylistic reasons, such as a doodle
+      separating two paragraphs or an arrow indicating the direction to read,
+      you can use an empty alt attribute to indicate that this image does not
+      provide any additional information to the reader. There is no reason to
+      force the user to listen to a lot of text that does not help them move
+      forward.
     </p>
     <p>
-      Ein inline svg kan ikkje ha ein alt-tag, så her må du gjere bittelitt meir
-      jobb. For å gi skjermleseren meir info om ein svg, må du legge inn:
+      Inline SVGs does not have alt attribute, so for them you can add an
+      aria-label instead:
       <code>
         <pre>
-&lt;svg aria-describedby="svg-title"&gt;
-  &lt;title id="svg-title"&gt;Skildring av svg-en&lt;/title&gt;
+&lt;svg aria-label="Description of the SVG"&gt;
   ...
 &lt;/svg&gt;
-	</pre
+			</pre
         >
       </code>
-      (I følge speccen skal det fungere med berre ein title-tag, men
-      aria-describedby sørger for at det fungerer for folk med gammelt oppsett
-      òg.)
     </p>
   </body>
 </html>

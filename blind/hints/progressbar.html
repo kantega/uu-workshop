@@ -2,19 +2,20 @@
 <html lang="nn">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="/hints.css" />
+    <link rel="stylesheet" type="text/css" href="../../common/common.css" />
     <title>Progressbar</title>
   </head>
-  <body>
-    Progressbaren har ikkje ein egen semantisk tag, men den har ei rolle som kan
-    brukes. Viss du gir diven- <code>role="progressbar"</code> vil den kunne
-    leses av skjermleseren. Her vil ein òg kunne bruke aria-attributter for å gi
-    meir informasjon.
-    <code> aria-valuemin="0" aria-valuemax="3" aria-valuenow="1"</code> vil
-    gjøre at skjermleseren les noko ala
-    <blockquote>"33 percent progressbar"</blockquote>
-    . Viss de i tillegg legg til
-    <code>aria-labelledby="progress-label"</code> vil den lese
-    <blockquote>"Framgang - 33 percent progressbar"</blockquote>
+  <body class="hint">
+    Progress bars don't have their own semantic tag, but they have a role that
+    can be used. If you give the div a <code>role="progressbar"</code>, it will
+    be readable by the screen reader. Here, you can also use ARIA attributes to
+    provide more information.
+    <code>aria-valuemin="0" aria-valuemax="3" aria-valuenow="1"</code> will make
+    the screen reader read something like
+    <blockquote>"33 percent progress bar"</blockquote>
+    . Additionally, if you add <code>aria-labelledby="progress-label"</code>, it
+    will read
+    <blockquote>"Progress - 33 percent progress bar"</blockquote>
+    .
   </body>
 </html>

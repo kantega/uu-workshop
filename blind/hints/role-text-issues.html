@@ -2,15 +2,16 @@
 <html lang="nn">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="/hints.css" />
+    <link rel="stylesheet" type="text/css" href="../../common/common.css" />
     <title>Role-text-issue</title>
   </head>
-  <body>
-    Role="text" skal ikkje brukes rundt fokuserbare element (knapper, lenker,
-    osb.). Då vil ikkje skjermlesaren klare å annonsere at lenka er ei lenke.
+  <body class="hint">
+    <code>role="text"</code> should not contain focusable elements (buttons,
+    links, etc.). Otherwise, the screen reader will not be able to announce that
+    the link is a link.
 
     <a href="https://dequeuniversity.com/rules/axe/4.3/aria-text"
-      >https://dequeuniversity.com/rules/axe/4.3/aria-text</a
+      >Read more about role text and focusable elements</a
     >
   </body>
 </html>

@@ -2,44 +2,44 @@
 <html lang="nn">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="/hints.css" />
+    <link rel="stylesheet" type="text/css" href="../../common/common.css" />
     <title>Tab capture</title>
   </head>
-  <body>
-    Du må fange markøren inne i modalen. F.eks. så kan du lage ein eventlistener
-    som lytter på tab og flytter fokus opp til øverste element når det forlater
-    siste element. Viss de vil slippe å skrive ei fokusfelle sjølv, kan de bruke
-    denne her:
-    <pre>
-// Run trapFocus on a modal that you want to trap focus within.
-// Shamelessly stolen from https://hidde.blog/using-javascript-to-trap-focus-in-an-element/
-function trapFocus(element) {
-  var focusableEls = element.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])');
-  var firstFocusableEl = focusableEls[0];
-  var lastFocusableEl = focusableEls[focusableEls.length - 1];
-  var KEYCODE_TAB = 9;
+  <body class="hint hint-wide">
+    You need to trap the focus inside the modal. For example, you can create an
+    event listener that listens for the Tab key and moves focus up to the top
+    element when it leaves the last element. If you want to avoid writing a
+    focus trap yourself, you can use this one:
 
-  element.addEventListener('keydown', function (e) {
-    var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+    <pre style="font-size: 0.8rem">
+        // Run trapFocus on a modal that you want to trap focus within.
+        // Shamelessly stolen from https://hidde.blog/using-javascript-to-trap-focus-in-an-element/
+        function trapFocus(element) {
+            var focusableEls = element.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])');
+            var firstFocusableEl = focusableEls[0];
+            var lastFocusableEl = focusableEls[focusableEls.length - 1];
+            var KEYCODE_TAB = 9;
 
-    if (!isTabPressed) {
-      return;
-    }
+            element.addEventListener('keydown', function (e) {
+                var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
 
-    if (e.shiftKey) /* shift + tab */ {
-      if (document.activeElement === firstFocusableEl) {
-        lastFocusableEl.focus();
-        e.preventDefault();
-      }
-    } else /* tab */ {
-      if (document.activeElement === lastFocusableEl) {
-        firstFocusableEl.focus();
-        e.preventDefault();
-      }
-    }
-  });
-}
-	</pre
-    >
+                if (!isTabPressed) {
+                    return;
+                }
+
+                if (e.shiftKey) /* shift + tab */ {
+                    if (document.activeElement === firstFocusableEl) {
+                        lastFocusableEl.focus();
+                        e.preventDefault();
+                    }
+                } else /* tab */ {
+                    if (document.activeElement === lastFocusableEl) {
+                        firstFocusableEl.focus();
+                        e.preventDefault();
+                    }
+                }
+            });
+        }
+    </pre>
   </body>
 </html>

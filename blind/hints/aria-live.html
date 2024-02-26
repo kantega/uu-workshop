@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="nn">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/hints.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../common/common.css" />
     <title>Aria-live</title>
-</head>
-<body>
-Ein skjermleser les inn alle element når den laster sida, så den får ikkje med seg viss eit element plutseleg blir
-populert, som ofte skjer med feilmeldinger.
-
-Aria-live er ein attributt du kan legge til på element som kan endre seg. aria-live="presentational" vil gjøre at
-skjermleseren les opp feilmeldingen når den oppstår.
-</body>
+  </head>
+  <body class="hint">
+    A screen reader reads all elements when the page loads, so it does not pick
+    up if an element suddenly appears, as often happens with error messages.
+    Aria-live is an attribute you can add to elements that may change.
+    <code>aria-live="polite"</code> will make the screen reader announce the
+    error message when it occurs.
+  </body>
 </html>
