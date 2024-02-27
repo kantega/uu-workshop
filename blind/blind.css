@@ -21,6 +21,10 @@ h3 {
   font-size: 20px;
 }
 
+.rocket-intro {
+  font-size: 1.1rem;
+}
+
 .modal-overlay {
   position: absolute;
   top: 0;
@@ -65,18 +69,24 @@ h3 {
 
 .progress {
   grid-area: progress;
-  margin-bottom: 10px;
+  margin-bottom: 2rem;
 }
 
-.progress span {
-  font-size: 0.75rem;
+.progress p {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 
 .progress-bar {
-  background-color: #27003d;
+  background-color: #896ca7;
   width: 0;
   height: 10px;
   transition: width 1s;
+  border-radius: 3px;
+}
+
+.modal-header {
+  font-family: "Quicksand", sans-serif;
 }
 
 .modal .button {
@@ -91,9 +101,6 @@ h3 {
 .modal-input label {
   display: block;
   font-size: 0.875rem;
-  font-weight: 500;
-  line-height: 1rem;
-  margin: 0 0.5rem;
 }
 
 .modal-input input {
@@ -108,8 +115,7 @@ h3 {
 }
 
 .validation-error {
-  color: red;
-  margin: 0 0.5rem;
+  color: #ee3a64;
   font-size: 0.875rem;
 }
 
@@ -119,9 +125,8 @@ h3 {
   background-color: #896ca7;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   font-family: "Inter";
-  text-align: center;
   font-size: 1rem;
 }
 
@@ -130,11 +135,19 @@ h3 {
 }
 
 .buy-button {
-  width: 75%;
+  width: 65%;
 }
 
 .person-bubble {
   background-color: #fff6f8;
+}
+
+.person-bubble > button {
+  background-color: #ffc3d1;
+}
+
+.person-bubble > button:hover {
+  background-color: #f38ba3;
 }
 
 .person-intro .side-by-side {
@@ -172,4 +185,13 @@ footer {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.rockets {
+  margin: 4rem 0;
+}
+
+.rocket-header {
+  font-size: 1.4rem;
+  font-weight: 400;
 }

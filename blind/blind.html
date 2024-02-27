@@ -29,7 +29,7 @@
     <div class="section intro">
       <div>
         <h1>Buy a rocket</h1>
-        <p class="blogg-intro">Here you can order great rockets!</p>
+        <p class="rocket-intro">Here you can order great rockets!</p>
       </div>
     </div>
 
@@ -81,23 +81,25 @@
     <div id="modal-overlay" class="modal-overlay">
       <div id="modal" class="modal">
         <div class="progress">
-          <span id="progress-label">Framgang: </span>
+          <p id="progress-label">Progress:</p>
           <div class="progress-bar" id="progress-bar"></div>
         </div>
-        <h2 id="modal-header">Betalings- og leveringsinfo for raketten</h2>
+        <h2 id="modal-header" class="modal-header">
+          Payment and delivery information for the rocket
+        </h2>
         <img src="rakett.png" width="994" height="855" />
         <p class="modal-input">
-          <label>Navn *</label>
+          <label>Name *</label>
           <input type="text" id="input-name" />
           <span id="validation-error-name" class="validation-error"></span>
         </p>
         <p class="modal-input">
-          <label>Adresse *</label>
+          <label>Address *</label>
           <input type="text" id="input-address" />
           <span id="validation-error-address" class="validation-error"></span>
         </p>
         <p class="modal-input">
-          <label>Epost *</label>
+          <label>Email *</label>
           <input type="text" id="input-email" />
           <span id="validation-error-email" class="validation-error"></span>
         </p>
@@ -106,7 +108,7 @@
     </div>
 
     <button class="button" onclick="showModal()">
-      Klikk her for å kjøpe ein rakett
+      Click here to buy a rocket
     </button>
 
     <div class="screen-readers hideable hidden">

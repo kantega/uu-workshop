@@ -68,12 +68,17 @@ html {
 
 .person-bubble > button {
   border: none;
-  background-color: transparent;
   font-family: "Inter";
-  font-size: 0.9rem;
-  text-decoration: underline;
-  text-underline-offset: 0.2rem;
-  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  padding: 0.3rem;
+  margin: 1rem 0 2rem 0;
+  border: none;
+  background-color: #e4eaf9;
+  border-radius: 3px;
+}
+
+.person-bubble > button:hover {
+  background-color: #c9d6f7;
 }
 
 .person-read-more {
