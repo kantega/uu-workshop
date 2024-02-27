@@ -6,7 +6,7 @@ html {
   margin: 10px 150px;
 }
 
-h1 {
+.h1 {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
   font-size: 55px;
@@ -155,18 +155,34 @@ h3 {
   height: 100%;
 }
 
+.hideable {
+  margin-bottom: 2rem;
+}
+
+.hideable > h2 {
+  font-weight: 400;
+}
+
+.hideable p {
+  margin-left: 1.5rem;
+}
+
+.rocket-info {
+  margin: 4rem 0 5rem 0;
+}
+
 .hidden.hideable .hideable-content {
   display: none;
 }
 
 .hidden.hideable h2::before {
   content: url("../assets/chevron-right.svg");
-  padding-right: 2px;
+  padding-right: 0.5rem;
 }
 
 .hideable h2::before {
   content: url("../assets/chevron-down.svg");
-  padding-right: 2px;
+  padding-right: 0.5rem;
 }
 
 footer {
