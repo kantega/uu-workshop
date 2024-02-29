@@ -193,10 +193,6 @@ footer {
   grid-gap: 0.3rem;
 }
 
-.tasks {
-  background-color: #e4eaf9;
-}
-
 .info-content {
   display: flex;
   gap: 1rem;

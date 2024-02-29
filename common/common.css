@@ -48,7 +48,7 @@ html {
   right: 40px;
 }
 
-.person-bubble > img {
+.person-bubble img {
   max-height: 7rem;
 }
 
@@ -70,7 +70,7 @@ html {
   font-family: "Inter";
   font-size: 0.8rem;
   padding: 0.3rem;
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 0;
   border: none;
   background-color: #e4eaf9;
   border-radius: 3px;
@@ -86,7 +86,7 @@ html {
   border: 3px solid #ee3a64;
 }
 
-.person-read-more > img {
+.person-read-more img {
   max-height: 11rem;
 }
 
@@ -123,6 +123,10 @@ html {
   color: black;
   padding: 3rem;
   max-width: 37rem;
+}
+
+.tasks-purple {
+  background-color: #e4eaf9;
 }
 
 .tasks > h2 {

@@ -3,128 +3,171 @@
   <head>
     <meta charset="UTF-8" />
     <title>Praktisk UU: Kognisjon</title>
+    <link rel="stylesheet" type="text/css" href="../common/common.css" />
     <link rel="stylesheet" type="text/css" href="cognition.css" />
     <script src="cognition.js" type="text/javascript"></script>
+    <script src="../common/common.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <nav class="nav">
-        <a class="link" href="../index.html">Hovedside</a>
-        <a class="link" href="../vision/vision.html">Svaksynt</a>
-        <a class="link" href="../blind/blind.html">Blind</a>
+      <nav class="nav-bar">
+        <a href="../vision/vision.html">Vision</a>
+        <a href="../blind/blind.html">Blind</a>
+        <p>Cognition</p>
+        <a href="../index.html">Main page</a>
       </nav>
-      <h1 class="title">Kognisjon</h1>
-    </header>
 
-    <section class="persons">
-      <img
-        class="person"
-        src="../assets/kari.png"
-        alt="Kari"
-      />
-      <img
-        class="person"
-        src="../assets/kryz.png"
-        alt="Kryzschek"
-      />
-      <img
-        class="person"
-        src="../assets/knut.png"
-        alt="Knut"
-      />
-    </section>
+      <h1 class="title">Order tickets</h1>
+      <p class="tickets-intro">
+        Order tickets now, your seats are reserved for some time.
+      </p>
+    </header>
 
     <main>
       <audio autoplay>
         <source src="audio.m4a" type="audio/mp4" />
         Your browser does not support the audio element.
       </audio>
-      <p>
-        Kognisjons-Kari jobber som vanleg som frontend-utvikler i eit større
-        norsk konsulentselskap, så ho ser på seg sjølv som ein rimeleg sterk
-        bruker. Men ho blei holdt vaken av eittåringen sin i fire timer i natt
-        og oppdaga plutseleg ein epost i outlooken sin der ho såg at ho må
-        fullføre denne greia før lunsj i dag, så ho er ikkje heilt der ho pleier
-        å vera. Då er det vanskeleg å tenke heilt klart. Denne sida kunne òg ha
-        handla om Kognisjons-Kryzschek, som slit med norsken eller Kognisjons-Knut 
-        som syns teknologi er vanskeleg.
-      </p>
+      <p></p>
 
-      <section class="timer-frame" id="timer-frame"">
-        <h2>Bestill billetter</h2>
-        <p class="timer">Reservert i <span id="seconds">10</span> sekunder</p>
+      <div id="person" class="person-bubble">
+        <div class="persons">
+          <img class="person" src="../assets/kari.png" alt="Kari" />
+          <img class="person" src="../assets/kryz.png" alt="Kryzschek" />
+          <img class="person" src="../assets/knut.png" alt="Knut" />
+        </div>
+        <h2>Cognition-Clara</h2>
+        <div class="description">
+          <p>
+            Cognition-Clara works as a frontend developer in a large Norwegian
+            consulting company, so she considers herself a reasonably strong
+            user. But she was kept awake by her one-year-old for four hours last
+            night and suddenly discovered an email in her Outlook where she saw
+            that she had to complete this thing before lunch today, so she's not
+            quite where she usually is. Then it's difficult to think completely
+            clearly.
+          </p>
+          <p>
+            This page could also have been about Cognition-Kryzschek who
+            struggles with Norwegian, or Cognition-Conrad who finds technology
+            difficult.
+          </p>
+        </div>
+        <button id="read-more-button" onclick="toggleReadMore()">
+          Read more
+        </button>
+      </div>
+
+      <section class="timer-frame" id="timer-frame">
+        <h2 class="form-title">Order tickets</h2>
+        <p class="timer">Reserved for <span id="seconds">10</span> seconds</p>
         <div class="form">
-          <input type="text" id="name" placeholder="Fornavn" required />
-          <input type="text" id="surname" placeholder="Etternavn" required />
-          <input type="email" id="email" placeholder="Epost" required pattern=".+@globex\.com"/>
-          <button onclick="orderTickets()"">Bestill</button>
+          <input type="text" id="name" placeholder="First name" required />
+          <input type="text" id="surname" placeholder="Last name" required />
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            required
+            pattern=".+@globex\.com"
+          />
+          <button onclick="orderTickets()">Bestill</button>
         </div>
         <p class="error" id="error">Noe er feil</p>
       </section>
       <p class="success" id="success">Billetter er bestilt!</p>
-      <button class="find-button" id="find-button" onclick="findTickets()">Finn billetter</button>
-
-      <section>
-      <h2>Relevante krav</h2>
-      <ul>
-        <li>
-          1.4.2 - Gi brukeren mulighet til å stoppe eller pause lyd som starter
-          automatisk.
-        </li>
-        <li>2.2.1 - Tidsbegrensninger skal kunne justeres av brukeren.</li>
-        <li>
-          2.2.2 - Gi brukeren mulighet til å stoppe, pause eller skjule innhold
-          som automatisk endrer seg.
-        </li>
-        <li>2.3.1 - Innhold skal ikke blinke mer enn tre ganger per sekund.</li>
-        <li>2.4.5 - Tilby brukeren flere måter å navigere på.</li>
-        <li>
-          3.2.1 - Når en komponent kommer i fokus medfører dette ikke automatisk
-          betydelige endringer i siden.
-        </li>
-        <li>
-          3.2.2 - Endring av verdien til et skjemafelt medfører ikke automatisk
-          betydelige endringer i siden.
-        </li>
-        <li>
-          3.2.3 - Navigasjonslinker som gjentas på flere sider skal ha en
-          konsekvent rekkefølge.
-        </li>
-        <li>
-          3.2.4 - Elementer som har samme funksjonalitet på tvers av flere sider
-          er utformet likt.
-        </li>
-        <li>
-          3.3.1 - For feil som oppdages automatisk må du vise hvor feilen har
-          oppstått og gi en tekstbeskrivelse av feilen.
-        </li>
-        <li>
-          3.3.3 - Dersom feil blir oppdaget automatisk, gi brukeren et forslag
-          til hvordan feilen kan rettes.
-        </li>
-        <li>
-          2.5.3 - Brukere som bruker visuelle ledetekster skal også kunne bruke
-          kodede ledetekster.
-        </li>
-        <li><a href="https://www.y-oslo.com/">Eksempel på innhold som flytter seg</a></li>
-      </ul>
-    </section>
-
+      <button
+        class="find-button button"
+        id="find-button"
+        onclick="findTickets()"
+      >
+        Finn billetter
+      </button>
 
       <iframe
         src="https://giphy.com/embed/qhepNcb0L83PG"
         width="480"
         height="320"
-        frameborder="0"
         class="gif"
       ></iframe>
 
-
+      <section class="tasks tasks-purple">
+        <h2>Relevant requirements</h2>
+        <ul>
+          <li>
+            1.4.2 - Provide the user with the ability to stop or pause audio
+            that starts automatically.
+          </li>
+          <li>2.2.1 - The user should be able to adjust time limits.</li>
+          <li>
+            2.2.2 - Give the user the ability to stop, pause, or hide content
+            that automatically changes.
+          </li>
+          <li>
+            2.3.1 - Content should not flash more than three times per second.
+          </li>
+          <li>2.4.5 - Offer the user multiple ways to navigate.</li>
+          <li>
+            3.2.1 - Focusing on a component should not automatically trigger
+            significant changes on the page.
+          </li>
+          <li>
+            3.2.2 - Changing the value of a form field should not automatically
+            trigger significant changes on the page.
+          </li>
+          <li>
+            3.2.3 - Navigation links repeated on multiple pages should have a
+            consistent order.
+          </li>
+          <li>
+            3.2.4 - Elements with the same functionality across multiple pages
+            should have consistent designs.
+          </li>
+          <li>
+            3.3.1 - For errors detected automatically, indicate where the error
+            occurred and provide a text description of the error.
+          </li>
+          <li>
+            3.3.3 - If errors are automatically detected, provide the user with
+            a suggestion for how to correct the error.
+          </li>
+          <li>
+            2.5.3 - Users who rely on visual cues should also be able to use
+            coded cues.
+          </li>
+          <li>
+            <a href="https://www.y-oslo.com/">Example of content that moves</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Illustrasjoner av
+        <a href="https://icons8.com/illustrations/author/HxMFjfKZdNq2"
+          >Rosina Gavrilash</a
+        >,
+        <a href="https://icons8.com/illustrations/author/GrbQqWBEhaDS"
+          >Liam Moore</a
+        >
+        og
+        <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA"
+          >Icons 8</a
+        >
+        fra <a href="https://icons8.com/illustrations">Ouch!</a>
+      </p>
+      <p>Musikk: Eyes Wide Open - Tony Anderson</p>
+      <img class="k" src="../assets/K.svg" />
       <svg
         viewBox="0 0 363 560"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        right="true"
         class="kantega-splat"
         aria-label=""
         role="img"
@@ -147,23 +190,6 @@
           ></path>
         </g>
       </svg>
-    </main>
-    <footer>
-      <p>
-        Illustrasjoner av
-        <a href="https://icons8.com/illustrations/author/HxMFjfKZdNq2"
-          >Rosina Gavrilash</a
-        >,
-        <a href="https://icons8.com/illustrations/author/GrbQqWBEhaDS"
-          >Liam Moore</a
-        >
-        og
-        <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA"
-          >Icons 8</a
-        >
-        fra <a href="https://icons8.com/illustrations">Ouch!</a>
-      </p>
-      <p>Musikk: Eyes Wide Open - Tony Anderson</p>
     </footer>
   </body>
 </html>
