@@ -1,13 +1,6 @@
-# uu-workshop
+# Universal design - from guidelines to code
 
-## Hvordan bruke workshoppen
-
-Opne index.html i ein nettleser for å få framsida. Der kan de velge mellom tre forskjellige oppgåvesider, alt etter kva
-de vil fokusere på først. Den for dei blinde er nok den som tek lengst tid å fullføre. Det går heilt fint å hoppe mellom
-oppgåver og løyse berre noko av kvar.
-
-Kvar oppgåve har all css, javascript og html liggende i sin egen mappe, så kva de gjer på ei oppgåve har ingen
-innvirkning på dei andre.
+## How to do this workshop
 
 Open the index.html in a web browser to access the homepage. There, you can choose between three different pages, depending on what you want to focus on first. The "blind"-page might be the most time-consuming. It's perfectly fine to switch between pages and tasks.
 
