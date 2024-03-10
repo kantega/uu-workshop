@@ -8,7 +8,7 @@ Each page has its own CSS, JavaScript, and HTML located in its own folder, so wh
 
 If you want to use the helpful plugings below, you need to run the page on a server. There is some helpful extensions for this. For example [Live Server for VSCode](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
-## Relevante plugins for Chrome:
+## Relevant plugins for Chrome:
 
 - [Blurry-eye Test: To see how a website looks for visually impaired users](https://chrome.google.com/webstore/detail/blurry-eye-test/panidpjdcjkdhjamnogampinhbkjdkpo)
 - [WAVE: Accessibility tool ](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh)
@@ -24,7 +24,7 @@ If you want to use the helpful plugings below, you need to run the page on a ser
 - [When should I use pixels and when should I use rem?](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/)
 - [Zoom](https://www.w3.org/WAI/WCAG21/Understanding/reflow.html)
 
-## Relevant toptics:
+## Relevant topics:
 
 - Landmarks
 - Correct use of input with label (and alternative solutions such as aria-label)
