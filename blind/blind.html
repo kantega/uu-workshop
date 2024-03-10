@@ -139,7 +139,7 @@
       <div class="tasks tasks-purple">
         <h2>How to Use Screen Readers</h2>
         <p>
-          It may be a good idea to try out screen reader navigation yourself. I
+          It is a good idea to try out screen reader navigation yourself. I
           would recommend figuring out how to both turn on
           <b>and off</b> the screen reader. There's a lot of talking.
         </p>
@@ -158,7 +158,7 @@
           </li>
           <li>
             <a href="https://support.apple.com/en-gb/guide/voiceover/unac078/mac#:~:text=Open%20VoiceOver%20Utility%20(press%20VO,%E2%80%9CShow%20caption%20panel%E2%80%9D%20checkbox.">
-              Show captions (Please use this in the workshop - It's a lot of talk otherwise)
+              Show captions (Please use this in the workshop)
             </a>
           </li>
         </ul>
@@ -181,50 +181,6 @@
         </ul>
       </div>
 
-      <div class="tasks tasks-purple">
-        <h2>Notes</h2>
-        <p>
-          Various notes about things that don't fit quite well into a separate
-          task. Perhaps just include this in the summary?
-        </p>
-        <h3>WAI-ARIA</h3>
-        <p>
-          Web Accessibility Initiative - Accessible Rich Internet Applications,
-          or just Aria, is a set of attributes you can add to your HTML tags to
-          provide information to the Accessibility API (which is what screen
-          readers use).
-        </p>
-        <p>
-          These are powerful tools that should be used where needed.
-          <b>However</b>, they should be used where needed and not just added to
-          be on the safe side. Ideally, you should write semantic HTML so that
-          they are not needed, but in certain cases, you will need to use them.
-          Having many ARIA attributes in the code is actually a code smell, as
-          it indicates that you need to use ARIA to try to fix problems instead
-          of writing good HTML.
-        </p>
-        <h4>Aria-hidden</h4>
-        <p>
-          Aria-hidden is an example of this. The attribute is often added to all
-          hidden elements just to be on the safe side, but it is not needed if
-          the element is hidden using <code>display: none</code>,
-          <code>visibility: hidden</code>, or the HTML
-          <code>hidden</code> attribute. Adding
-          <code>aria-hidden: true</code> in these cases provides no additional
-          information to the screen reader, but it increases the likelihood of
-          errors if, for example, <code>visibility: visible</code> is set
-          without setting <code>aria-hidden: false</code>.
-        </p>
-        <h3>Semantic HTML</h3>
-        <h4>h-tags</h4>
-        <p>
-          h1/h2/h3/h4/h5/h6 tags must follow the structure. If your parent is an
-          h1, then you should be an h2, even if the design may suggest that you
-          should look like an h3. Here you must first set up the semantic
-          structure, and then you can style afterwards. Designers must also
-          consider this ;)
-        </p>
-      </div>
 
       <div class="tasks tasks-purple">
         <h2>Things to Test</h2>
@@ -298,8 +254,7 @@
             <a href="hints/alt.html">Hint</a>
           </li>
           <li>
-            Does a blind person really need information about the corner dash on
-            the bottom right side? <a href="hints/aria-hidden.html">Hint</a>
+            Do you really need information about the K in the bottom right corner? <a href="hints/aria-hidden.html">Hint</a>
           </li>
           <li>
             How will this sentence be read by the screen reader on a Mac?
@@ -312,6 +267,46 @@
           </li>
         </ul>
       </div>
+      <div class="tasks tasks-purple">
+       <h2>Notes</h2>
+        <h3>WAI-ARIA</h3>
+       <p>
+         Web Accessibility Initiative - Accessible Rich Internet Applications,
+         or just Aria, is a set of attributes you can add to your HTML tags to
+         provide information to the Accessibility API (which is what screen
+         readers use).
+       </p>
+       <p>
+         These are powerful tools that should be used where needed.
+         <b>However</b>, they should be used where needed and not just added to
+         be on the safe side. Ideally, you should write semantic HTML so that
+         they are not needed, but in certain cases, you will need to use them.
+         Having many ARIA attributes in the code is actually a code smell, as
+         it indicates that you need to use ARIA to try to fix problems instead
+         of writing good HTML.
+       </p>
+       <h4>Aria-hidden</h4>
+       <p>
+         Aria-hidden is an example of this. The attribute is often added to all
+         hidden elements just to be on the safe side, but it is not needed if
+         the element is hidden using <code>display: none</code>,
+         <code>visibility: hidden</code>, or the HTML
+         <code>hidden</code> attribute. Adding
+         <code>aria-hidden: true</code> in these cases provides no additional
+         information to the screen reader, but it increases the likelihood of
+         errors if, for example, <code>visibility: visible</code> is set
+         without setting <code>aria-hidden: false</code>.
+       </p>
+       <h3>Semantic HTML</h3>
+       <h4>h-tags</h4>
+       <p>
+         h1/h2/h3/h4/h5/h6 tags must follow the structure. If your parent is an
+         h1, then you should be an h2, even if the design may suggest that you
+         should look like an h3. Here you must first set up the semantic
+         structure, and then you can style afterwards. Designers must also
+         consider this ;)
+       </p>
+     </div>
 
       <div class="tasks tasks-purple">
         <h2>Relevant Requirements</h2>
@@ -369,10 +364,10 @@
     </div>
 
     <footer>
-      Illustrasjon av
+      Illustrations by
       <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a>
-      fra <a href="https://icons8.com/illustrations">Ouch!</a>
-      <img class="k" src="../assets/K.svg" />
+      from <a href="https://icons8.com/illustrations">Ouch!</a>
+      <img class="k" src="../assets/K.svg" alt="The letter K" />
     </footer>
   </body>
 </html>
