@@ -6,7 +6,7 @@ Open the index.html in a web browser to access the homepage. There, you can choo
 
 Each page has its own CSS, JavaScript, and HTML located in its own folder, so what you do on one task will not affect the others.
 
-If you want to use the helpful plugings below, you need to run the page on a server. There is some helpful extensions for this. For example [Live Server for VSCode](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+If you want to use the helpful plugings below, you need to run the page on a server. There are some helpful extensions for this. For example [Live Server for VSCode](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
 ## Relevante plugins for Chrome:
 
