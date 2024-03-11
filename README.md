@@ -6,9 +6,9 @@ Open the index.html in a web browser to access the homepage. There, you can choo
 
 Each page has its own CSS, JavaScript, and HTML located in its own folder, so what you do on one task will not affect the others.
 
-If you want to use the helpful plugings below, you need to run the page on a server. There are some helpful extensions for this. For example [Live Server for VSCode](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+If you want to use the helpful plugins below, you need to run the page on a server. There are some helpful extensions for this. For example [Live Server for VSCode](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
-## Relevante plugins for Chrome:
+## Relevant plugins for Chrome:
 
 - [Blurry-eye Test: To see how a website looks for visually impaired users](https://chrome.google.com/webstore/detail/blurry-eye-test/panidpjdcjkdhjamnogampinhbkjdkpo)
 - [WAVE: Accessibility tool ](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh)
@@ -23,13 +23,3 @@ If you want to use the helpful plugings below, you need to run the page on a ser
 - [About the difference between keyboard navigation and screen readers, interesting video at the end showing someone using a screen reader](https://tink.uk/the-difference-between-keyboard-and-screen-reader-navigation/)
 - [When should I use pixels and when should I use rem?](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/)
 - [Zoom](https://www.w3.org/WAI/WCAG21/Understanding/reflow.html)
-
-## Relevant toptics:
-
-- Landmarks
-- Correct use of input with label (and alternative solutions such as aria-label)
-- Various Chrome extensions you can use for testing ([colorblind](https://chrome.google.com/webstore/detail/colorblindly/floniaahmccleoclneebhhmnjgdfijgg?hl=en), [Accessibility-test](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh), [Accessibility-test](https://chrome.google.com/webstore/detail/siteimprove-accessibility/djcglbmbegflehmbfleechkjhmedcopn?hl=en))
-- Alt texts (Alt="" vs no alt vs alt="description")
-- Focus highlighting (in the NAV design system "outline" is used instead of "border" because it doesn't change the size of the element, "box-shadow" is also an option)
-- Non-semantic HTML (Button created as a div, for example)
-- Use of screen reader - tabbing vs other supported functionality such as reading headers - the importance of semantic HTML.
