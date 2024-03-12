@@ -207,3 +207,9 @@ footer {
   font-size: 1.4rem;
   font-weight: 400;
 }
+
+.blind-splash {
+  width: 16rem;
+  display: block;
+  margin: -3rem 1rem 1rem auto;
+}
