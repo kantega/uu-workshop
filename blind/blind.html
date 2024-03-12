@@ -17,22 +17,24 @@
   </head>
 
   <body class="blind-page">
-    <div class="nav-bar">
+    <nav class="nav-bar">
       <a class="link" href="../vision/vision.html">Vision</a>
       <p>Blind</p>
       <a href="../cognition/cognition.html">Cognition</a>
       <a href="../index.html">Main page</a>
-    </div>
+    </nav>
 
-    <div>
+    <section>
       <div>
-        <img class="h1" src="../assets/title-blind.png" />
+        <h1>
+            <img class="blind-header" src="/assets/title-blind.png" alt="Blind" />
+        </h1>
         <p class="rocket-intro">Here you can order great rockets!</p>
       </div>
-    </div>
+    </section>
 
-    <div id="person" class="person-bubble">
-      <img src="../assets/betina.png" />
+    <section id="person" class="person-bubble">
+      <img src="../assets/betina.png" alt="Blind Bethany" />
       <h2>Blind Bethany</h2>
       <div class="description">
         <p>
@@ -49,65 +51,69 @@
       <button id="read-more-button" onclick="toggleReadMore()">
         Read more
       </button>
-    </div>
+    </section>
 
     <div id="modal-overlay" class="modal-overlay">
-      <div id="modal" class="modal">
+      <dialog aria-labelledby="modal-header" id="modal" class="modal">
         <div class="progress">
           <p id="progress-label">Progress:</p>
-          <div class="progress-bar" id="progress-bar"></div>
+          <div class="progress-bar" id="progress-bar" role="progressbar" aria-labelledby="progress-label" aria-valuemin="0" aria-valuemax="3" aria-valuenow="0"></div>
         </div>
         <h2 id="modal-header" class="modal-header">
           Payment and delivery information for the rocket
         </h2>
-        <img src="../assets/rakett.png" width="994" height="855" />
+        <img src="../assets/rakett.png" width="994" height="855"  alt="A soaring Kantega rocket"/>
         <p class="modal-input">
-          <label>Name *</label>
-          <input type="text" id="input-name" />
-          <span id="validation-error-name" class="validation-error"></span>
+          <label for="input-name">Name (Required)</label>
+          <input type="text" id="input-name" required/>
+          <span id="validation-error-name" class="validation-error" aria-live="polite"></span>
         </p>
         <p class="modal-input">
-          <label>Address *</label>
-          <input type="text" id="input-address" />
-          <span id="validation-error-address" class="validation-error"></span>
+          <label for="input-address">Address (Required)</label>
+          <input type="text" id="input-address" required />
+          <span id="validation-error-address" class="validation-error" aria-live="polite"></span>
         </p>
         <p class="modal-input">
-          <label>Email *</label>
-          <input type="text" id="input-email" />
-          <span id="validation-error-email" class="validation-error"></span>
+          <label for="input-email">Email (Required)</label>
+          <input type="text" id="input-email" required />
+          <span id="validation-error-email" class="validation-error" aria-live="polite"></span>
         </p>
         <button class="button buy-button" onclick="buy()">Buy</button>
-      </div>
+        <button class="button close-button" onclick="hideModal()"><img src="../assets/x-lg.svg" alt="Lukk"></button>
+
+      </dialog>
     </div>
 
-    <button class="button" onclick="showModal()">
-      Click here to buy a rocket
-    </button>
+    <section>
+      <button class="button" onclick="showModal()">
+        Click here to buy a rocket
+      </button>
+    </section>
 
     <div class="rocket-info">
-      <div class="red-rocket hideable hidden">
-        <h2 id="red-rocket-header">Red rocket</h2>
-        <div class="hideable-content">
+      <details class="red-rocket">
+        <summary><h2 id="red-rocket-header">Red rocket</h2></summary>
+        <div>
           <p>This rocket is fast!</p>
           <img src="../assets/rakett-red.svg" />
         </div>
-      </div>
+      </details>
 
-      <div class="blue-rocket hideable hidden">
-        <h2 id="blue-rocket-header">Blue rocket</h2>
-        <div class="hideable-content">
+      <details class="blue-rocket">
+        <summary><h2 id="blue-rocket-header">Blue rocket</h2></summary>
+        <div>
           <p>This rocket is pretty!</p>
           <img src="../assets/rakett-blue.svg" />
         </div>
-      </div>
+      </details>
 
-      <div class="green-rocket hideable hidden">
-        <h2 id="green-rocket-header">Green rocket</h2>
-        <div class="hideable-content">
+      <details class="green-rocket">
+        <summary><h2 id="green-rocket-header">Green rocket</h2></summary>
+        <div>
           <p>This rocket is green!</p>
           <img src="../assets/rakett-green.svg" />
         </div>
-      </div>
+      </details>
     </div>
 
     <svg
@@ -115,7 +121,7 @@
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       class="blind-splash"
-      aria-label="Kantega-splash i lys blå-grønn farge"
+      aria-hidden="true"
     >
       <g opacity="0.2" fill="#027c92">
         <path
@@ -263,7 +269,10 @@
             corner? <a href="hints/aria-hidden.html">Hint</a>
           </li>
           <li>
-            How will this sentence be read by the screen reader on a Mac?
+            <span role="text">
+              <span>How will this sentence</span>
+              <span>be read by the screen reader on a Mac?</span>
+            </span>
             <a href="hints/role-text.html">Hint</a>
           </li>
           <li>

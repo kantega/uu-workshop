@@ -89,7 +89,7 @@ h3 {
   font-family: "Quicksand", sans-serif;
 }
 
-.modal .button {
+.modal .buy-button {
   grid-area: footer;
 }
 
@@ -134,6 +134,14 @@ h3 {
   background-color: #493257;
 }
 
+.close-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	background-color: white;
+}
+
 .buy-button {
   width: 65%;
 }
@@ -155,34 +163,8 @@ h3 {
   height: 100%;
 }
 
-.hideable {
-  margin-bottom: 2rem;
-}
-
-.hideable > h2 {
-  font-weight: 400;
-}
-
-.hideable p {
-  margin-left: 1.5rem;
-}
-
 .rocket-info {
   margin: 4rem 0 5rem 0;
-}
-
-.hidden.hideable .hideable-content {
-  display: none;
-}
-
-.hidden.hideable h2::before {
-  content: url("../assets/chevron-right.svg");
-  padding-right: 0.5rem;
-}
-
-.hideable h2::before {
-  content: url("../assets/chevron-down.svg");
-  padding-right: 0.5rem;
 }
 
 footer {
@@ -212,4 +194,8 @@ footer {
   width: 16rem;
   display: block;
   margin: -3rem 1rem 1rem auto;
+}
+
+details h2 {
+	display: inline-block;
 }
