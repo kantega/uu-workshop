@@ -81,16 +81,16 @@ function validate(inputId = undefined) {
 }
 
 function validateNameInput(name) {
-  return !name ? "Navn er påkrevd" : "";
+  return !name ? "Name is required" : "";
 }
 
 function validateAddressInput(address) {
-  return !address ? "Addresse er påkrevd" : "";
+  return !address ? "Address is required" : "";
 }
 
 function validateEmailInput(email) {
   if (!email) {
-    return "Epost er påkrevd";
+    return "Email is required";
   }
   if (
     !String(email)
@@ -99,7 +99,7 @@ function validateEmailInput(email) {
         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       )
   ) {
-    return "Eposten er ikkje gyldig";
+    return "The email is not valid";
   }
   return "";
 }
