@@ -47,6 +47,12 @@ html {
   top: 40px;
   right: 40px;
 }
+@media screen and (max-width: 64rem) {
+  .person-bubble {
+    position: inherit;
+  }
+}
+
 
 .person-bubble img {
   max-height: 7rem;

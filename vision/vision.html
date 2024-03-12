@@ -25,19 +25,6 @@
     </div>
 
     <div class="section intro">
-      <div>
-        <h1>Blog post</h1>
-        <p class="blogg-intro">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-
       <div id="person" class="person-bubble">
         <img src="../assets/sven.png" alt="Image of visually impaired Sven." />
         <h2>Visually impaired Sven</h2>
@@ -55,6 +42,20 @@
           Read more
         </button>
       </div>
+      <div>
+        <h1>Blog post</h1>
+        <p class="blogg-intro">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+
     </div>
 
     <svg
@@ -110,13 +111,14 @@
 
     <div class="signup section">
       <h2>Subscribe to newsletter</h2>
-      <div class="signup-email">
-        <label for="signup-email-input">Email</label>
-        <input type="email" id="signup-email-input" />
-      </div>
-      <button type="submit" id="signup-submit" class="button" disabled>
-        Subscribe
-      </button>
+      <div class="signup-group">
+          <label for="signup-email-input">Epost</label>
+          <input type="email" id="signup-email-input" />
+          <span id="signup-email-error"></span>
+          <button type="submit" id="signup-submit" class="button" >
+            Submit
+          </button>
+        </div>
     </div>
 
     <div class="how-to-test section">

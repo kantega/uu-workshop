@@ -1,14 +1,14 @@
-window.addEventListener("change", function (e) {
-	if (e.target.id === "signup-email-input") {
-		let emailButton = document.getElementById("signup-submit");
-		emailButton.disabled = !validateEmailInput(e.target.value);
-	}
-});
 window.addEventListener("click", function (e) {
 	if (e.target.id === "signup-submit") {
 		let emailInput = document.getElementById("signup-email-input");
-		emailInput.value = "";
-		e.target.disabled = true;
+		let emailError = document.getElementById("signup-email-error");
+		if(validateEmailInput(emailInput.value)){
+			emailInput.value = "";
+			emailError.innerText = "";
+		}
+		else {
+			emailError.innerText = "Eposten er ikkje gyldig"
+		}
 	}
 });
 

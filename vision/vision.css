@@ -3,16 +3,16 @@
 h1 {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
-  font-size: 55px;
-  margin-top: 30px;
+  font-size: 3.4375rem;
+  margin-top: 1.875rem;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 body {
@@ -20,11 +20,10 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   background-color: #e4eaf9;
-  color: white;
-  min-width: 1200px;
+  color: black;
 }
 
 .intro {
@@ -35,7 +34,7 @@ body {
 .blogg-intro {
   font-family: "Inter";
   font-weight: 500;
-  margin-top: 70px;
+  margin-top: 4.375rem;
 }
 
 .signup {
@@ -43,36 +42,38 @@ body {
 }
 
 .section {
-  padding: 10px 150px;
+  padding: 0.625rem 150px;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .section > * {
-  max-width: 800px;
+  max-width: 50rem;
 }
 
-@media screen and (max-width: 1980px) {
+@media screen and (max-width: 123.75rem) {
   .section {
-    padding: 10px 150px;
+    padding: 0.625rem 150px;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 64rem) {
   .section {
-    padding: 10px 80px;
+    padding: 0.625rem 80px;
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 40rem) {
   .section {
-    padding: 10px 32px;
+    padding: 0.625rem 32px;
   }
 }
 
 .blog-content {
-  color: black;
-  background-color: #493257;
-  padding: 20px 0;
+  padding: 0.625rem 0;
+  background-color: #19254f;
+  color: white
 }
 
 .blog-content h2 {
@@ -85,50 +86,67 @@ body {
   align-items: center;
 }
 
+.blog-text a:visited {
+  color: lightblue;
+}
+
+
 .signup {
   display: flex;
-  align-items: end;
-  margin: 40px 0;
+  align-items: start;
+  margin: 2.5rem 0;
+  flex-direction: column;
 }
 
 .signup > h2 {
-  margin: 0;
+  margin: 0 40px 1rem 0;
   font-size: 1.2rem;
   font-family: "Quicksand", sans-serif;
-  margin-right: 40px;
   font-weight: 500;
 }
 
+.signup-group {
+	display: grid;
+	grid-gap: 0.5rem;
+	grid-template-areas:
+      "label ."
+      "input button"
+      "error .";
+}
+
 .signup-email {
-  display: inline-block;
   margin-right: 8px;
 }
 
-.signup-email label {
+.signup-group label {
+  grid-area: label;
   display: block;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 16px;
-  margin: 5px 0;
+  line-height: 1rem;
+  margin: 0.3125rem 0;
 }
 
-.signup-email input {
+.signup-group input {
+  grid-area: input;
   display: block;
   box-sizing: border-box;
-  padding: 8px;
+  padding: 0.5rem 8px;
   border: 2px solid rgb(206, 206, 206);
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 20px;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
 }
 
-.signup-email input:focus-visible {
+.group input:focus-visible {
   outline: none;
   border: #c9d6f7 2px solid;
 }
 
 .signup .button {
-  height: 38px;
+  grid-area: button;
+  align-self: stretch;
+  justify-self: stretch;
   padding: 0 20px;
   text-align: center;
   vertical-align: center;
@@ -140,21 +158,27 @@ body {
   background-color: lightseagreen;
   color: white;
   margin: 0;
-  padding: 20px;
-  border-radius: 4px;
+  padding: 1.25rem;
+  border-radius: 0.25rem;
   border: none;
   text-align: center;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
+  transition: border-color 300ms;
 }
 
-.button:disabled {
-  background-color: #ee3a64;
+.button:hover {
+	border-color: white;
+}
+
+#signup-email-error {
+	grid-area: error;
+	color: red;
 }
 
 .how-to-test {
   display: flex;
-  gap: 30px;
+  gap: 1.875rem;
   align-items: start;
   font-family: "Inter";
   font-weight: 400;
