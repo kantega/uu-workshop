@@ -7,7 +7,7 @@ window.addEventListener("click", function (e) {
 			emailError.innerText = "";
 		}
 		else {
-			emailError.innerText = "Eposten er ikkje gyldig"
+			emailError.innerText = "Email is invalid";
 		}
 	}
 });

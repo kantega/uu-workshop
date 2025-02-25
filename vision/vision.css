@@ -23,7 +23,7 @@ body {
   font-size: 1rem;
   line-height: 1.5rem;
   background-color: #e4eaf9;
-  color: black;
+  color: #393939;
 }
 
 .intro {
@@ -73,7 +73,11 @@ body {
 .blog-content {
   padding: 0.625rem 0;
   background-color: #19254f;
-  color: white
+  color: #e1e1e1
+}
+
+.blog-content a {
+  color:#f4b8c6;
 }
 
 .blog-content h2 {
