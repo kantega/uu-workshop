@@ -34,6 +34,7 @@ html {
 .person-bubble {
   width: 15rem;
   height: 15rem;
+  outline: 3px solid transparent;
   background-color: white;
   border-radius: 100%;
   color: black;
@@ -83,7 +84,7 @@ html {
 .person-read-more {
   width: 32rem;
   height: 32rem;
-  border: 3px solid #ee3a64;
+  outline-color: #ee3a6454;
 }
 
 .person-read-more img {

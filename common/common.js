@@ -11,15 +11,3 @@ function toggleReadMore() {
   }
 }
 
-function showHideGebyrgrunnlag(id) {
-  const element = document.getElementById("bygning-gebyrgrunnlag-" + id);
-  if (element.getAttribute("hidden") == null) {
-    element.setAttribute("hidden", "hidden");
-    document.getElementById("vis-gebyr-knapp-" + id).innerHTML =
-      "Legg til gebyr";
-  } else {
-    element.removeAttribute("hidden");
-    document.getElementById("vis-gebyr-knapp-" + id).innerHTML =
-      "Skjul gebyrer";
-  }
-}
