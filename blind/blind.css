@@ -114,6 +114,7 @@ summary > p {
 
 .close-button {
 	margin: 0;
+  padding: 1rem;
 	background-color: white;
   position: absolute;
   top: 0.5rem;
