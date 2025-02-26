@@ -175,6 +175,10 @@ h3 {
   display: none;
 }
 
+.hideable > h2 {
+  font-size: 18px;
+}
+
 .hidden.hideable h2::before {
   content: url("../assets/chevron-right.svg");
   padding-right: 0.5rem;
@@ -208,8 +212,10 @@ footer {
   font-weight: 400;
 }
 
-.blind-splash {
-  width: 16rem;
-  display: block;
-  margin: -3rem 1rem 1rem auto;
+
+.rocket-info > div {
+  background-color: #eff3fd;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
 }
