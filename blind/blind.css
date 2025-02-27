@@ -102,9 +102,6 @@ h3 {
 
 .button {
   margin: 1rem auto 0;
-  padding: 1.25rem;
-  background-color: #896ca7;
-  color: white;
   border: none;
   border-radius: 5px;
   font-family: "Inter";
@@ -114,18 +111,6 @@ h3 {
 
 .buy-button {
   width: 65%;
-}
-
-.person-bubble {
-  background-color: #fff6f8;
-}
-
-.person-bubble > button {
-  background-color: #ffc3d1;
-}
-
-.person-bubble > button:hover {
-  background-color: #f38ba3;
 }
 
 .person-intro .side-by-side {

@@ -8,9 +8,14 @@ html {
 
 :root {
   --typography-black: #393939;
-  --button-purple: #896ca7;
-  --button-purple-hover: #765897;
+  --button-purple: #735096;
+  --button-purple-hover: #634087;
   --kantega-red: #ee3a64;
+  --purple-soft-light: #fbf5ffde;
+  --purple-soft: #ece4f1c9;
+  --purple-soft-darker: #e8dcef;
+
+
 }
 
 html {
@@ -22,34 +27,43 @@ html {
   display: flex;
   justify-content: space-between;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  width: 26rem;
+  font-weight: 500;
+  width: 36rem;
   padding: 70px 0 30px 0;
   transition: color 0.3s ease-out;
+  text-underline-offset: 7px;
+  font-family: "Quicksand", sans-serif;
+
+  
 }
 
 .nav-bar > * {
-  color: #493257;
-  font-size: 1.25rem;
-  text-underline-offset: 7px;
+  font-size: 1.15rem;
+  background-color: var(--purple-soft-light);
+  color: #2a2a2a;
   margin: 0;
-  text-underline-offset: 7px;
+  text-decoration: none;
+  padding: 0.3rem 1rem;
+  border-radius: 2px;
+  outline: 2px solid white;
 }
 
 .nav-bar > p {
-  color: var(--kantega-red);
-  font-weight: 400;
+  font-weight: 600;
+  background: none;
+  outline: none;
 }
 
 .nav-bar > a:hover {
-  color: var(--kantega-red);
+  background-color: var(--purple-soft-darker);
 }
 
 .person-bubble {
   width: 15rem;
   height: 15rem;
-  outline: 5px solid #ee3a6417;
-  background-color: #fff6f8;
+  outline: 5px solid white;
+  background-color: var(--purple-soft-light);
+  backdrop-filter: blur(10px);
   border-radius: 100%;
   color: #393939;
   display: flex;
@@ -100,19 +114,20 @@ html {
   padding: 0.3rem;
   border: none;
   border-radius: 3px;
-  background-color: #ffc3d1;
+  border: 1px solid var(--typography-black);
+  background-color: transparent;
   color: var(--typography-black);
 }
 
 .person-bubble > button:hover {
-  background-color: #f38ba3;
+  background-color: var(--purple-soft);
 }
 
 
 .person-read-more {
   width: 32rem;
   height: 32rem;
-  outline-color: #ee3a6433;
+  outline-color: var(--purple-soft);
 }
 
 .person-read-more img {
@@ -134,8 +149,9 @@ html {
 }
 
 .hint code {
-  color: #ee3a64;
-  font-weight: 600;
+  color: var(--kantega-red);
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .hint blockquote {
@@ -148,7 +164,7 @@ html {
 
 .tasks {
   border-radius: 0.75rem;
-  background: #fff;
+  background: white;
   padding: 3rem;
   max-width: 37rem;
 }
@@ -158,10 +174,10 @@ html {
 }
 
 .tasks > h2 {
-  color: #ee3a64;
+  color: var(--kantega-red);
   font-family: "Quicksand", sans-serif;
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 .tasks h3 {
   font-weight: 500;
