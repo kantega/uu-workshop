@@ -46,13 +46,13 @@ html {
   text-decoration: none;
   padding: 0.3rem 1rem;
   border-radius: 2px;
-  outline: 2px solid var(--white-softe-transparent);
+  border: 2px solid var(--white-softe-transparent);
 }
 
 .nav-bar > p {
   font-weight: 600;
   background: none;
-  outline: none;
+  border: none;
 }
 
 .nav-bar > a:hover {
