@@ -14,6 +14,7 @@ If you want to use the helpful plugins below, you need to run the page on a serv
 - [WAVE: Accessibility tool ](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh)
 - [Siteimprove Accessibility Checker: Accessibility tool that also contains a filter to view the page as colorblind](https://chrome.google.com/webstore/detail/siteimprove-accessibility/djcglbmbegflehmbfleechkjhmedcopn?hl=en)
 - [Funkify is an extension for Chrome that helps you experience the web and interfaces through the eyes of extreme users with different abilities and disabilities.](https://chromewebstore.google.com/detail/funkify-%E2%80%93-disability-simu/ojcijjdchelkddboickefhnbdpeajdjg?utm_source=Funkify-free-button&utm_medium=Funkify-web&utm_campaign=Premium-web&utm_content=Premium-free-button&fbclid=IwAR3bGQH0XDpObPy2tdTQTQuuSxZo3Bmf1rYAJcNiFYCtJv9J6JZaeN9mQE0)
+- [WCAG Color Contrast Check](https://chromewebstore.google.com/detail/wcag-color-contrast-check)
 
 ## Relevant links:
 
