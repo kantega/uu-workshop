@@ -3,8 +3,9 @@
 h1 {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
-  font-size: 3.4375rem;
-  margin-top: 1.875rem;
+  font-size: 3.4rem;
+  line-height: 3.4rem;
+  margin-top: 1.8rem;
 }
 
 h2 {
@@ -129,6 +130,7 @@ body {
 .signup-group > div {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
