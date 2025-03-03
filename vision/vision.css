@@ -135,15 +135,11 @@ body {
 }
 
 .signup-group input {
-  padding: 0.5rem 8px;
-  border: 2px solid rgb(206, 206, 206);
   border-radius: 0.25rem;
   font-size: 1rem;
-}
-
-.group input:focus-visible {
-  outline: none;
-  border: #c9d6f7 2px solid;
+  padding: 0.5rem;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
 }
 
 .signup .button {
