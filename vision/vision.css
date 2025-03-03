@@ -48,7 +48,7 @@ body {
   margin: 0;
 }
 
-.section > * {
+.section p {
   max-width: 800px;
 }
 
@@ -152,13 +152,7 @@ body {
   background-color: #ee3a64;
 }
 
-.how-to-test {
-  display: flex;
-  gap: 30px;
-  align-items: start;
-  font-family: "Inter";
-  font-weight: 400;
-}
+
 
 footer {
   color: black;

@@ -13,14 +13,6 @@ html {
   margin-top: 30px;
 }
 
-h2 {
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 20px;
-}
-
 .rocket-intro {
   font-size: 1.1rem;
 }
@@ -139,7 +131,7 @@ h3 {
 }
 
 .hideable > h2 {
-  font-size: 18px;
+  font-size: 1.2em;
 }
 
 .hidden.hideable h2::before {
@@ -158,12 +150,6 @@ footer {
   padding-top: 5rem;
   justify-content: center;
   grid-gap: 0.3rem;
-}
-
-.info-content {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
 }
 
 .rockets {
