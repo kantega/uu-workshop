@@ -12,9 +12,9 @@ html {
   --button-purple-hover: #634087;
   --kantega-red: #ee3a64;
   --purple-soft-light: #fbf5ffde;
-  --purple-soft: #ece4f1c9;
+  --purple-soft: #e8dcefa7;
   --purple-soft-darker: #e8dcef;
-  --white-softe-transparent: #ffffff6b;
+  --white-softe-transparent: #ffffff;
 }
 
 html {
@@ -42,18 +42,25 @@ html {
 
 .nav-bar > * {
   font-size: 1.15rem;
-  background-color: var(--purple-soft-light);
+  background-color: var(--purple-soft);
   color: #2a2a2a;
   margin: 0;
   text-decoration: none;
   padding: 0.3rem 1rem;
-  border-radius: 4px;
+  border-radius: 3px;
+  outline: 2px solid var(--white-softe-transparent);
+  outline-offset: 2px;;
 }
+
+.nav-bar > a:focus-visible {
+  outline-color: var(--button-purple-hover);
+}
+  
 
 .nav-bar > p {
   font-weight: 600;
   background: none;
-  border: none;
+  outline: none;
 }
 
 .nav-bar > a:hover {
@@ -154,11 +161,19 @@ html {
   max-width: unset;
 }
 
+.info-content {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 .tasks {
   border-radius: 0.75rem;
   background: white;
   padding: 3rem;
   max-width: 37rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .tasks-purple {
