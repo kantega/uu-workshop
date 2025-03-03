@@ -115,16 +115,15 @@ body {
 .signup-email input {
   display: block;
   box-sizing: border-box;
-  padding: 8px;
-  border: 2px solid rgb(206, 206, 206);
-  border-radius: 4px;
   font-size: 16px;
   line-height: 20px;
+  padding: 0.5rem;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
 }
 
 .signup-email input:focus-visible {
-  outline: none;
-  border: #c9d6f7 2px solid;
+  outline: #c9d6f7 2px solid;
 }
 
 .signup .button {
@@ -151,8 +150,6 @@ body {
 .button:disabled {
   background-color: #ee3a64;
 }
-
-
 
 footer {
   color: black;

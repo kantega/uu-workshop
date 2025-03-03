@@ -44,21 +44,12 @@ body {
 }
 
 .button {
-  padding: 1.25rem;
-  background-color: #896ca7;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-family: "Inter";
-  font-size: 1rem;
+  margin-bottom: 6rem;
 }
 
-.button:hover {
-  background-color: #493257;
-}
 
 .timer-frame {
-  border: 2px solid #a17d7d;
+  background-color: var(--pink-soft);
   border-radius: 7px;
   display: flex;
   flex-direction: column;
@@ -68,23 +59,16 @@ body {
   padding-bottom: 1rem;
 }
 
-.timer {
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.8rem;
-
-  color: #a17d7d;
-  text-align: center;
-}
-
 .find-button {
   display: none;
 }
 
 .error {
   display: none;
-  background-color: #f0d2d2;
+  background-color: #fd9898ae;
+  font-size: 0.9rem;
   padding: 0.3rem 0.5rem;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .form {
@@ -98,8 +82,17 @@ body {
 .form-title {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
-  margin: 3.25rem 0 2rem 0;
   font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.timer {
+  font-size: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  width: 95%;
 }
 
 .success {
@@ -125,4 +118,10 @@ footer {
   align-items: center;
   padding-top: 5rem;
   position: relative;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
 }

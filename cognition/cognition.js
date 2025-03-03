@@ -1,4 +1,4 @@
-let time = 10;
+let time = 15;
 let timer = setInterval(calculate, 1000);
 
 function calculate() {
@@ -20,7 +20,7 @@ function findTickets() {
   document.getElementById("timer-frame").style.display = "flex";
   document.getElementById("find-button").style.display = "none";
 
-  time = 10;
+  time = 15;
   timer = setInterval(calculate, 1000);
 }
 
