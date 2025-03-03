@@ -58,44 +58,55 @@
     </p>
 
     <main>
-      <audio controls>
+      <audio controls autoplay>
         <source src="audio.m4a" type="audio/mp4" />
         Your browser does not support the audio element.
       </audio>
       <p></p>
 
       <section class="timer-frame" id="timer-frame">
-        <p class="timer">Tickets reserved for <span id="seconds">15</span> seconds</p>
+        <p class="timer">Tickets reserved for <span id="seconds">15</span> seconds <button class="seconcary-button" onclick="extendTime()">Extend time</button></p>
         <h2 class="form-title">Order tickets</h2>
-        <div class="form">
-          <input type="text" id="name" placeholder="First name" required />
-          <input type="text" id="surname" placeholder="Last name" required />
-          <input
-            type="email"
-            id="email"
-            placeholder="Email"
-            required
-            pattern=".+@globex\.com"
-          />
-          <button onclick="orderTickets()">Bestill</button>
+        <form class="form" id="form">
+          <label for="name">First name
+            <input type="text" id="name" placeholder="First name" required />
+          </label>
+          <label for="surname">
+            Last name
+            <input type="text" id="surname" placeholder="Last name" required />
+          </label>
+          <label for="email">
+            Email          
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              required
+            /></label>
+            <button type="submit">Order</button>
+
         </div>
-        <p class="error" id="error">Noe er feil</p>
       </section>
-      <p class="success" id="success">Billetter er bestilt!</p>
+      <p class="success" id="success">Here you should see a summary of your input. You should have these options: "confirm" and "cancel" 🤍 </p>
       <button
         class="find-button button"
         id="find-button"
         onclick="findTickets()"
       >
-        Finn billetter
+        Find tickets
       </button>
 
-      <iframe
+      <details class="illustration" open>
+        <summary>Show/hide illustration</summary>
+        <iframe
         src="https://giphy.com/embed/qhepNcb0L83PG"
         width="480"
         height="320"
         class="gif"
       ></iframe>
+      </details>
+
+     
 
       <section class="tasks tasks-purple">
         <h2>Relevant requirements</h2>

@@ -17,7 +17,7 @@ html {
   --pink-soft-darker: #f1cfd5;
   --purple-soft: #e8dcefa7;
   --purple-soft-darker: #e8dcef;
-
+  --blue-soft: #eff3fd;
 }
 
 html {
@@ -117,7 +117,8 @@ html {
   margin-top: 0;
 }
 
-.person-bubble > button {
+.person-bubble > button,
+.seconcary-button {
   border: none;
   font-family: "Inter";
   font-size: 0.8rem;
@@ -129,7 +130,8 @@ html {
   color: var(--typography-black);
 }
 
-.person-bubble > button:hover {
+.person-bubble > button:hover,
+.seconcary-button:hover {
   background-color: var(--pink-soft-dark);
 }
 
@@ -187,7 +189,7 @@ html {
 }
 
 .tasks-purple {
-  background-color: #eff3fd;
+  background-color: var(--blue-soft)
 }
 
 .tasks > h2 {

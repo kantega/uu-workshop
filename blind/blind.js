@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("buy").addEventListener("click", () => {
     if (validate()) {
-      console.log("buy hei maiken yyyy");
       dialog.close();
     }
   });

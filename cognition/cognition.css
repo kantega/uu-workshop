@@ -43,11 +43,6 @@ body {
   max-height: 10rem;
 }
 
-.button {
-  margin-bottom: 6rem;
-}
-
-
 .timer-frame {
   background-color: var(--pink-soft);
   border-radius: 7px;
@@ -75,8 +70,8 @@ body {
   padding: 3rem 0 1rem 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  grid-gap: 0.5rem;
+  align-items: flex-end;
+  gap: 1rem;
 }
 
 .form-title {
@@ -92,13 +87,14 @@ body {
   display: flex;
   gap: 0.5rem;
   justify-content: flex-end;
+  align-items: center;
   width: 95%;
 }
 
 .success {
   display: none;
-  background-color: #cfe6ce;
-  padding: 0.3rem 0.5rem;
+  background-color: var(--pink-soft);
+  padding: 2rem 1rem;
   border-radius: 5px;
 }
 
@@ -124,4 +120,21 @@ input {
   padding: 0.5rem;
   border: 1px solid #d1d1d1;
   border-radius: 5px;
+}
+
+.illustration {
+  background-color: var(--blue-soft);
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 2rem 0;
+}
+
+.illustration > summary {
+  cursor: pointer;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
 }
