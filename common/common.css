@@ -11,10 +11,10 @@ html {
   --button-purple: #735096;
   --button-purple-hover: #634087;
   --kantega-red: #ee3a64;
-  --purple-soft-light: #fbf5ffde;
-  --purple-soft: #e8dcefa7;
-  --purple-soft-darker: #e8dcef;
-  --white-softe-transparent: #ffffff;
+  --white-softe-transparent: #ffffffb3;
+  --pink-soft: #fff6f8;
+  --pink-soft-dark: #fbe5e9;
+  --pink-soft-darker: #f1cfd5;
 }
 
 html {
@@ -33,7 +33,6 @@ html {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   transition: color 0.3s ease-out;
   text-underline-offset: 7px;
@@ -42,21 +41,15 @@ html {
 
 .nav-bar > * {
   font-size: 1.15rem;
-  background-color: var(--purple-soft);
+  background-color: var(--pink-soft-dark);
   color: #2a2a2a;
   margin: 0;
   text-decoration: none;
   padding: 0.3rem 1rem;
   border-radius: 3px;
-  outline: 2px solid var(--white-softe-transparent);
   outline-offset: 2px;;
 }
-
-.nav-bar > a:focus-visible {
-  outline-color: var(--button-purple-hover);
-}
   
-
 .nav-bar > p {
   font-weight: 600;
   background: none;
@@ -64,14 +57,13 @@ html {
 }
 
 .nav-bar > a:hover {
-  background-color: var(--purple-soft-darker);
+  background-color: var(--pink-soft-darker);
 }
 
 .person-bubble {
   width: 15rem;
   height: 15rem;
-  background-color: var(--purple-soft-light);
-  backdrop-filter: blur(10px);
+  background-color: var(--pink-soft);
   border-radius: 100%;
   color: #393939;
   display: flex;
@@ -119,14 +111,14 @@ html {
 }
 
 .person-bubble > button:hover {
-  background-color: var(--purple-soft);
+  background-color: var(--pink-soft-dark);
 }
 
 
 .person-read-more {
   width: 32rem;
   height: 32rem;
-  border: 4px solid var(--purple-soft);;
+  border: 2px solid var(--pink-soft-dark);
 }
 
 .person-read-more img {

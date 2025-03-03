@@ -26,6 +26,10 @@ body {
   background-color: #e4eaf9;
 }
 
+.person-bubble, .nav-bar > * {
+  background-color: var(--white-softe-transparent);
+}
+
 .intro {
   display: flex;
   justify-content: space-between;
