@@ -15,6 +15,9 @@ html {
   --pink-soft: #fff6f8;
   --pink-soft-dark: #fbe5e9;
   --pink-soft-darker: #f1cfd5;
+  --purple-soft: #e8dcefa7;
+  --purple-soft-darker: #e8dcef;
+
 }
 
 html {
@@ -58,6 +61,22 @@ html {
 
 .nav-bar > a:hover {
   background-color: var(--pink-soft-darker);
+}
+
+.vision-page .person-bubble, .vision-page .nav-bar > a {
+  background-color: var(--white-softe-transparent);
+}
+
+.vision-page .nav-bar > a:hover {
+  background-color: var(--purple-soft-darker);
+}
+
+.vision-page .person-bubble > button:hover {
+  background-color: var(--purple-soft);
+}
+
+.vision-page .person-read-more {
+  border-color: var(--purple-soft);
 }
 
 .person-bubble {
@@ -114,11 +133,10 @@ html {
   background-color: var(--pink-soft-dark);
 }
 
-
 .person-read-more {
   width: 32rem;
   height: 32rem;
-  border: 2px solid var(--pink-soft-dark);
+  border: 3px solid var(--pink-soft-dark);
 }
 
 .person-read-more img {
