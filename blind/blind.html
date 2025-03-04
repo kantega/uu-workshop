@@ -65,28 +65,25 @@
         <div class="progress-bar" id="progress-bar" role="progressbar" aria-labelledby="progress-label" aria-valuemin="0" aria-valuemax="3" aria-valuenow="0"></div>
       </div>
       <img src="../assets/rakett.png" width="994" height="855"  alt="A soaring Kantega rocket"/>
-      <p class="modal-input">
-        <label for="input-name">Name (Required)</label>
-        <input type="text" id="input-name" required/>
-        <span id="validation-error-name" class="validation-error" aria-live="polite"></span>
-      </p>
-      <p class="modal-input">
-        <label for="input-address">Address (Required)</label>
-        <input type="text" id="input-address" required />
-        <span id="validation-error-address" class="validation-error" aria-live="polite"></span>
-      </p>
-      <p class="modal-input">
-        <label for="input-email">Email (Required)</label>
-        <input type="text" id="input-email" required />
-        <span id="validation-error-email" class="validation-error" aria-live="polite"></span>
-      </p>
-      <button class="button buy-button" id="buy">Buy</button>
+      <form id="form" class="form">
+        <label for="input-name">Name (Required)
+          <input type="text" id="input-name" required autocomplete="given-name"/>
+        </label>
+        <label for="input-address">Address (Required)
+          <input type="text" id="input-address" required autocomplete="street-address"/>
+        </label>
+        <label for="input-email">Email (Required)
+          <input type="email" id="input-email" placeholder="Email" required autocomplete="email"/>
+        </label>
+        <button type="submit" class="button buy-button" id="buy">Buy</button>
+    </form>
     </dialog>
 
     <section>
       <button class="button" id="openDialog">
         Buy a rocket
       </button>
+      <p class="success" id="success">Your rocket is on it's way to you 🤍 </p>
     </section>
 
     <div class="rocket-info">

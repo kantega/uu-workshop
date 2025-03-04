@@ -28,7 +28,7 @@ h3 {
 .modal {
   background-color: white;
   border: 2px solid #ececec;
-  padding: 2rem 4rem;
+  padding: 2rem 4rem 4rem 4rem;
   border-radius: 4px;
 }
 
@@ -64,17 +64,7 @@ h3 {
   font-family: "Quicksand", sans-serif;
 }
 
-.modal-input {
-  padding-bottom: 1rem;
-  margin: 0;
-}
-
-.modal-input label {
-  display: block;
-  font-size: 0.875rem;
-}
-
-.modal-input input {
+input {
   box-sizing: border-box;
   width: 100%;
   margin: 0.5rem 0;
@@ -83,11 +73,6 @@ h3 {
   border-radius: 0.25rem;
   font-size: 1rem;
   line-height: 1.1875rem;
-}
-
-.validation-error {
-  color: #ee3a64;
-  font-size: 0.875rem;
 }
 
 details {
@@ -122,9 +107,14 @@ summary > p {
   background-color: #ebebeb;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 
 .buy-button {
-  width: 65%;
+  width: 100%;
 }
 
 
@@ -158,4 +148,14 @@ footer {
 .rocket-header {
   font-size: 1.4rem;
   font-weight: 400;
+}
+
+
+.success {
+  display: none;
+  background-color: #d6f2dc;
+  padding: 2rem 1rem;
+  border-radius: 5px;
+  width: fit-content;
+  margin-top: 3rem;
 }

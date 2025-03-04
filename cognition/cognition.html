@@ -69,11 +69,11 @@
         <h2 class="form-title">Order tickets</h2>
         <form class="form" id="form">
           <label for="name">First name
-            <input type="text" id="name" placeholder="First name" required />
+            <input type="text" id="name" placeholder="First name" required autocomplete="given-name" />
           </label>
           <label for="surname">
             Last name
-            <input type="text" id="surname" placeholder="Last name" required />
+            <input type="text" id="surname" placeholder="Last name" required autocomplete="family-name" />
           </label>
           <label for="email">
             Email          
@@ -82,6 +82,7 @@
               id="email"
               placeholder="Email"
               required
+              autocomplete="email"
             /></label>
             <button type="submit">Order</button>
 
