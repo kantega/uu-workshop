@@ -45,316 +45,320 @@
       </button>
     </section>
   </header>
-
-  <section>
-    <div>
-      <h1>
-          <img class="blind-header" src="/assets/title-blind.png" alt="Blind" />
-      </h1>
-      <p class="rocket-intro">Here you can order great rockets!</p>
-    </div>
-  </section>
-
-<dialog aria-labelledby="modal-header" id="rocket-dialog" class="modal">
-  <button class="button close-button" id="closeDialog"><img src="../assets/x-lg.svg" alt="Lukk"></button>
-      <h2 id="modal-header" class="modal-header">
-        Please enter delivery information
-      </h2>
-      <div class="progress">
-        <p id="progress-label">Progress:</p>
-        <div class="progress-bar" id="progress-bar" role="progressbar" aria-labelledby="progress-label" aria-valuemin="0" aria-valuemax="3" aria-valuenow="0"></div>
-      </div>
-      <img src="../assets/rakett.png" width="994" height="855"  alt="A soaring Kantega rocket"/>
-      <form id="form" class="form">
-        <label for="input-name">Name (Required)
-          <input type="text" id="input-name" required autocomplete="given-name"/>
-        </label>
-        <label for="input-address">Address (Required)
-          <input type="text" id="input-address" required autocomplete="street-address"/>
-        </label>
-        <label for="input-email">Email (Required)
-          <input type="email" id="input-email" placeholder="Email" required autocomplete="email"/>
-        </label>
-        <button type="submit" class="button buy-button" id="buy">Buy</button>
-    </form>
-    </dialog>
-
+  <main>
     <section>
-      <button class="button" id="openDialog">
-        Buy a rocket
-      </button>
-      <p class="success" id="success">Your rocket is on it's way to you 🤍 </p>
+      <div>
+        <h1 class="blind-header">
+            Buy a rocket
+        </h1>
+        <p class="rocket-intro">Here you can order great rockets!</p>
+      </div>
     </section>
 
-    <div class="rocket-info">
-      <details class="red-rocket">
-        <summary><p id="red-rocket-header">Red rocket</p></summary>
-        <div>
-          <p>This rocket is fast!</p>
-          <img src="../assets/rakett-red.svg" alt="Super fast red rocket" />
+  <dialog aria-labelledby="modal-header" id="rocket-dialog" class="modal">
+    <button class="button close-button" id="closeDialog"><img src="../assets/x-lg.svg" alt="Lukk"></button>
+        <h2 id="modal-header" class="modal-header">
+          Please enter delivery information
+        </h2>
+        <div class="progress">
+          <p id="progress-label">Progress:</p>
+          <div class="progress-bar" id="progress-bar" role="progressbar" aria-labelledby="progress-label" aria-valuemin="0" aria-valuemax="3" aria-valuenow="0"></div>
         </div>
-      </details>
+        <img src="../assets/rakett.png" width="994" height="855"  alt="A soaring Kantega rocket"/>
+        <form id="form" class="form">
+          <label for="input-name">Name (Required)
+            <input type="text" id="input-name" required autocomplete="given-name"/>
+          </label>
+          <label for="input-address">Address (Required)
+            <input type="text" id="input-address" required autocomplete="street-address"/>
+          </label>
+          <label for="input-email">Email (Required)
+            <input type="email" id="input-email" placeholder="Email" required autocomplete="email"/>
+          </label>
+          <button type="submit" class="button buy-button" id="buy">Buy</button>
+      </form>
+      </dialog>
 
-      <details class="blue-rocket">
-        <summary><p id="blue-rocket-header">Blue rocket</p></summary>
-        <div>
-          <p>This rocket is pretty!</p>
-          <img src="../assets/rakett-blue.svg" alt="Incredibly pretty blue rocket"/>
+      <section>
+        <button class="button" id="openDialog">
+          Buy a rocket
+        </button>
+        <p class="success" id="success">Your rocket is on it's way to you 🤍 </p>
+      </section>
+
+      <section class="rocket-info">
+        <details class="red-rocket">
+          <summary><p id="red-rocket-header">Red rocket</p></summary>
+          <div>
+            <p>This rocket is fast!</p>
+            <img src="../assets/rakett-red.svg" alt="Super fast red rocket" />
+          </div>
+        </details>
+
+        <details class="blue-rocket">
+          <summary><p id="blue-rocket-header">Blue rocket</p></summary>
+          <div>
+            <p>This rocket is pretty!</p>
+            <img src="../assets/rakett-blue.svg" alt="Incredibly pretty blue rocket"/>
+          </div>
+        </details>
+
+        <details class="green-rocket">
+          <summary><p id="green-rocket-header">Green rocket</p></summary>
+          <div>
+            <p>This rocket is green!</p>
+            <img src="../assets/rakett-green.svg" alt="Lean mean green rocket machine" />
+          </div>
+        </details>
+      </section>
+
+      <section class="info-content">
+        <div class="tasks tasks-purple">
+          <h2>How to Use Screen Readers</h2>
+          <p>
+            It is a good idea to try out screen reader navigation yourself. I
+            would recommend figuring out how to both turn on
+            <b>and off</b> the screen reader. There's a lot of talking.
+          </p>
+          <h3>Mac</h3>
+          <ul>
+            <li>
+              <a href="https://support.apple.com/en-gb/guide/voiceover/vo2682/mac"
+                >Turn VoiceOver on or off</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts#:~:text=Command%20%2B%20F5%20starts%20the%20VoiceOver,as%20VO%20in%20the%20tables."
+                >Keyboard shortcuts for VoiceOver</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://support.apple.com/en-gb/guide/voiceover/unac078/mac#:~:text=Open%20VoiceOver%20Utility%20(press%20VO,%E2%80%9CShow%20caption%20panel%E2%80%9D%20checkbox."
+              >
+                Show captions (Please use this in the workshop)
+              </a>
+            </li>
+            <li>
+              Use the Rotor (VO + U). VoiceOver-users typically get a quick overview of the site using landmarks / headings / links -
+              using the Rotor, you may get the same information without having to wait for VoiceOver to read it aloud.
+            </li>
+          </ul>
+          <h3>Windows</h3>
+          <ul>
+            <li>You turn Narrator on and off by pressing Windows+Ctrl+Enter</li>
+            <li>
+              <a
+                href="https://support.microsoft.com/en-us/windows/appendix-b-narrator-keyboard-commands-and-touch-gestures-8bdab3f4-b3e9-4554-7f28-8b15bd37410a"
+                >Keyboard shortcuts for Narrator</a
+              >
+            </li>
+            <li>
+              Use the commands list (Narrator + F1/2/5/6/7). Narrator-users typically get a quick overview of the site using landmarks / headings / links -
+              using the list, you may get the same information without having to wait for Narrator to read it aloud.
+            </li>
+            <li>
+              If anyone figures out how to get Narrator to show captions, please
+              tell us.
+            </li>
+          </ul>
+          <h3>Linux</h3>
+          <ul>
+            <li>🤷</li>
+          </ul>
         </div>
-      </details>
 
-      <details class="green-rocket">
-        <summary><p id="green-rocket-header">Green rocket</p></summary>
-        <div>
-          <p>This rocket is green!</p>
-          <img src="../assets/rakett-green.svg" alt="Lean mean green rocket machine" />
+        <div class="tasks tasks-purple">
+          <h2>Things to Test</h2>
+          <h3>Navigation and Overview</h3>
+          <p>
+            Sighted users open the page and get an overview right away. Screen
+            reader users can use shortcuts to quickly read headers or main
+            sections.
+          </p>
+          <ul>
+            <li>
+              When you open the page with a screen reader, one of the first things
+              said is: "Title". Why? <a href="hints/title.html">Hint</a>
+            </li>
+            <li>
+              Is there something strange with the heading (h1)? 🤔 Is it possible to read it by screen reader?
+            </li>
+            <li>
+              Try to get an overview of the page by navigating via landmarks or
+              headings. <a href="hints/navigation.html">Hint</a>
+            </li>
+            <li>
+              Can you expand the different rockets using a screen reader?
+              <a href="hints/non-semantic-click-events.html">Hint</a>
+            </li>
+            <li>
+              When you start navigating, you have to tab through the entire header
+              before getting to the juicy stuff. Screen reader users should be
+              able to skip to the main content.
+              <a href="hints/skip-to-main-content.html">Hint</a>
+            </li>
+            <li>
+              Open the purchase modal. A sighted user will have context with
+              "Payment and delivery info for the rocket," but does Bethany get any
+              context from the screen reader? <a href="hints/modal.html">Hint</a>
+            </li>
+            <li>
+              Open the modal and tab around. Can the cursor leave the modal?
+              <a href="hints/tab-capture.html">Hint</a>
+            </li>
+            <li>
+              Try to close the modal without purchasing.
+              <a href="hints/close-button.html">Hint</a>
+            </li>
+          </ul>
+          <h3>Interaction</h3>
+          <ul>
+            <li>
+              Tab through the input fields in the modal. How do you know what to
+              write in each field? <a href="hints/labels.html">Hint</a>
+            </li>
+            <li>
+              How can a blind person know that "name" is required?
+              <a href="hints/required.html">Hint</a>
+            </li>
+            <li>
+              Click buy without filling anything out, so you get a validation
+              error. How do you find out about this using a screen reader?
+              <a href="hints/aria-live.html">Hint</a>
+            </li>
+            <li>
+              This isnt really a test, but click this hint for a bit of
+              information about forms. <a href="hints/forms.html">Hint</a>
+            </li>
+            <li>
+              Okay, the progress bar is pretty pointless in this case, but it's
+              used in many other cases so bear with me. How will a screen reader
+              read the progress bar and will it be able to get any information
+              from it? <a href="hints/progressbar.html">Hint</a>
+            </li>
+          </ul>
+          <h3>Reading and Images</h3>
+          <ul>
+            <li>
+              Tab through the images. What information do you get?
+              <a href="hints/alt.html">Hint</a>
+            </li>
+            <li>
+              Do you really need information about the K in the bottom right
+              corner? <a href="hints/aria-hidden.html">Hint</a>
+            </li>
+            <li>
+              <span role="text">
+                <span>How will this sentence</span>
+                <span>be read by the screen reader on a Mac?</span>
+              </span>
+              <a href="hints/role-text.html">Hint</a>
+            </li>
+            <li>
+              Have you fixed the previous list item? Can the screen reader
+              understand that the hint is a link?
+              <a href="hints/role-text-issues.html">Hint</a>
+            </li>
+          </ul>
         </div>
-      </details>
-    </div>
+        <div class="tasks tasks-purple">
+          <h2>Notes</h2>
+          <h3>WAI-ARIA</h3>
+          <p>
+            Web Accessibility Initiative - Accessible Rich Internet Applications,
+            or just Aria, is a set of attributes you can add to your HTML tags to
+            provide information to the Accessibility API (which is what screen
+            readers use).
+          </p>
+          <p>
+            These are powerful tools that should be used where needed.
+            <b>However</b>, they should be used where needed and not just added to
+            be on the safe side. Ideally, you should write semantic HTML so that
+            they are not needed, but in certain cases, you will need to use them.
+            Having many ARIA attributes in the code is actually a code smell, as
+            it indicates that you need to use ARIA to try to fix problems instead
+            of writing good HTML.
+          </p>
+          <h4>Aria-hidden</h4>
+          <p>
+            Aria-hidden is an example of this. The attribute is often added to all
+            hidden elements just to be on the safe side, but it is not needed if
+            the element is hidden using <code>display: none</code>,
+            <code>visibility: hidden</code>, or the HTML
+            <code>hidden</code> attribute. Adding
+            <code>aria-hidden: true</code> in these cases provides no additional
+            information to the screen reader, but it increases the likelihood of
+            errors if, for example, <code>visibility: visible</code> is set
+            without setting <code>aria-hidden: false</code>.
+          </p>
+          <h3>Semantic HTML</h3>
+          <h4>h-tags</h4>
+          <p>
+            h1/h2/h3/h4/h5/h6 tags must follow the structure. If your parent is an
+            h1, then you should be an h2, even if the design may suggest that you
+            should look like an h3. Here you must first set up the semantic
+            structure, and then you can style afterwards. Designers must also
+            consider this ;)
+          </p>
+        </div>
 
-    <div class="info-content">
-      <div class="tasks tasks-purple">
-        <h2>How to Use Screen Readers</h2>
-        <p>
-          It is a good idea to try out screen reader navigation yourself. I
-          would recommend figuring out how to both turn on
-          <b>and off</b> the screen reader. There's a lot of talking.
-        </p>
-        <h3>Mac</h3>
-        <ul>
-          <li>
-            <a href="https://support.apple.com/en-gb/guide/voiceover/vo2682/mac"
-              >Turn VoiceOver on or off</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts#:~:text=Command%20%2B%20F5%20starts%20the%20VoiceOver,as%20VO%20in%20the%20tables."
-              >Keyboard shortcuts for VoiceOver</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://support.apple.com/en-gb/guide/voiceover/unac078/mac#:~:text=Open%20VoiceOver%20Utility%20(press%20VO,%E2%80%9CShow%20caption%20panel%E2%80%9D%20checkbox."
-            >
-              Show captions (Please use this in the workshop)
-            </a>
-          </li>
-          <li>
-            Use the Rotor (VO + U). VoiceOver-users typically get a quick overview of the site using landmarks / headings / links -
-            using the Rotor, you may get the same information without having to wait for VoiceOver to read it aloud.
-          </li>
-        </ul>
-        <h3>Windows</h3>
-        <ul>
-          <li>You turn Narrator on and off by pressing Windows+Ctrl+Enter</li>
-          <li>
-            <a
-              href="https://support.microsoft.com/en-us/windows/appendix-b-narrator-keyboard-commands-and-touch-gestures-8bdab3f4-b3e9-4554-7f28-8b15bd37410a"
-              >Keyboard shortcuts for Narrator</a
-            >
-          </li>
-          <li>
-            Use the commands list (Narrator + F1/2/5/6/7). Narrator-users typically get a quick overview of the site using landmarks / headings / links -
-            using the list, you may get the same information without having to wait for Narrator to read it aloud.
-          </li>
-          <li>
-            If anyone figures out how to get Narrator to show captions, please
-            tell us.
-          </li>
-        </ul>
-        <h3>Linux</h3>
-        <ul>
-          <li>🤷</li>
-        </ul>
-      </div>
-
-      <div class="tasks tasks-purple">
-        <h2>Things to Test</h2>
-        <h3>Navigation and Overview</h3>
-        <p>
-          Sighted users open the page and get an overview right away. Screen
-          reader users can use shortcuts to quickly read headers or main
-          sections.
-        </p>
-        <ul>
-          <li>
-            When you open the page with a screen reader, one of the first things
-            said is: "Title". Why? <a href="hints/title.html">Hint</a>
-          </li>
-          <li>
-            Try to get an overview of the page by navigating via landmarks or
-            headings. <a href="hints/navigation.html">Hint</a>
-          </li>
-          <li>
-            Can you expand the different rockets using a screen reader?
-            <a href="hints/non-semantic-click-events.html">Hint</a>
-          </li>
-          <li>
-            When you start navigating, you have to tab through the entire header
-            before getting to the juicy stuff. Screen reader users should be
-            able to skip to the main content.
-            <a href="hints/skip-to-main-content.html">Hint</a>
-          </li>
-          <li>
-            Open the purchase modal. A sighted user will have context with
-            "Payment and delivery info for the rocket," but does Bethany get any
-            context from the screen reader? <a href="hints/modal.html">Hint</a>
-          </li>
-          <li>
-            Open the modal and tab around. Can the cursor leave the modal?
-            <a href="hints/tab-capture.html">Hint</a>
-          </li>
-          <li>
-            Try to close the modal without purchasing.
-            <a href="hints/close-button.html">Hint</a>
-          </li>
-        </ul>
-        <h3>Interaction</h3>
-        <ul>
-          <li>
-            Tab through the input fields in the modal. How do you know what to
-            write in each field? <a href="hints/labels.html">Hint</a>
-          </li>
-          <li>
-            How can a blind person know that "name" is required?
-            <a href="hints/required.html">Hint</a>
-          </li>
-          <li>
-            Click buy without filling anything out, so you get a validation
-            error. How do you find out about this using a screen reader?
-            <a href="hints/aria-live.html">Hint</a>
-          </li>
-          <li>
-            This isnt really a test, but click this hint for a bit of
-            information about forms. <a href="hints/forms.html">Hint</a>
-          </li>
-          <li>
-            Okay, the progress bar is pretty pointless in this case, but it's
-            used in many other cases so bear with me. How will a screen reader
-            read the progress bar and will it be able to get any information
-            from it? <a href="hints/progressbar.html">Hint</a>
-          </li>
-        </ul>
-        <h3>Reading and Images</h3>
-        <ul>
-          <li>
-            Tab through the images. What information do you get?
-            <a href="hints/alt.html">Hint</a>
-          </li>
-          <li>
-            Do you really need information about the K in the bottom right
-            corner? <a href="hints/aria-hidden.html">Hint</a>
-          </li>
-          <li>
-            <span role="text">
-              <span>How will this sentence</span>
-              <span>be read by the screen reader on a Mac?</span>
-            </span>
-            <a href="hints/role-text.html">Hint</a>
-          </li>
-          <li>
-            Have you fixed the previous list item? Can the screen reader
-            understand that the hint is a link?
-            <a href="hints/role-text-issues.html">Hint</a>
-          </li>
-        </ul>
-      </div>
-      <div class="tasks tasks-purple">
-        <h2>Notes</h2>
-        <h3>WAI-ARIA</h3>
-        <p>
-          Web Accessibility Initiative - Accessible Rich Internet Applications,
-          or just Aria, is a set of attributes you can add to your HTML tags to
-          provide information to the Accessibility API (which is what screen
-          readers use).
-        </p>
-        <p>
-          These are powerful tools that should be used where needed.
-          <b>However</b>, they should be used where needed and not just added to
-          be on the safe side. Ideally, you should write semantic HTML so that
-          they are not needed, but in certain cases, you will need to use them.
-          Having many ARIA attributes in the code is actually a code smell, as
-          it indicates that you need to use ARIA to try to fix problems instead
-          of writing good HTML.
-        </p>
-        <h4>Aria-hidden</h4>
-        <p>
-          Aria-hidden is an example of this. The attribute is often added to all
-          hidden elements just to be on the safe side, but it is not needed if
-          the element is hidden using <code>display: none</code>,
-          <code>visibility: hidden</code>, or the HTML
-          <code>hidden</code> attribute. Adding
-          <code>aria-hidden: true</code> in these cases provides no additional
-          information to the screen reader, but it increases the likelihood of
-          errors if, for example, <code>visibility: visible</code> is set
-          without setting <code>aria-hidden: false</code>.
-        </p>
-        <h3>Semantic HTML</h3>
-        <h4>h-tags</h4>
-        <p>
-          h1/h2/h3/h4/h5/h6 tags must follow the structure. If your parent is an
-          h1, then you should be an h2, even if the design may suggest that you
-          should look like an h3. Here you must first set up the semantic
-          structure, and then you can style afterwards. Designers must also
-          consider this ;)
-        </p>
-      </div>
-
-      <div class="tasks tasks-purple">
-        <h2>Relevant Requirements</h2>
-        <ul>
-          <li>
-            1.1.1 - Provide users with a text alternative for non-text content.
-          </li>
-          <li>1.3.1 - Things should be coded as they appear.</li>
-          <li>1.3.2 - Present content in a meaningful sequence.</li>
-          <li>
-            1.3.3 - Instructions must not rely solely on shape, size, visual
-            location, orientation, or sound to be understood.
-          </li>
-          <li>1.3.5 - Form elements are coded with input purpose.</li>
-          <li>1.4.1 - Do not use presentation that relies solely on color.</li>
-          <li>1.4.5 - Use text instead of images of text.</li>
-          <li>2.1.1 - All functionality must be operable via keyboard only.</li>
-          <li>2.1.2 - Avoid keyboard traps.</li>
-          <li>
-            2.4.1 - Provide users with the ability to skip directly to main
-            content.
-          </li>
-          <li>2.4.2 - Use helpful and clear page titles.</li>
-          <li>2.4.3 - Present content in a logical sequence (focus order).</li>
-          <li>
-            2.4.4 - Clearly indicate the target and function of all links in the
-            link text.
-          </li>
-          <li>2.4.6 - Ensure that labels and headings are descriptive.</li>
-          <li>
-            3.1.1 - Ensure that the language of content on all web pages is
-            specified in the code.
-          </li>
-          <li>
-            3.1.2 - Ensure that all parts of content that are in a language
-            different from the rest of the page are marked in the code.
-          </li>
-          <li>
-            3.3.1 - For errors detected automatically, show where the error
-            occurred and provide a text description of the error.
-          </li>
-          <li>
-            3.3.2 - Display labels or instructions when form elements need to be
-            filled out.
-          </li>
-          <li>
-            4.1.2 - All components have name and role determined in the code.
-          </li>
-          <li>
-            4.1.3 - Users should receive status messages about important changes
-            on the website without causing a change in context.
-          </li>
-        </ul>
-      </div>
-    </div>
+        <div class="tasks tasks-purple">
+          <h2>Relevant Requirements</h2>
+          <ul>
+            <li>
+              1.1.1 - Provide users with a text alternative for non-text content.
+            </li>
+            <li>1.3.1 - Things should be coded as they appear.</li>
+            <li>1.3.2 - Present content in a meaningful sequence.</li>
+            <li>
+              1.3.3 - Instructions must not rely solely on shape, size, visual
+              location, orientation, or sound to be understood.
+            </li>
+            <li>1.3.5 - Form elements are coded with input purpose.</li>
+            <li>1.4.1 - Do not use presentation that relies solely on color.</li>
+            <li>1.4.5 - Use text instead of images of text.</li>
+            <li>2.1.1 - All functionality must be operable via keyboard only.</li>
+            <li>2.1.2 - Avoid keyboard traps.</li>
+            <li>
+              2.4.1 - Provide users with the ability to skip directly to main
+              content.
+            </li>
+            <li>2.4.2 - Use helpful and clear page titles.</li>
+            <li>2.4.3 - Present content in a logical sequence (focus order).</li>
+            <li>
+              2.4.4 - Clearly indicate the target and function of all links in the
+              link text.
+            </li>
+            <li>2.4.6 - Ensure that labels and headings are descriptive.</li>
+            <li>
+              3.1.1 - Ensure that the language of content on all web pages is
+              specified in the code.
+            </li>
+            <li>
+              3.1.2 - Ensure that all parts of content that are in a language
+              different from the rest of the page are marked in the code.
+            </li>
+            <li>
+              3.3.1 - For errors detected automatically, show where the error
+              occurred and provide a text description of the error.
+            </li>
+            <li>
+              3.3.2 - Display labels or instructions when form elements need to be
+              filled out.
+            </li>
+            <li>
+              4.1.2 - All components have name and role determined in the code.
+            </li>
+            <li>
+              4.1.3 - Users should receive status messages about important changes
+              on the website without causing a change in context.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
     <footer>
       Illustrations by
